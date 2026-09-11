@@ -163,9 +163,17 @@ older notes is wrong (`docs/PIPELINE.md:305-306`).
 ## Sample scene
 
 The sample scene is **not in git** — it is a pipeline artifact, and this repository commits
-none. It is published as an asset on the repository's
-[Releases](https://github.com/artigrib/cloudeye/releases) page. Download and unpack it next
-to the driver:
+none. It is intended to be published as an asset on the repository's
+[Releases](https://github.com/artigrib/cloudeye/releases) page.
+
+> ### ⚠️ Release not yet published — the commands below will work once the sample-scene release exists
+>
+> As of 2026-09-11 **no release has been published**, so the download URL below returns
+> **404**. The commands are correct and are kept here so they are ready the moment the
+> asset is uploaded; they are not something you can run today. Until then, build your own
+> bundle with the fallback at the end of this section.
+
+Once the release exists, download and unpack it next to the driver:
 
     mkdir -p var/sample-scene
     curl -L -o /tmp/sample-scene.tar.zst \
@@ -178,6 +186,6 @@ stacks, which is enough to run `PACK` through `EXPORT` and to exercise
 `--from-pulled var/sample-scene/pass_a`, and the offline suite with
 `PIPELINE_TEST_FIXTURES=var/sample-scene`.
 
-If no release asset is published yet, produce your own by running a video through the
+**Until the release exists, this is the only path:** produce your own bundle by running a video through the
 7-stage `gpu/` path and keeping its `per_view/` output — there is no other source, and this
 repository will not grow one.

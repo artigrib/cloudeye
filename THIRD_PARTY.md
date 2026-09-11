@@ -108,11 +108,23 @@ applies to those meshes.
 `frontend/public/fonts/` holds subset `.woff2` files for **Inter** and **JetBrains Mono**
 (latin and cyrillic, weights 400–600).
 
-- **Licence: UNKNOWN as shipped.** Both families are published upstream under the SIL Open
-  Font License 1.1, but **no licence file ships with these subsets in this repository**, and
-  nothing here records where the subsets were generated from. The OFL requires its text to
-  accompany redistribution. A maintainer should add the upstream `OFL.txt` for each family
-  under `frontend/public/fonts/` before treating this as settled.
+- **Licence: SIL Open Font License 1.1**, for both families. The OFL requires its text to
+  accompany redistribution, so the upstream licence text for each family ships beside the
+  subsets, fetched verbatim on 2026-09-11 from the projects' own repositories:
+
+  | Family | Licence file | Fetched from |
+  |---|---|---|
+  | Inter | `frontend/public/fonts/OFL-Inter.txt` | <https://raw.githubusercontent.com/rsms/inter/master/LICENSE.txt> (repo: <https://github.com/rsms/inter>) |
+  | JetBrains Mono | `frontend/public/fonts/OFL-JetBrainsMono.txt` | <https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/OFL.txt> (repo: <https://github.com/JetBrains/JetBrainsMono>) |
+
+  Copyright lines, as carried in those files: *Copyright (c) 2016 The Inter Project
+  Authors* and *Copyright 2020 The JetBrains Mono Project Authors*.
+
+- **Provenance of the subsets** is recorded in `frontend/public/fonts/README.md`: the Inter
+  faces were copied verbatim from `@fontsource/inter@5.3.0` (whose own bundled `LICENSE` is
+  the same OFL 1.1 text), and the JetBrains Mono faces were fetched from Google Fonts,
+  which serves that family under the same licence. Neither family's outlines were modified
+  or renamed — only subset — so no Reserved Font Name question arises.
 
 ---
 
