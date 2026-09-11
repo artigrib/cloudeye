@@ -43,10 +43,10 @@ services:
     environment:
       DATABASE_URL: postgresql+asyncpg://robot:robot@postgres:5432/robotdb
       REDIS_URL: redis://redis:6379/0
-      UPLOAD_DIR: /data/uploads
+      UPLOAD_DIR: /var/lib/cloudeye/uploads
       OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
     ports: ["127.0.0.1:8000:8000"]
-    volumes: ["uploads:/data/uploads"]
+    volumes: ["uploads:/var/lib/cloudeye/uploads"]
 
   worker:
     build: {context: ., dockerfile: Dockerfile.api}
@@ -56,9 +56,9 @@ services:
     environment:
       DATABASE_URL: postgresql+asyncpg://robot:robot@postgres:5432/robotdb
       REDIS_URL: redis://redis:6379/0
-      UPLOAD_DIR: /data/uploads
+      UPLOAD_DIR: /var/lib/cloudeye/uploads
       OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
-    volumes: ["uploads:/data/uploads"]
+    volumes: ["uploads:/var/lib/cloudeye/uploads"]
     command: ["arq", "app.worker.WorkerSettings"]
 
   web:

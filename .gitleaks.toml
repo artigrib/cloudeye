@@ -1,0 +1,29 @@
+# gitleaks configuration for this repository.
+#
+#   gitleaks detect --no-git --source .   # the working tree
+#   gitleaks detect                        # every commit in history
+#
+# Both must report zero findings before anything is pushed.
+#
+# The allowlist below covers directories that are NOT part of this repository: dependency
+# trees and build output, all of them gitignored and all of them recreated by `uv sync`,
+# `npm ci` or a pipeline run. Third-party packages ship test vectors and documentation
+# that trip secret heuristics (numpy's RNG test constants, PIL's font tables, a USD schema
+# file); none of it is ours and none of it is committed. Nothing under a tracked path is
+# allowlisted - if a finding appears in code, docs or fixtures, it is a real finding.
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Dependency trees and build output - gitignored, never committed"
+paths = [
+  '''(^|/)\.venv/''',
+  '''(^|/)node_modules/''',
+  '''(^|/)frontend/dist/''',
+  '''(^|/)var/''',
+  '''(^|/)__pycache__/''',
+  '''(^|/)\.pytest_cache/''',
+  '''(^|/)\.ruff_cache/''',
+  '''(^|/)\.mypy_cache/''',
+]

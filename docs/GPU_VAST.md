@@ -147,7 +147,7 @@ From real runs, each with its source:
 
 | Number | What | Source |
 |---|---|---|
-| **4 min 12 s** | `onstart_nvblox.sh` provisioning a fresh 4090 | `docs/PIPELINE.md:95` |
+| **4 min 12 s** (4:12) | `onstart_nvblox.sh` provisioning a fresh 4090 | `docs/PIPELINE.md:95` |
 | **$0.1293** | one room, true cost of a 566 s billed window (252 s provisioning + 81 s link probing + 233 s run) | `docs/PIPELINE.md:306` |
 | 265 s | `own_0901_161054` end to end on that box | `docs/PIPELINE.md:95` |
 | 2.2 s / 16.4 MiB | nvblox compute and VRAM — the GPU size is irrelevant | `docs/PIPELINE.md:622` |
@@ -156,7 +156,7 @@ From real runs, each with its source:
 | 4.38 / 3.46 MB/s | up / down on the UK box, ten times the previous one | `docs/PIPELINE.md:95` |
 | $0.8222/hr, $0.369/hr | the two box rates the figures above are quoted against | `docs/PIPELINE.md:95`, `:23` |
 
-Call it **about $0.13 per room** plus whatever a fresh provision costs, and note that the
+Call it **4:12 to provision and about $0.13 per room**, and note that the
 ledger undercounted by 2.43x before `--billing-from-epoch` existed — the $0.0527 figure in
 older notes is wrong (`docs/PIPELINE.md:305-306`).
 
