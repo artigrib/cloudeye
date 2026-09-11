@@ -1,0 +1,850 @@
+{
+  "n_walls": 3,
+  "n_dropped_components": 17,
+  "dropped_components": [
+    {
+      "area_m2": 0.09500000000000001,
+      "centroid_xy": [
+        -0.7647366375368891,
+        -2.195892545267072
+      ],
+      "cell_count": 38
+    },
+    {
+      "area_m2": 0.29250000000000004,
+      "centroid_xy": [
+        -0.6013875597141272,
+        0.17951231303252246
+      ],
+      "cell_count": 117
+    },
+    {
+      "area_m2": 0.0175,
+      "centroid_xy": [
+        -0.2465035548301222,
+        -3.947960214440005
+      ],
+      "cell_count": 7
+    },
+    {
+      "area_m2": 0.18250000000000002,
+      "centroid_xy": [
+        0.12414223773347866,
+        0.5613352845815216
+      ],
+      "cell_count": 73
+    },
+    {
+      "area_m2": 0.022500000000000006,
+      "centroid_xy": [
+        0.2558773975508304,
+        -0.9662141826939727
+      ],
+      "cell_count": 9
+    },
+    {
+      "area_m2": 0.06250000000000001,
+      "centroid_xy": [
+        0.4732107308841633,
+        -2.289103071582862
+      ],
+      "cell_count": 25
+    },
+    {
+      "area_m2": 0.05250000000000001,
+      "centroid_xy": [
+        0.5225440642174966,
+        -1.4217697382495285
+      ],
+      "cell_count": 21
+    },
+    {
+      "area_m2": 0.0075000000000000015,
+      "centroid_xy": [
+        0.5725440642174968,
+        -2.438436404916195
+      ],
+      "cell_count": 3
+    },
+    {
+      "area_m2": 0.010000000000000002,
+      "centroid_xy": [
+        0.6767107308841638,
+        -0.41760307158286203
+      ],
+      "cell_count": 4
+    },
+    {
+      "area_m2": 0.04000000000000001,
+      "centroid_xy": [
+        0.8392107308841634,
+        -2.961353071582862
+      ],
+      "cell_count": 16
+    },
+    {
+      "area_m2": 0.10500000000000002,
+      "centroid_xy": [
+        1.141591683265116,
+        -2.370579262059052
+      ],
+      "cell_count": 42
+    },
+    {
+      "area_m2": 0.020000000000000004,
+      "centroid_xy": [
+        1.9829607308841637,
+        -5.961353071582862
+      ],
+      "cell_count": 8
+    },
+    {
+      "area_m2": 0.022500000000000006,
+      "centroid_xy": [
+        2.3503218419952754,
+        -5.705103071582862
+      ],
+      "cell_count": 9
+    },
+    {
+      "area_m2": 0.005000000000000001,
+      "centroid_xy": [
+        2.314210730884164,
+        -5.380103071582862
+      ],
+      "cell_count": 2
+    },
+    {
+      "area_m2": 0.0025000000000000005,
+      "centroid_xy": [
+        2.439210730884164,
+        -5.255103071582862
+      ],
+      "cell_count": 1
+    },
+    {
+      "area_m2": 0.0025000000000000005,
+      "centroid_xy": [
+        2.489210730884164,
+        -4.805103071582861
+      ],
+      "cell_count": 1
+    },
+    {
+      "area_m2": 0.0025000000000000005,
+      "centroid_xy": [
+        3.139210730884164,
+        -2.905103071582862
+      ],
+      "cell_count": 1
+    }
+  ],
+  "n_objects_kept": 15,
+  "stage_counts": {
+    "footprints": 38,
+    "after_merge": 29,
+    "after_small_filter": 28,
+    "after_outside_room": 28,
+    "after_support_rule": 22,
+    "after_min_points": 22,
+    "after_class_caps": 15
+  },
+  "n_merges": 5,
+  "merges": [
+    {
+      "kept_id": "chair_0",
+      "merged_ids": [
+        "chair_1"
+      ],
+      "reason": "centroid",
+      "iou": 0.134,
+      "centroid_dist_m": 0.0792,
+      "vetoed_pairs": [
+        {
+          "a": "chair_0",
+          "b": "chair_2",
+          "veto": "floor_vs_wall",
+          "vertical_gap_m": 0.0
+        },
+        {
+          "a": "chair_0",
+          "b": "chair_3",
+          "veto": "floor_vs_wall",
+          "vertical_gap_m": 0.0178
+        },
+        {
+          "a": "chair_0",
+          "b": "chair_4",
+          "veto": "floor_vs_wall",
+          "vertical_gap_m": 0.0
+        },
+        {
+          "a": "chair_0",
+          "b": "chair_5",
+          "veto": "floor_vs_wall",
+          "vertical_gap_m": 0.0
+        },
+        {
+          "a": "chair_1",
+          "b": "chair_2",
+          "veto": "floor_vs_wall",
+          "vertical_gap_m": 0.2393
+        },
+        {
+          "a": "chair_1",
+          "b": "chair_3",
+          "veto": "vertical_gap",
+          "vertical_gap_m": 0.7302
+        },
+        {
+          "a": "chair_1",
+          "b": "chair_4",
+          "veto": "floor_vs_wall",
+          "vertical_gap_m": 0.0
+        },
+        {
+          "a": "chair_1",
+          "b": "chair_5",
+          "veto": "floor_vs_wall",
+          "vertical_gap_m": 0.0
+        }
+      ]
+    },
+    {
+      "kept_id": "television_0",
+      "merged_ids": [
+        "television_2",
+        "television_3"
+      ],
+      "reason": "centroid",
+      "iou": 0.0579,
+      "centroid_dist_m": 0.2265,
+      "vetoed_pairs": [
+        {
+          "a": "television_1",
+          "b": "television_2",
+          "veto": "vertical_gap",
+          "vertical_gap_m": 0.3026
+        }
+      ]
+    },
+    {
+      "kept_id": "lamp_6",
+      "merged_ids": [
+        "lamp_2"
+      ],
+      "reason": "centroid",
+      "iou": 0.1755,
+      "centroid_dist_m": 0.125,
+      "vetoed_pairs": [
+        {
+          "a": "lamp_0",
+          "b": "lamp_2",
+          "veto": "vertical_gap",
+          "vertical_gap_m": 0.7143
+        },
+        {
+          "a": "lamp_0",
+          "b": "lamp_6",
+          "veto": "vertical_gap",
+          "vertical_gap_m": 0.3273
+        },
+        {
+          "a": "lamp_2",
+          "b": "lamp_4",
+          "veto": "vertical_gap",
+          "vertical_gap_m": 0.3573
+        },
+        {
+          "a": "lamp_2",
+          "b": "lamp_9",
+          "veto": "vertical_gap",
+          "vertical_gap_m": 0.4203
+        },
+        {
+          "a": "lamp_2",
+          "b": "lamp_11",
+          "veto": "vertical_gap",
+          "vertical_gap_m": 0.4502
+        }
+      ]
+    },
+    {
+      "kept_id": "lamp_9",
+      "merged_ids": [
+        "lamp_11",
+        "lamp_12"
+      ],
+      "reason": "centroid",
+      "iou": 0.2721,
+      "centroid_dist_m": 0.094,
+      "vetoed_pairs": [
+        {
+          "a": "lamp_0",
+          "b": "lamp_12",
+          "veto": "vertical_gap",
+          "vertical_gap_m": 0.4222
+        },
+        {
+          "a": "lamp_1",
+          "b": "lamp_9",
+          "veto": "vertical_gap",
+          "vertical_gap_m": 0.4013
+        },
+        {
+          "a": "lamp_1",
+          "b": "lamp_11",
+          "veto": "vertical_gap",
+          "vertical_gap_m": 0.4313
+        },
+        {
+          "a": "lamp_2",
+          "b": "lamp_9",
+          "veto": "vertical_gap",
+          "vertical_gap_m": 0.4203
+        },
+        {
+          "a": "lamp_2",
+          "b": "lamp_11",
+          "veto": "vertical_gap",
+          "vertical_gap_m": 0.4502
+        }
+      ]
+    },
+    {
+      "kept_id": "pillow_0",
+      "merged_ids": [
+        "pillow_1",
+        "pillow_3",
+        "pillow_4"
+      ],
+      "reason": "centroid",
+      "iou": 0.0027,
+      "centroid_dist_m": 0.2905,
+      "vetoed_pairs": [
+        {
+          "a": "pillow_1",
+          "b": "pillow_4",
+          "veto": "vertical_gap",
+          "vertical_gap_m": 0.3156
+        },
+        {
+          "a": "pillow_3",
+          "b": "pillow_4",
+          "veto": "vertical_gap",
+          "vertical_gap_m": 0.3695
+        }
+      ]
+    }
+  ],
+  "n_support_dropped": 6,
+  "support_drops": [
+    {
+      "id": "chair_2",
+      "label": "chair",
+      "reason": "floating",
+      "z_min": 0.6902,
+      "floor_gap_m": 0.6902,
+      "wall_distance_m": 0.0,
+      "nearest_support": {
+        "kind": "object",
+        "distance_m": 0.4731,
+        "id": "chair_0",
+        "label": "chair",
+        "other_top_y": 1.1632,
+        "overlap_fraction": 0.7465,
+        "fit": "none"
+      }
+    },
+    {
+      "id": "chair_3",
+      "label": "chair",
+      "reason": "floating",
+      "z_min": 1.1811,
+      "floor_gap_m": 1.1811,
+      "wall_distance_m": 0.0,
+      "nearest_support": {
+        "kind": "object",
+        "distance_m": 0.1449,
+        "id": "desk_1",
+        "label": "desk",
+        "other_top_y": 1.0361,
+        "overlap_fraction": 0.8518,
+        "fit": "none"
+      }
+    },
+    {
+      "id": "desk_0",
+      "label": "desk",
+      "reason": "floating",
+      "z_min": 0.6961,
+      "floor_gap_m": 0.6961,
+      "wall_distance_m": 0.0,
+      "nearest_support": {
+        "kind": "floor",
+        "distance_m": 0.6961
+      }
+    },
+    {
+      "id": "desk_2",
+      "label": "desk",
+      "reason": "floating",
+      "z_min": 0.2957,
+      "floor_gap_m": 0.2957,
+      "wall_distance_m": 0.0,
+      "nearest_support": {
+        "kind": "floor",
+        "distance_m": 0.2957
+      }
+    },
+    {
+      "id": "lamp_8",
+      "label": "lamp",
+      "reason": "floating",
+      "z_min": 0.5962,
+      "floor_gap_m": 0.5962,
+      "wall_distance_m": 0.2759,
+      "nearest_support": {
+        "kind": "wall",
+        "distance_m": 0.2759
+      }
+    },
+    {
+      "id": "curtain_1",
+      "label": "curtain",
+      "reason": "floating",
+      "z_min": 1.198,
+      "floor_gap_m": 1.198,
+      "wall_distance_m": 0.0,
+      "nearest_support": {
+        "kind": "object",
+        "distance_m": 0.0341,
+        "id": "lamp_1",
+        "label": "lamp",
+        "other_top_y": 1.1638,
+        "overlap_fraction": 0.0203,
+        "fit": "none"
+      }
+    }
+  ],
+  "support_keeps": [
+    {
+      "id": "bed_0",
+      "label": "bed",
+      "reason": "floor",
+      "z_min": 0.0276,
+      "nearest_support": {
+        "kind": "floor",
+        "distance_m": 0.0276
+      }
+    },
+    {
+      "id": "chair_0",
+      "label": "chair",
+      "reason": "floor",
+      "z_min": 0.0984,
+      "nearest_support": {
+        "kind": "floor",
+        "distance_m": 0.0984
+      }
+    },
+    {
+      "id": "chair_4",
+      "label": "chair",
+      "reason": "on_object",
+      "z_min": 0.1897,
+      "nearest_support": {
+        "kind": "object",
+        "id": "desk_1",
+        "label": "desk",
+        "other_top_y": 1.0361,
+        "dz_m": 0.8464,
+        "overlap_fraction": 1.0,
+        "fit": "inside_blob",
+        "distance_m": 0.8464
+      }
+    },
+    {
+      "id": "chair_5",
+      "label": "chair",
+      "reason": "on_object",
+      "z_min": 0.1826,
+      "nearest_support": {
+        "kind": "object",
+        "id": "desk_1",
+        "label": "desk",
+        "other_top_y": 1.0361,
+        "dz_m": 0.8535,
+        "overlap_fraction": 1.0,
+        "fit": "inside_blob",
+        "distance_m": 0.8535
+      }
+    },
+    {
+      "id": "desk_1",
+      "label": "desk",
+      "reason": "floor",
+      "z_min": 0.0919,
+      "nearest_support": {
+        "kind": "floor",
+        "distance_m": 0.0919
+      }
+    },
+    {
+      "id": "television_0",
+      "label": "television",
+      "reason": "on_object",
+      "z_min": 0.8664,
+      "nearest_support": {
+        "kind": "object",
+        "id": "desk_1",
+        "label": "desk",
+        "other_top_y": 1.0361,
+        "dz_m": 0.1697,
+        "overlap_fraction": 1.0,
+        "fit": "inside_blob",
+        "distance_m": 0.1697
+      }
+    },
+    {
+      "id": "television_1",
+      "label": "television",
+      "reason": "wall",
+      "z_min": 1.191,
+      "nearest_support": {
+        "kind": "wall",
+        "distance_m": 0.0
+      }
+    },
+    {
+      "id": "television_4",
+      "label": "television",
+      "reason": "on_object",
+      "z_min": 0.6408,
+      "nearest_support": {
+        "kind": "object",
+        "id": "bed_0",
+        "label": "bed",
+        "other_top_y": 1.2786,
+        "dz_m": 0.6378,
+        "overlap_fraction": 0.96,
+        "fit": "inside_blob",
+        "distance_m": 0.6378
+      }
+    },
+    {
+      "id": "lamp_0",
+      "label": "lamp",
+      "reason": "wall",
+      "z_min": 1.8592,
+      "nearest_support": {
+        "kind": "wall",
+        "distance_m": 0.0
+      }
+    },
+    {
+      "id": "lamp_1",
+      "label": "lamp",
+      "reason": "on_object",
+      "z_min": 0.5872,
+      "nearest_support": {
+        "kind": "object",
+        "id": "desk_1",
+        "label": "desk",
+        "other_top_y": 1.0361,
+        "dz_m": 0.449,
+        "overlap_fraction": 1.0,
+        "fit": "inside_blob",
+        "distance_m": 0.449
+      }
+    },
+    {
+      "id": "lamp_6",
+      "label": "lamp",
+      "reason": "wall",
+      "z_min": 1.1083,
+      "nearest_support": {
+        "kind": "wall",
+        "distance_m": 0.0
+      }
+    },
+    {
+      "id": "lamp_4",
+      "label": "lamp",
+      "reason": "wall",
+      "z_min": 1.5022,
+      "nearest_support": {
+        "kind": "wall",
+        "distance_m": 0.0
+      }
+    },
+    {
+      "id": "lamp_5",
+      "label": "lamp",
+      "reason": "wall",
+      "z_min": 1.2955,
+      "nearest_support": {
+        "kind": "wall",
+        "distance_m": 0.0
+      }
+    },
+    {
+      "id": "lamp_7",
+      "label": "lamp",
+      "reason": "on_object",
+      "z_min": 0.6958,
+      "nearest_support": {
+        "kind": "object",
+        "id": "bed_0",
+        "label": "bed",
+        "other_top_y": 1.2786,
+        "dz_m": 0.5828,
+        "overlap_fraction": 0.994,
+        "fit": "inside_blob",
+        "distance_m": 0.5828
+      }
+    },
+    {
+      "id": "lamp_9",
+      "label": "lamp",
+      "reason": "wall",
+      "z_min": 1.3967,
+      "nearest_support": {
+        "kind": "wall",
+        "distance_m": 0.0
+      }
+    },
+    {
+      "id": "lamp_10",
+      "label": "lamp",
+      "reason": "on_object",
+      "z_min": 1.2515,
+      "nearest_support": {
+        "kind": "object",
+        "id": "bed_0",
+        "label": "bed",
+        "other_top_y": 1.2786,
+        "dz_m": 0.0271,
+        "overlap_fraction": 1.0,
+        "fit": "top_face",
+        "distance_m": 0.0271
+      }
+    },
+    {
+      "id": "lamp_13",
+      "label": "lamp",
+      "reason": "wall",
+      "z_min": 1.3982,
+      "nearest_support": {
+        "kind": "wall",
+        "distance_m": 0.0
+      }
+    },
+    {
+      "id": "curtain_0",
+      "label": "curtain",
+      "reason": "floor",
+      "z_min": 0.0664,
+      "nearest_support": {
+        "kind": "floor",
+        "distance_m": 0.0664
+      }
+    },
+    {
+      "id": "nightstand_0",
+      "label": "nightstand",
+      "reason": "floor",
+      "z_min": -0.0219,
+      "nearest_support": {
+        "kind": "floor",
+        "distance_m": 0.0
+      }
+    },
+    {
+      "id": "nightstand_1",
+      "label": "nightstand",
+      "reason": "floor",
+      "z_min": -0.0288,
+      "nearest_support": {
+        "kind": "floor",
+        "distance_m": 0.0
+      }
+    },
+    {
+      "id": "pillow_0",
+      "label": "pillow",
+      "reason": "on_object",
+      "z_min": 0.5247,
+      "nearest_support": {
+        "kind": "object",
+        "id": "bed_0",
+        "label": "bed",
+        "other_top_y": 1.2786,
+        "dz_m": 0.7539,
+        "overlap_fraction": 1.0,
+        "fit": "inside_blob",
+        "distance_m": 0.7539
+      }
+    },
+    {
+      "id": "pillow_2",
+      "label": "pillow",
+      "reason": "on_object",
+      "z_min": 0.4774,
+      "nearest_support": {
+        "kind": "object",
+        "id": "bed_0",
+        "label": "bed",
+        "other_top_y": 1.2786,
+        "dz_m": 0.8012,
+        "overlap_fraction": 1.0,
+        "fit": "inside_blob",
+        "distance_m": 0.8012
+      }
+    }
+  ],
+  "blob_splits": [
+    {
+      "id": "bed_0",
+      "label": "bed",
+      "long_side_m": 4.265,
+      "k": 2,
+      "instance_long_side_m": 2.1325,
+      "reason": "blob_long_side"
+    }
+  ],
+  "n_min_points_dropped": 0,
+  "min_points_drops": [],
+  "room_area_m2": 24.10967566697459,
+  "n_class_cap_dropped": 7,
+  "class_cap_drops": [
+    {
+      "id": "lamp_4",
+      "label": "lamp",
+      "support": 138.0,
+      "rank": 5,
+      "cap": 4,
+      "reason": "class_cap"
+    },
+    {
+      "id": "lamp_10",
+      "label": "lamp",
+      "support": 126.0,
+      "rank": 6,
+      "cap": 4,
+      "reason": "class_cap"
+    },
+    {
+      "id": "lamp_9",
+      "label": "lamp",
+      "support": 114.0,
+      "rank": 7,
+      "cap": 4,
+      "reason": "class_cap"
+    },
+    {
+      "id": "lamp_6",
+      "label": "lamp",
+      "support": 50.0,
+      "rank": 8,
+      "cap": 4,
+      "reason": "class_cap"
+    },
+    {
+      "id": "lamp_13",
+      "label": "lamp",
+      "support": 46.0,
+      "rank": 9,
+      "cap": 4,
+      "reason": "class_cap"
+    },
+    {
+      "id": "television_1",
+      "label": "television",
+      "support": 2905.0,
+      "rank": 2,
+      "cap": 1,
+      "reason": "class_cap"
+    },
+    {
+      "id": "television_4",
+      "label": "television",
+      "support": 1563.0,
+      "rank": 3,
+      "cap": 1,
+      "reason": "class_cap"
+    }
+  ],
+  "scene_usd_assets": {
+    "assets_root": "var/assets/furniture",
+    "n_placed": 14,
+    "n_placeholder": 1
+  },
+  "n_objects_overhead_excluded": 1,
+  "overhead_object_ids": [
+    "lamp_3"
+  ],
+  "n_small_objects_dropped": 1,
+  "small_object_ids_dropped": [
+    "nightstand_2"
+  ],
+  "n_objects_outside_room_dropped": 0,
+  "outside_room_ids_dropped": [],
+  "n_walls_before_room_check": 3,
+  "n_walls_outside_room_dropped": 0,
+  "wall_ids_dropped": [],
+  "dropped_prims": [],
+  "wall_clip_margin_m": 0.2,
+  "room_opening_radius_m": 0.45,
+  "room_opening_radius_cells": 9,
+  "n_gaps": 12,
+  "usd_exported": true,
+  "floor_polygon_present": true,
+  "room_polygon_method": "largest_free_component_union_floor_standing_footprints_closed_outer_contour",
+  "n_room_polygon_floor_standing_objects": 6,
+  "room_polygon_regularized": true,
+  "room_polygon_n_vertices": 18,
+  "room_polygon_n_vertices_raw": 81,
+  "room_grid_padding_cells": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "floor_standing_inside_fractions": {
+    "bed_0": 1.0,
+    "chair_0": 0.9999999999999998,
+    "desk_1": 1.0000000000000002,
+    "curtain_0": 1.0000000000000002,
+    "nightstand_0": 1.0,
+    "nightstand_1": 1.0000000000000002
+  },
+  "floor_standing_inside_fraction_min": 0.9999999999999998,
+  "wall_band_thickness_m": 0.1,
+  "wall_height_m": 2.952064141708062,
+  "wall_band_present": true,
+  "top_down_render_exported": true,
+  "yaw_method": "wall_hull_min_area_rect",
+  "yaw_applied": true,
+  "yaw_correction_rad": 0.9246458985738557,
+  "yaw_correction_deg": 52.978307532363516,
+  "yaw_is_degenerate_square": false,
+  "yaw_long_axis_angle_deg": -52.978307532363516,
+  "yaw_rect_size_m": [
+    4.780361354548679,
+    3.837806858934923
+  ],
+  "yaw_free_only_polygon_present": true,
+  "yaw_free_only_long_axis_angle_deg": -56.90830006131755,
+  "yaw_free_only_is_degenerate_square": false,
+  "yaw_wall_hull_long_axis_angle_deg": -52.978307532363516,
+  "yaw_wall_hull_is_degenerate_square": false,
+  "yaw_disagreement_deg": 3.929992528954031,
+  "yaw_disagreement_threshold_deg": 10.0,
+  "yaw_applied_source": "wall_hull",
+  "yaw_fallback_to_polygon": false,
+  "yaw_cross_check_disagrees": false,
+  "yaw_histogram_correction_deg": null,
+  "yaw_histogram_peak_share": null,
+  "yaw_histogram_gate_passed": false
+}

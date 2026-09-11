@@ -1,0 +1,43 @@
+# Target: nvblox (valtsblukis/nvblox fork, used by nvblox_torch's README for
+#         its PRE_CXX11_ABI_LINKABLE support)
+# File:   nvblox/include/nvblox/utils/rates.h
+# Commit: 7bda93e993594ca69c479dde64213ac35835eb8 (valtsblukis/nvblox HEAD,
+#         2024-01-30 — the fork's tip as of our 2026-08-28 build; the fork
+#         has had no commits since)
+#
+# Toolchain: CUDA 12.8 (nvcc), GCC 13, Ubuntu 24.04
+#
+# Upstream status (checked 2026-08-29): ALREADY FIXED in real upstream —
+# nvidia-isaac/nvblox's `public` branch already has `#include <array>` in
+# rates.h. Same story as the nvtx3 fix (patch 02): the fork we had to use
+# is stale and never picked this up. No upstream contribution needed; see
+# patches/nvblox-cuda128/README.md.
+#
+# Symptom (hit after patches 02 and 03 were already applied, ~76% through
+# the build): compiling rates.h fails with:
+#   error: 'nvblox::timing::CircularBuffer<T, kLength>::buffer_' has
+#   incomplete type
+#
+# Cause: rates.h uses std::array<T, kLength> as a member type but never
+# includes <array> directly. It relied on a transitive include (via
+# <string> or <tuple> from another header pulled in earlier in the
+# translation unit) that happened to declare std::array on the libstdc++
+# this code was originally written against. On GCC 13's libstdc++ that
+# transitive path only forward-declares std::array in that position,
+# which isn't enough to make CircularBuffer's member a complete type.
+#
+# Fix: add the missing #include <array>. Self-contained, no behavior
+# change — every translation unit that reaches this header already gets
+# std::array from *somewhere*, this just stops relying on which somewhere.
+diff --git a/nvblox/include/nvblox/utils/rates.h b/nvblox/include/nvblox/utils/rates.h
+index 7464daf..e1a4d4e 100644
+--- a/nvblox/include/nvblox/utils/rates.h
++++ b/nvblox/include/nvblox/utils/rates.h
+@@ -15,6 +15,7 @@ limitations under the License.
+ */
+ #pragma once
+
++#include <array>
+ #include <string>
+ #include <unordered_map>
+

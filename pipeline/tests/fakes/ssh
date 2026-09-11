@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+"""Fake `ssh`. FAKE_SSH_RC controls the exit code; the remote command is recorded."""
+import os, sys
+log = os.environ.get("FAKE_LOG")
+if log:
+    with open(log, "a") as fh:
+        fh.write("ssh " + " ".join(sys.argv[1:]) + "\n")
+rc = int(os.environ.get("FAKE_SSH_RC", "0"))
+if rc != 0:
+    print("fake ssh: connection refused", file=sys.stderr)
+    sys.exit(rc)
+cmd = sys.argv[-1]
+if "echo SSH_OK" in cmd:
+    print("SSH_OK")
+elif "nvidia-smi" in cmd:
+    print(os.environ.get("FAKE_NVIDIA_SMI",
+                         "NVIDIA GeForce RTX 4090, 24564 MiB, 580.126.09"))
+else:
+    print("fake ssh ok")
+sys.exit(0)

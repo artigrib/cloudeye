@@ -1,0 +1,48 @@
+[Unit]
+Description=Video backend arq worker (GPU pipeline orchestration)
+After=network.target postgresql.service redis-server.service
+Wants=postgresql.service redis-server.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/cloudeye
+# Order matters: values from the later file win, so app defaults come from .env and the
+# OpenRouter secret is layered on top without ever needing to live in .env itself.
+# .env is NOT prefixed with "-": every setting here (DATABASE_URL in particular) has a
+# hardcoded fallback in app/config.py, so a missing/unreadable .env must fail the unit
+# loudly instead of silently starting against robot:robot@127.0.0.1/robotdb. The
+# OpenRouter file stays optional ("-") since its absence only disables VLM calls
+# (openrouter_api_key defaults to "").
+EnvironmentFile=/opt/cloudeye/.env
+EnvironmentFile=-/etc/cloudeye/openrouter.env
+#
+# The pipeline the worker drives (pipeline/run_pipeline.py) rents GPU boxes on vast.ai. Its
+# operator-facing safety is the pipeline/ARMED file, which an operator writes for one
+# morning; a worker runs unattended, so in worker mode these two take its place
+# (pipeline/worker_driver.py):
+#
+#   PIPELINE_WORKER_ENABLED=1  - REQUIRED for the worker to rent anything. Absent or any
+#                                other value means the worker still runs the pipeline and
+#                                still writes status.json, but makes no vast call and spends
+#                                nothing. This is the default on purpose: renting is opt-in.
+#   PIPELINE_DAILY_USD=<cap>   - the day's ceiling in USD, measured from `create` (or
+#                                `start`) to a confirmed `exited` and accumulated in
+#                                pipeline/state/daily_spend.json across restarts. Checked
+#                                BEFORE any vast call, and the per-run --max-usd is clamped
+#                                to whatever is left of it.
+#
+# Neither is set here. Uncomment and set them deliberately, and only then reinstall this
+# unit - an edit to this file in the repo changes nothing until it is copied to
+# /etc/systemd/system and `systemctl daemon-reload`ed.
+#Environment=PIPELINE_WORKER_ENABLED=1
+#Environment=PIPELINE_DAILY_USD=5.00
+ExecStart=/usr/local/bin/uv run --project /opt/cloudeye arq app.worker.WorkerSettings
+Restart=always
+RestartSec=5
+# A pipeline run can legitimately take several minutes; give a clean shutdown a real
+# chance to happen (e.g. finish an in-flight SSH poll) rather than being SIGKILLed instantly.
+TimeoutStopSec=30
+
+[Install]
+WantedBy=multi-user.target

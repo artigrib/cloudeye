@@ -1,0 +1,58 @@
+# Target: stdgpu (vendored into nvblox's build via CMake FetchContent)
+# File:   cmake/Findthrust.cmake
+# Commit: e10f6f3ccc9902d693af4380c3bcd188ec34a2e6 (stotko/stdgpu, 2021-07-26 —
+#         the exact commit pinned by valtsblukis/nvblox's
+#         thirdparty/stdgpu/stdgpu.cmake GIT_TAG as of 2026-08-28)
+#
+# Toolchain: CUDA 12.8 (nvcc), CMake 3.28, Ubuntu 24.04
+#
+# Upstream status (checked 2026-08-29): stdgpu fixed this exact bug in its
+# own commit 1f0b2d51718692ec9046fe1b36173a591c611bdb (2024-03-13, "Fix bug
+# #407: THRUST_VERSION may be followed by comments"), which postdates the
+# commit nvblox pins. nvblox's real upstream (nvidia-isaac/nvblox, formerly
+# NVIDIA-ISAAC-ROS/nvblox) still pins stdgpu to commit 71a5aef2
+# (2024-02-11) — also before the fix — and has an open, unaddressed report
+# of this exact symptom: nvidia-isaac/nvblox#54. See
+# patches/nvblox-cuda128/upstream/ for a draft PR bumping that pin instead
+# of patching the vendored file. This local patch remains useful as-is for
+# anyone stuck on an older nvblox/stdgpu pin.
+#
+# Symptom: `cmake ..` configure fails with:
+#   CMake Error at .../ext_stdgpu-src/cmake/Findthrust.cmake:22 (math):
+#     math cannot parse the expression: "ERROR / 100000": syntax error,
+#     unhandled operator...
+#   -- Could NOT find thrust: Found unsuitable version "ERROR.ERROR.ERROR",
+#     but required is at least "..." (found .../include)
+#
+# Cause: Findthrust.cmake extracts THRUST_VERSION from CUDA's
+# thrust/version.h with a regex, then feeds the extracted string straight
+# into math(EXPR ...). CUDA 12.8's thrust/version.h has a trailing comment
+# on that #define line:
+#
+#   #define THRUST_VERSION 200700  // macro expansion is a header change...
+#
+# The existing REGEX REPLACE only strips the "#define THRUST_VERSION"
+# prefix, so THRUST_VERSION_STRING is left as "200700  // macro expansion is
+# a header change..." — not purely numeric — and math(EXPR) fails, producing
+# the literal string "ERROR" for each of major/minor/patch.
+#
+# Fix: add a second regex pass (MATCH, not REPLACE) that pulls out just the
+# leading run of digits before doing arithmetic on it. This is deliberately
+# conservative — it doesn't try to parse or strip comments in general, it
+# just takes "the first integer in what's left after stripping the macro
+# name," which is correct for every prior THRUST_VERSION format as well
+# (there's never been a digit-bearing comment token immediately after the
+# number in older CUDA versions, so this is a strict superset of the old
+# behavior).
+diff --git a/cmake/Findthrust.cmake b/cmake/Findthrust.cmake
+index 7238bb3..2103db4 100644
+--- a/cmake/Findthrust.cmake
++++ b/cmake/Findthrust.cmake
+@@ -13,6 +13,7 @@ if(THRUST_INCLUDE_DIR)
+          REGEX "#define THRUST_VERSION[ \t]+([0-9x]+)")
+
+     string(REGEX REPLACE "#define THRUST_VERSION[ \t]+" "" THRUST_VERSION_STRING ${THRUST_VERSION_STRING})
++    string(REGEX MATCH "[0-9]+" THRUST_VERSION_STRING "${THRUST_VERSION_STRING}")
+
+     math(EXPR THRUST_VERSION_MAJOR "${THRUST_VERSION_STRING} / 100000")
+     math(EXPR THRUST_VERSION_MINOR "(${THRUST_VERSION_STRING} / 100) % 1000")

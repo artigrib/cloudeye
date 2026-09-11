@@ -1,0 +1,22 @@
+#!/usr/bin/env python3
+"""Fake `scp`. Sleeps FAKE_SCP_SLEEP s so a MB/s number is finite, and - when the source is
+remote - actually creates the destination file, because measure_inet_down sizes what it got.
+"""
+import os, sys, time
+log = os.environ.get("FAKE_LOG")
+if log:
+    with open(log, "a") as fh:
+        fh.write("scp " + " ".join(sys.argv[1:]) + "\n")
+time.sleep(float(os.environ.get("FAKE_SCP_SLEEP", "0.2")))
+rc = int(os.environ.get("FAKE_SCP_RC", "0"))
+if rc == 0:
+    args = [a for a in sys.argv[1:] if not a.startswith("-")]
+    # drop option values (-i key, -P port, -o opt) - they follow a flag
+    argv = sys.argv[1:]
+    vals = {argv[i + 1] for i, a in enumerate(argv[:-1]) if a in ("-i", "-P", "-o")}
+    args = [a for a in args if a not in vals]
+    if len(args) >= 2 and args[-2].startswith("root@") and not args[-1].startswith("root@"):
+        n = int(os.environ.get("FAKE_SCP_BYTES", str(1024 * 1024)))
+        with open(args[-1], "wb") as fh:
+            fh.write(b"\0" * n)
+sys.exit(rc)

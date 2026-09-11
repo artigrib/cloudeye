@@ -1,0 +1,3129 @@
+[
+  {
+    "a": "wall_0",
+    "a_kind": "wall",
+    "b": "bed_0",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      1.0859,
+      -3.9724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_0",
+    "a_kind": "wall",
+    "b": "toilet_0",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -2.6641,
+      -2.9224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_0",
+    "a_kind": "wall",
+    "b": "counter_0",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -1.1641,
+      -3.4724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_0",
+    "a_kind": "wall",
+    "b": "toilet_1",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -1.5641,
+      -3.0724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "counter_0",
+    "a_kind": "object",
+    "b": "toilet_1",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -1.3641,
+      -3.1224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_0",
+    "a_kind": "wall",
+    "b": "toilet_3",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -1.5141,
+      -2.9224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "toilet_1",
+    "a_kind": "object",
+    "b": "toilet_3",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -1.5141,
+      -2.8724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "towel_2",
+    "a_kind": "object",
+    "b": "toilet_4",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -3.4641,
+      -2.6224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "towel_2",
+    "a_kind": "object",
+    "b": "toilet_0",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -2.9641,
+      -2.5724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "rug_1",
+    "a_kind": "object",
+    "b": "table_0",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -0.0641,
+      -2.1724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_0",
+    "a_kind": "wall",
+    "b": "refrigerator_0",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -1.4141,
+      -2.1224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "sink_2",
+    "a_kind": "object",
+    "b": "towel_2",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -2.8141,
+      -2.0724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_0",
+    "a_kind": "wall",
+    "b": "rug_3",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -2.1141,
+      -2.0724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "refrigerator_0",
+    "a_kind": "object",
+    "b": "counter_0",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -1.3141,
+      -2.0724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "refrigerator_2",
+    "a_kind": "object",
+    "b": "sink_2",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -2.8141,
+      -2.0224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "table_0",
+    "a_kind": "object",
+    "b": "stool_1",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -0.0641,
+      -1.9224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "rug_3",
+    "a_kind": "object",
+    "b": "refrigerator_0",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -1.8641,
+      -1.9224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_0",
+    "a_kind": "wall",
+    "b": "blanket_0",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      0.8859,
+      -1.8724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_1",
+    "a_kind": "wall",
+    "b": "refrigerator_2",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -2.5141,
+      -1.7224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_1",
+    "a_kind": "wall",
+    "b": "refrigerator_0",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -2.0641,
+      -1.6224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "mirror_0",
+    "a_kind": "object",
+    "b": "sink_2",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -3.0641,
+      -1.6224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "counter_0",
+    "a_kind": "object",
+    "b": "stool_1",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -0.1141,
+      -1.3724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_0",
+    "a_kind": "wall",
+    "b": "rug_0",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      0.5859,
+      -1.1224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "table_0",
+    "a_kind": "object",
+    "b": "counter_0",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -0.1141,
+      -1.2224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "refrigerator_0",
+    "a_kind": "object",
+    "b": "stool_1",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -1.1141,
+      -1.0724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "chair_0",
+    "a_kind": "object",
+    "b": "stool_1",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -0.4141,
+      -1.0724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_1",
+    "a_kind": "wall",
+    "b": "towel_1",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -2.7141,
+      -0.8724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "bed_1",
+    "a_kind": "object",
+    "b": "rug_0",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      0.1359,
+      -0.2724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_0",
+    "a_kind": "wall",
+    "b": "bed_1",
+    "b_kind": "object",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      0.1859,
+      -0.1724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_2",
+    "a_kind": "wall",
+    "b": "wall_3",
+    "b_kind": "wall",
+    "width_m": 0.1,
+    "measurement_point_xy": [
+      -0.9641,
+      2.1276
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_0",
+    "a_kind": "wall",
+    "b": "rug_1",
+    "b_kind": "object",
+    "width_m": 0.1207,
+    "measurement_point_xy": [
+      -0.0141,
+      -3.1224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "bed_0",
+    "a_kind": "object",
+    "b": "blanket_0",
+    "b_kind": "object",
+    "width_m": 0.1207,
+    "measurement_point_xy": [
+      0.9359,
+      -1.8724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "refrigerator_1",
+    "a_kind": "object",
+    "b": "towel_1",
+    "b_kind": "object",
+    "width_m": 0.1207,
+    "measurement_point_xy": [
+      -2.5141,
+      -0.9224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_0",
+    "a_kind": "wall",
+    "b": "wall_2",
+    "b_kind": "wall",
+    "width_m": 0.1207,
+    "measurement_point_xy": [
+      0.2359,
+      0.4276
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_1",
+    "a_kind": "wall",
+    "b": "wall_3",
+    "b_kind": "wall",
+    "width_m": 0.1207,
+    "measurement_point_xy": [
+      -1.0641,
+      2.1276
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "refrigerator_2",
+    "a_kind": "object",
+    "b": "towel_2",
+    "b_kind": "object",
+    "width_m": 0.15,
+    "measurement_point_xy": [
+      -2.7641,
+      -2.0724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "chair_0",
+    "a_kind": "object",
+    "b": "table_0",
+    "b_kind": "object",
+    "width_m": 0.15,
+    "measurement_point_xy": [
+      -0.3641,
+      -1.0724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_1",
+    "a_kind": "wall",
+    "b": "sink_2",
+    "b_kind": "object",
+    "width_m": 0.1707,
+    "measurement_point_xy": [
+      -2.7141,
+      -1.6724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_1",
+    "a_kind": "wall",
+    "b": "broom_0",
+    "b_kind": "object",
+    "width_m": 0.1707,
+    "measurement_point_xy": [
+      -2.8641,
+      -0.1224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "rug_3",
+    "a_kind": "object",
+    "b": "refrigerator_2",
+    "b_kind": "object",
+    "width_m": 0.1825,
+    "measurement_point_xy": [
+      -2.3141,
+      -1.8224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": false,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "rug_0",
+    "a_kind": "object",
+    "b": "table_0",
+    "b_kind": "object",
+    "width_m": 0.2118,
+    "measurement_point_xy": [
+      -0.1641,
+      -1.0224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": true,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_1",
+    "a_kind": "wall",
+    "b": "wall_2",
+    "b_kind": "wall",
+    "width_m": 0.2118,
+    "measurement_point_xy": [
+      -1.0141,
+      2.0276
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": true,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "refrigerator_0",
+    "a_kind": "object",
+    "b": "refrigerator_2",
+    "b_kind": "object",
+    "width_m": 0.2236,
+    "measurement_point_xy": [
+      -2.2641,
+      -1.7224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": true,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_1",
+    "a_kind": "wall",
+    "b": "refrigerator_1",
+    "b_kind": "object",
+    "width_m": 0.2236,
+    "measurement_point_xy": [
+      -2.5641,
+      -1.0224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": true,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "toilet_0",
+    "a_kind": "object",
+    "b": "toilet_4",
+    "b_kind": "object",
+    "width_m": 0.25,
+    "measurement_point_xy": [
+      -3.1141,
+      -2.6724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": true,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_0",
+    "a_kind": "wall",
+    "b": "refrigerator_2",
+    "b_kind": "object",
+    "width_m": 0.2532,
+    "measurement_point_xy": [
+      -2.6141,
+      -2.0724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": true,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_0",
+    "a_kind": "wall",
+    "b": "towel_2",
+    "b_kind": "object",
+    "width_m": 0.2914,
+    "measurement_point_xy": [
+      -2.7141,
+      -2.3224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": true,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": false,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "rug_0",
+    "a_kind": "object",
+    "b": "chair_0",
+    "b_kind": "object",
+    "width_m": 0.3384,
+    "measurement_point_xy": [
+      -0.3141,
+      -0.9224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": true,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": true,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": false,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_1",
+    "a_kind": "wall",
+    "b": "mirror_0",
+    "b_kind": "object",
+    "width_m": 0.35,
+    "measurement_point_xy": [
+      -2.9141,
+      -1.4724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": true,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": true,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": true,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_0",
+    "a_kind": "wall",
+    "b": "stool_1",
+    "b_kind": "object",
+    "width_m": 0.3606,
+    "measurement_point_xy": [
+      0.2359,
+      -1.7224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": true,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": false,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": true,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": true,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": false,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": false,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "refrigerator_0",
+    "a_kind": "object",
+    "b": "refrigerator_1",
+    "b_kind": "object",
+    "width_m": 0.5099,
+    "measurement_point_xy": [
+      -2.1141,
+      -0.9724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": true,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": true,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": true,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": true,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": true,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": true,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "rug_1",
+    "a_kind": "object",
+    "b": "stool_1",
+    "b_kind": "object",
+    "width_m": 0.5193,
+    "measurement_point_xy": [
+      0.1859,
+      -1.9724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": true,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": true,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": true,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": true,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": true,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": true,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "rug_0",
+    "a_kind": "object",
+    "b": "stool_1",
+    "b_kind": "object",
+    "width_m": 0.5328,
+    "measurement_point_xy": [
+      0.1359,
+      -1.2224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": true,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": true,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": true,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": true,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": true,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": true,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "bed_0",
+    "a_kind": "object",
+    "b": "rug_1",
+    "b_kind": "object",
+    "width_m": 0.6325,
+    "measurement_point_xy": [
+      0.4359,
+      -2.5224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": true,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": true,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": true,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": true,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": false,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": true,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": true,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "bed_0",
+    "a_kind": "object",
+    "b": "rug_0",
+    "b_kind": "object",
+    "width_m": 0.9217,
+    "measurement_point_xy": [
+      1.1359,
+      -1.3224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": true,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": true,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": true,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": true,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": true,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": true,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": true,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_1",
+    "a_kind": "wall",
+    "b": "stool_1",
+    "b_kind": "object",
+    "width_m": 0.9487,
+    "measurement_point_xy": [
+      -0.9641,
+      -0.3724
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": true,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": true,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": true,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": true,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": true,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": true,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": true,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_0",
+    "a_kind": "wall",
+    "b": "wall_1",
+    "b_kind": "wall",
+    "width_m": 1.0,
+    "measurement_point_xy": [
+      -0.4641,
+      0.3776
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": true,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": true,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": true,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": true,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": true,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": true,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": true,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_1",
+    "a_kind": "wall",
+    "b": "rug_0",
+    "b_kind": "object",
+    "width_m": 1.0738,
+    "measurement_point_xy": [
+      -0.5141,
+      -0.0224
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": true,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": true,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": true,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": true,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": true,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": true,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": false,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": true,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  },
+  {
+    "a": "wall_3",
+    "a_kind": "wall",
+    "b": "broom_0",
+    "b_kind": "object",
+    "width_m": 1.7687,
+    "measurement_point_xy": [
+      -2.7641,
+      1.1276
+    ],
+    "platforms": [
+      {
+        "platform_id": "burger",
+        "fits": true,
+        "required_clearance_m": 0.2
+      },
+      {
+        "platform_id": "limo",
+        "fits": true,
+        "required_clearance_m": 0.388
+      },
+      {
+        "platform_id": "waffle_pi",
+        "fits": true,
+        "required_clearance_m": 0.3
+      },
+      {
+        "platform_id": "turtlebot4",
+        "fits": true,
+        "required_clearance_m": 0.35
+      },
+      {
+        "platform_id": "jackal",
+        "fits": true,
+        "required_clearance_m": 0.668
+      },
+      {
+        "platform_id": "go2",
+        "fits": true,
+        "required_clearance_m": 0.4992
+      },
+      {
+        "platform_id": "husky",
+        "fits": true,
+        "required_clearance_m": 1.1056
+      },
+      {
+        "platform_id": "rosbot_xl_arm",
+        "fits": true,
+        "required_clearance_m": 0.437122
+      }
+    ]
+  }
+]

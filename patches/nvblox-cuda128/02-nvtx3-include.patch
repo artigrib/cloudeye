@@ -1,0 +1,49 @@
+# Target: nvblox (valtsblukis/nvblox fork, used by nvblox_torch's README for
+#         its PRE_CXX11_ABI_LINKABLE support)
+# File:   nvblox/include/nvblox/utils/nvtx_ranges.h
+# Commit: 7bda93e993594ca69c479dde64213ac35835eb8 (valtsblukis/nvblox HEAD,
+#         2024-01-30 — the fork's tip as of our 2026-08-28 build; the fork
+#         has had no commits since)
+#
+# Toolchain: CUDA 12.8 (nvcc), GCC 13, Ubuntu 24.04
+#
+# Upstream status (checked 2026-08-29): ALREADY FIXED in real upstream —
+# nvidia-isaac/nvblox's `public` branch already includes
+# <nvtx3/nvToolsExt.h>. The fork we had to use is simply stale (its last
+# commit predates the real-upstream fix) and was never rebased onto it. No
+# upstream contribution needed for this one; see patches/nvblox-cuda128/
+# README.md for the "stop using the stale fork" recommendation instead.
+#
+# Symptom: compiling src/gpu_hash/gpu_layer_view.cu fails with ~35
+# duplicate-definition errors, e.g.:
+#   error: "nvtxEventAttributes_v2" has already been defined
+#   error: "nvtxResourceGenericType_t" has already been defined
+#   error: "nvtxRangeStartEx" has already been defined
+#   ... (~35 total, all NVTX types/functions)
+#
+# Cause: nvtx_ranges.h includes the legacy <nvToolsExt.h>. In the same
+# translation unit, CUDA 12.8's Thrust/CUB (CCCL) internally includes the
+# new <nvtx3/nvToolsExt.h>. Both headers define the same NVTX symbols, and
+# there's no shared include guard between the legacy path and the nvtx3
+# path (they're different physical files with different guard macros), so
+# the second inclusion redefines everything the first one already defined.
+# CUDA's own deprecation notice in the legacy header states NVTX3 is a full
+# drop-in API replacement, which is why switching the include is sufficient
+# — no call sites in nvtx_ranges.h need to change.
+#
+# Fix: include <nvtx3/nvToolsExt.h> directly instead of the legacy header,
+# so both nvblox and CCCL pull in the same physical file and its include
+# guard does its job.
+diff --git a/nvblox/include/nvblox/utils/nvtx_ranges.h b/nvblox/include/nvblox/utils/nvtx_ranges.h
+index e2c6be4..566f3e6 100644
+--- a/nvblox/include/nvblox/utils/nvtx_ranges.h
++++ b/nvblox/include/nvblox/utils/nvtx_ranges.h
+@@ -17,7 +17,7 @@ limitations under the License.
+
+ #include <string>
+
+-#include <nvToolsExt.h>
++#include <nvtx3/nvToolsExt.h>
+
+ #include "nvblox/core/color.h"
+

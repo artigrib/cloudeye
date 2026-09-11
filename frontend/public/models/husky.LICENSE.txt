@@ -1,0 +1,58 @@
+husky_a200.glb
+==============
+
+Derived from the Clearpath Husky A200 meshes and URDF in the husky/husky repository:
+
+  Source:      https://github.com/husky/husky
+  Branch:      noetic-devel
+  Commit:      41e15d283a8d955938204e79554a875264417bb9 (2025-10-01)
+  Path:        husky_description/meshes/{base_link.stl, top_chassis.stl, top_plate.stl,
+               wheel.stl, bumper.dae}
+  License:     BSD 3-Clause (reproduced in full below, from the repository's root LICENSE
+               file; husky_description/package.xml also declares <license>BSD</license>)
+  Copyright:   2021 Clearpath Robotics Inc.
+  Retrieved:   2026-08-31
+
+NOTE ON REVISION: this repository (husky/husky) describes the Husky A200 (classic), NOT
+the newer, larger Husky A300. husky.urdf.xacro's base footprint properties (base_x_size
+0.9874m, base_y_size 0.5709m, track 0.555m, wheel_length 0.1143m) combine to a ~990 x
+~669mm footprint, matching Clearpath's published A200 dimensions (990 x 670 x 390 mm)
+almost exactly - and this repo has no A300 xacro/mesh variant at all (A300 is described in
+Clearpath's separate, newer clearpath_common ROS 2 repository). husky_a200.glb's own final
+bounding box (990 x 396 x 669 mm) confirms this: it matches the A200 spec to ~0.5-1.6%, and
+would be off by ~4% on width against the A300's 698mm.
+
+This .glb is a static, non-articulated conversion of those meshes: base_link, top_chassis,
+the default top_plate, the front and rear bumpers, and all four wheels were assembled per
+the offsets and origins in husky_description/urdf/husky.urdf.xacro (default configuration:
+HUSKY_FRONT_BUMPER=1, HUSKY_REAR_BUMPER=1, HUSKY_TOP_PLATE_ENABLED=true, no large top plate,
+no PACS), decimated, and re-exported. The user_rail and all PACS/sensor-mount accessories
+are NOT included (fine mounting/bracket hardware, not needed for silhouette recognition).
+See frontend/scripts/build-husky-glb.mjs and the "Regenerating the robot model" section of
+frontend/README.md for the exact process, which is the modification the license below asks
+be reflected in redistributed copies.
+
+No trademark or endorsement by Clearpath Robotics is implied.
+
+
+Copyright 2021 Clearpath Robotics Inc.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the
+following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following
+disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following
+disclaimer in the documentation and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products
+derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

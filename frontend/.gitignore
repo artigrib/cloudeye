@@ -1,0 +1,31 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Intermediate output from scripts/build-turtlebot-glb.mjs (raw.glb, weld/simplify/quantize
+# steps) - only the committed frontend/public/models/turtlebot3_burger.glb is checked in.
+scripts/out
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# T15c: local scratch GLBs fed to /_msa-viewer via ?glb= (never committed)
+public/msa-scratch

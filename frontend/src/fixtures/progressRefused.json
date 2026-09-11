@@ -1,0 +1,72 @@
+{
+  "_source": "SYNTHETIC - no recorded run on this box reaches these substages",
+  "_why": "The recorded own_0901_161054 run succeeded and was written by a build that predates substage/detail/since/attempt/next_retry entirely, so nothing on disk exercises refused, waiting_manual, waiting_capacity or a provider fallback. Every field here is shaped by pipeline-v1's own writer: substage values come from run_pipeline.SUBSTAGES, `since` is the substage's clock and is deliberately later than the step's `started`, `attempt`/`next_retry` are what the waiting_capacity loop writes, and provider_used/fallback_reason sit at the TOP level per JOB_SPEC section 2. It is labelled synthetic so nobody mistakes it for a measurement.",
+  "state": "GPU_UP_NV",
+  "started": "2026-09-09T13:46:39+02:00",
+  "finished": null,
+  "error": null,
+  "provider_used": "vertex-gemma",
+  "fallback_reason": "openrouter 429, 3 retries",
+  "steps": {
+    "QUEUED": {
+      "state": "done",
+      "started": "2026-09-09T13:46:39+02:00",
+      "finished": "2026-09-09T13:46:39+02:00",
+      "duration_s": 0.25,
+      "error": null,
+      "substage": null,
+      "detail": null,
+      "since": "2026-09-09T13:46:39+02:00",
+      "attempt": 0,
+      "next_retry": null
+    },
+    "FRAMES": {
+      "state": "skipped",
+      "started": "2026-09-09T13:46:39+02:00",
+      "finished": "2026-09-09T13:46:40+02:00",
+      "duration_s": 0.26,
+      "error": null,
+      "substage": "skipped",
+      "detail": "frames already on disk",
+      "since": "2026-09-09T13:46:39+02:00",
+      "attempt": 0,
+      "next_retry": null
+    },
+    "MAPANYTHING": {
+      "state": "running",
+      "started": "2026-09-09T13:46:41+02:00",
+      "finished": null,
+      "duration_s": null,
+      "error": null,
+      "substage": "waiting_manual",
+      "detail": "no per-view npz on the box; upload them or re-run FRAMES",
+      "since": "2026-09-09T13:47:00+02:00",
+      "attempt": 0,
+      "next_retry": null
+    },
+    "GPU_UP_NV": {
+      "state": "running",
+      "started": "2026-09-09T13:46:39+02:00",
+      "finished": null,
+      "duration_s": null,
+      "error": null,
+      "substage": "waiting_capacity",
+      "detail": "no box available on attempt 4: no capacity for RTX 4090",
+      "since": "2026-09-09T13:50:10+02:00",
+      "attempt": 4,
+      "next_retry": "2026-09-09T13:51:10+02:00"
+    },
+    "NVBLOX": {
+      "state": "running",
+      "started": "2026-09-09T13:50:00+02:00",
+      "finished": null,
+      "duration_s": null,
+      "error": null,
+      "substage": "refused",
+      "detail": "vast account not armed for this key",
+      "since": "2026-09-09T13:50:15+02:00",
+      "attempt": 0,
+      "next_retry": null
+    }
+  }
+}

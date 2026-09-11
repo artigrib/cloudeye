@@ -1,0 +1,604 @@
+{
+  "room": {
+    "width_m": 7.95,
+    "depth_m": 4.65,
+    "ceiling_m": 2.7076803001776657
+  },
+  "platforms": [
+    {
+      "id": "burger",
+      "display_name": "TurtleBot3 Burger",
+      "radius_m": 0.1
+    },
+    {
+      "id": "limo",
+      "display_name": "AgileX LIMO",
+      "radius_m": 0.194
+    },
+    {
+      "id": "waffle_pi",
+      "display_name": "TurtleBot3 Waffle Pi",
+      "radius_m": 0.15
+    },
+    {
+      "id": "turtlebot4",
+      "display_name": "TurtleBot 4",
+      "radius_m": 0.175
+    },
+    {
+      "id": "jackal",
+      "display_name": "Clearpath Jackal",
+      "radius_m": 0.334
+    },
+    {
+      "id": "go2",
+      "display_name": "Unitree Go2",
+      "radius_m": 0.2496
+    },
+    {
+      "id": "husky",
+      "display_name": "Husky A200",
+      "radius_m": 0.5528
+    },
+    {
+      "id": "rosbot_xl_arm",
+      "display_name": "Husarion ROSbot XL + Arm",
+      "radius_m": 0.218561
+    }
+  ],
+  "objects": [
+    {
+      "name": "bed",
+      "position": [
+        5.106867942968375,
+        0.5199543750542381,
+        1.7623908394100445
+      ],
+      "reachableBy": [
+        "burger",
+        "waffle_pi"
+      ]
+    },
+    {
+      "name": "pillow",
+      "position": [
+        4.781081058221824,
+        0.7157682337043243,
+        0.9178839481837322
+      ],
+      "reachableBy": [
+        "burger",
+        "waffle_pi"
+      ]
+    },
+    {
+      "name": "pillow",
+      "position": [
+        5.45132505614495,
+        0.7397252766088607,
+        0.6405642663682003
+      ],
+      "reachableBy": [
+        "burger",
+        "waffle_pi"
+      ]
+    },
+    {
+      "name": "blanket",
+      "position": [
+        4.814554518932141,
+        0.5057055367475743,
+        2.058379146108191
+      ],
+      "reachableBy": [
+        "burger",
+        "waffle_pi"
+      ]
+    },
+    {
+      "name": "blanket",
+      "position": [
+        5.623134514657685,
+        0.6125200588497718,
+        1.132523519188266
+      ],
+      "reachableBy": [
+        "burger",
+        "waffle_pi"
+      ]
+    },
+    {
+      "name": "rug",
+      "position": [
+        3.848658562566227,
+        0.0006901361386222047,
+        3.6262535545188266
+      ],
+      "reachableBy": [
+        "burger",
+        "limo",
+        "waffle_pi",
+        "turtlebot4",
+        "jackal",
+        "go2",
+        "rosbot_xl_arm"
+      ]
+    },
+    {
+      "name": "rug",
+      "position": [
+        3.0819471249881336,
+        0.039815265439338214,
+        1.7931022111440962
+      ],
+      "reachableBy": [
+        "burger",
+        "limo",
+        "waffle_pi",
+        "turtlebot4",
+        "jackal",
+        "go2",
+        "rosbot_xl_arm"
+      ]
+    },
+    {
+      "name": "rug",
+      "position": [
+        5.52923035648416,
+        0.01561727246877333,
+        2.624628853821055
+      ],
+      "reachableBy": [
+        "burger",
+        "limo",
+        "waffle_pi",
+        "turtlebot4",
+        "jackal",
+        "go2",
+        "rosbot_xl_arm"
+      ]
+    },
+    {
+      "name": "chair",
+      "position": [
+        3.0188049596449344,
+        0.36141333761986766,
+        3.061192665219067
+      ],
+      "reachableBy": [
+        "burger",
+        "limo",
+        "waffle_pi",
+        "turtlebot4",
+        "jackal",
+        "go2",
+        "rosbot_xl_arm"
+      ]
+    },
+    {
+      "name": "chair",
+      "position": [
+        3.266491546117834,
+        0.5784361551559596,
+        2.6472464055091085
+      ],
+      "reachableBy": [
+        "burger",
+        "limo",
+        "waffle_pi",
+        "turtlebot4",
+        "jackal",
+        "go2",
+        "rosbot_xl_arm"
+      ]
+    },
+    {
+      "name": "chair",
+      "position": [
+        6.848375489688365,
+        0.5673408609947317,
+        2.6311021666735313
+      ],
+      "reachableBy": [
+        "waffle_pi"
+      ]
+    },
+    {
+      "name": "chair",
+      "position": [
+        6.738462093611801,
+        0.05481736805087754,
+        2.5427417926176483
+      ],
+      "reachableBy": [
+        "burger",
+        "waffle_pi"
+      ]
+    },
+    {
+      "name": "chair",
+      "position": [
+        5.900844278405989,
+        0.5836860980309452,
+        2.9474224527056188
+      ],
+      "reachableBy": [
+        "burger",
+        "limo",
+        "waffle_pi",
+        "turtlebot4",
+        "jackal",
+        "go2",
+        "rosbot_xl_arm"
+      ]
+    },
+    {
+      "name": "chair",
+      "position": [
+        6.258261150409127,
+        0.07989539027709462,
+        2.788830710613878
+      ],
+      "reachableBy": [
+        "burger",
+        "jackal",
+        "go2",
+        "rosbot_xl_arm"
+      ]
+    },
+    {
+      "name": "chair",
+      "position": [
+        6.009333136727091,
+        0.054788965897169487,
+        3.279484867563008
+      ],
+      "reachableBy": [
+        "limo",
+        "waffle_pi",
+        "turtlebot4",
+        "jackal",
+        "go2",
+        "rosbot_xl_arm"
+      ]
+    },
+    {
+      "name": "chair",
+      "position": [
+        6.266294829888782,
+        0.3858183989684931,
+        3.0277711660606013
+      ],
+      "reachableBy": [
+        "limo",
+        "waffle_pi",
+        "turtlebot4",
+        "jackal",
+        "go2",
+        "rosbot_xl_arm"
+      ]
+    },
+    {
+      "name": "table",
+      "position": [
+        3.056326722331481,
+        0.8762068211242243,
+        2.66808329540709
+      ],
+      "reachableBy": [
+        "burger",
+        "limo",
+        "waffle_pi",
+        "turtlebot4",
+        "jackal",
+        "go2",
+        "rosbot_xl_arm"
+      ]
+    },
+    {
+      "name": "table",
+      "position": [
+        6.385761492096332,
+        0.4180552799538495,
+        2.7627760697115726
+      ],
+      "reachableBy": [
+        "burger",
+        "jackal",
+        "go2",
+        "rosbot_xl_arm"
+      ]
+    },
+    {
+      "name": "table",
+      "position": [
+        5.700695908427425,
+        0.4224595041250297,
+        3.7431795155288308
+      ],
+      "reachableBy": [
+        "burger",
+        "limo",
+        "waffle_pi",
+        "turtlebot4",
+        "jackal",
+        "go2",
+        "rosbot_xl_arm"
+      ]
+    },
+    {
+      "name": "table",
+      "position": [
+        5.372576469026683,
+        0.1025631157553025,
+        3.9836234729360855
+      ],
+      "reachableBy": [
+        "burger",
+        "waffle_pi"
+      ]
+    },
+    {
+      "name": "table",
+      "position": [
+        3.3024378544114343,
+        0.3913165564896249,
+        2.6792153463124855
+      ],
+      "reachableBy": [
+        "burger",
+        "limo",
+        "waffle_pi",
+        "turtlebot4",
+        "jackal",
+        "go2",
+        "rosbot_xl_arm"
+      ]
+    },
+    {
+      "name": "bench",
+      "position": [
+        5.66337414983609,
+        0.43141537780956146,
+        3.6981457138749594
+      ],
+      "reachableBy": [
+        "burger",
+        "limo",
+        "waffle_pi",
+        "turtlebot4",
+        "jackal",
+        "go2",
+        "rosbot_xl_arm"
+      ]
+    },
+    {
+      "name": "bench",
+      "position": [
+        5.6871932908100415,
+        0.07189000086343895,
+        3.8833562891520312
+      ],
+      "reachableBy": []
+    },
+    {
+      "name": "refrigerator",
+      "position": [
+        1.9799191910566116,
+        0.8992552840812088,
+        3.1185756413612244
+      ],
+      "reachableBy": [
+        "burger",
+        "waffle_pi"
+      ]
+    },
+    {
+      "name": "counter",
+      "position": [
+        2.8711963798290707,
+        0.9287150539414639,
+        2.0929891341736737
+      ],
+      "reachableBy": [
+        "burger",
+        "waffle_pi",
+        "jackal"
+      ]
+    },
+    {
+      "name": "stool",
+      "position": [
+        3.003285176189934,
+        0.7734438751067897,
+        3.0975354717616104
+      ],
+      "reachableBy": [
+        "burger",
+        "limo",
+        "waffle_pi",
+        "turtlebot4",
+        "jackal",
+        "go2",
+        "rosbot_xl_arm"
+      ]
+    },
+    {
+      "name": "stool",
+      "position": [
+        3.1767939955921065,
+        0.34828312160095853,
+        2.7378289982440673
+      ],
+      "reachableBy": [
+        "burger",
+        "limo",
+        "waffle_pi",
+        "turtlebot4",
+        "jackal",
+        "go2",
+        "rosbot_xl_arm"
+      ]
+    },
+    {
+      "name": "coffee maker",
+      "position": [
+        2.429429086562118,
+        1.354780439341162,
+        2.887445397827883
+      ],
+      "reachableBy": [
+        "burger",
+        "waffle_pi"
+      ]
+    },
+    {
+      "name": "coffee maker",
+      "position": [
+        2.6621326316208203,
+        1.0773847894833881,
+        2.672200037443858
+      ],
+      "reachableBy": [
+        "burger",
+        "waffle_pi"
+      ]
+    },
+    {
+      "name": "air conditioner",
+      "position": [
+        0.91936095867832,
+        2.4448496470933416,
+        3.5556992430480583
+      ],
+      "reachableBy": [
+        "burger"
+      ]
+    },
+    {
+      "name": "mirror",
+      "position": [
+        0.1393046359422172,
+        1.5208974864967684,
+        2.401380364598599
+      ],
+      "reachableBy": [
+        "burger"
+      ]
+    },
+    {
+      "name": "sink",
+      "position": [
+        2.6351044964545047,
+        0.8393580722515152,
+        2.252194462962257
+      ],
+      "reachableBy": [
+        "burger",
+        "waffle_pi"
+      ]
+    },
+    {
+      "name": "sink",
+      "position": [
+        0.40766261487663114,
+        0.7379094438804391,
+        2.3643331126311686
+      ],
+      "reachableBy": [
+        "burger"
+      ]
+    },
+    {
+      "name": "towel",
+      "position": [
+        5.625813120076822,
+        0.6120630951154672,
+        1.121817803586751
+      ],
+      "reachableBy": [
+        "burger",
+        "waffle_pi"
+      ]
+    },
+    {
+      "name": "towel",
+      "position": [
+        0.8806970067318916,
+        1.1659407424739439,
+        3.580483941636595
+      ],
+      "reachableBy": [
+        "burger"
+      ]
+    },
+    {
+      "name": "towel",
+      "position": [
+        0.3953178989340085,
+        0.8150655854210632,
+        2.005783564955484
+      ],
+      "reachableBy": [
+        "burger"
+      ]
+    },
+    {
+      "name": "toilet",
+      "position": [
+        0.6748266429157685,
+        0.28717667135925906,
+        1.6550545317565013
+      ],
+      "reachableBy": [
+        "burger"
+      ]
+    },
+    {
+      "name": "toilet",
+      "position": [
+        2.115024009827199,
+        0.593163595797152,
+        1.5017115178780251
+      ],
+      "reachableBy": [
+        "burger",
+        "waffle_pi"
+      ]
+    },
+    {
+      "name": "fan",
+      "position": [
+        5.323580456249157,
+        2.4990074723511357,
+        1.2295384269321072
+      ],
+      "reachableBy": [
+        "burger",
+        "waffle_pi"
+      ]
+    },
+    {
+      "name": "fan",
+      "position": [
+        6.007177698896498,
+        2.68406161684902,
+        0.939118049522075
+      ],
+      "reachableBy": [
+        "burger",
+        "waffle_pi"
+      ]
+    }
+  ],
+  "robotStart": [
+    3.5250000000000004,
+    0,
+    3.875
+  ],
+  "_source": {
+    "note": "Computed from live CloudEye API for project 02_modular_home (real captured scene), not synthetic.",
+    "scene_id": "e1e21716-841e-449e-b973-07c9020094e2",
+    "generated_at": "2026-09-05"
+  }
+}
