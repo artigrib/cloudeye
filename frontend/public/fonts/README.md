@@ -30,3 +30,13 @@ never fetches the Cyrillic glyphs - the pattern the JetBrains Mono faces already
 Three weights: 400 body/caption, 500 headings, 600 the display number.
 
 To refresh: `npm i -D @fontsource/inter@<version>` and re-copy those six files.
+
+## Licences
+
+Both families are SIL Open Font License 1.1. The upstream licence text ships beside the
+subsets, as the OFL requires of any redistribution:
+
+- `OFL-Inter.txt` — https://raw.githubusercontent.com/rsms/inter/master/LICENSE.txt
+- `OFL-JetBrainsMono.txt` — https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/OFL.txt
+
+Both fetched verbatim 2026-09-11. See `THIRD_PARTY.md` for the full record.
