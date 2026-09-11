@@ -124,7 +124,7 @@ Processing video needs a rented GPU box. Two paths exist:
   an armed-file safety, a per-run cap and a daily cap.
 
 Measured on real runs: provisioning a fresh 4090 from `pipeline/box/onstart_nvblox.sh` takes
-**4 min 12 s**, and one room costs about **$0.13** (`docs/PIPELINE.md:95`, `:306`). A
+**4 min 12 s** (4:12), and one room costs about **$0.13** (`docs/PIPELINE.md:95`, `:306`). A
 one-minute walkthrough through the 7-stage path takes about 16 minutes end to end, of which
 the SAM 3 `objects` stage is 75% (`docs/COMPARISON.md:194`).
 

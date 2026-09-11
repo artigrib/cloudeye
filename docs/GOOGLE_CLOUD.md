@@ -23,7 +23,7 @@ path. Chat always runs on OpenRouter today.
    only Google value the app reads from configuration (`app/config.py:77`).
 2. **Region.** There is no region variable. The endpoint is hard-coded to `locations/global`
    (`gpu/stage_vocab.py:63-65`). Changing region means editing that URL.
-3. **Credentials — ADC, not a service-account key.** Authentication is Application Default
+3. **Credentials — ADC, not a service account.** Authentication is Application Default
    Credentials:
 
        gcloud auth application-default login
@@ -31,9 +31,13 @@ path. Chat always runs on OpenRouter today.
    `app/services/vertex_auth.py` shells out to `gcloud auth application-default
    print-access-token` and caches the token in memory for 45 minutes (the cache exists
    because `gcloud`'s own CLI startup measured ~1.7 s, which would otherwise consume the
-   health check's 3 s budget). A **service-account key file is deliberately not supported**
-   — the comment at `app/config.py:70-74` records that org policy forbids service-account
-   keys. If you need one, that is a code change in `vertex_auth.py`, not configuration.
+   health check's 3 s budget).
+
+   **A service account is deliberately not supported.** There is no code path that reads a
+   service account key file, and no `GOOGLE_APPLICATION_CREDENTIALS` handling: the comment
+   at `app/config.py:70-74` records that org policy forbids service account keys, so this
+   authenticates as a person. If you need a service account — and for anything
+   multi-tenant you do — that is a change in `vertex_auth.py`, not a setting.
 4. **Enable the API.** The project needs Vertex AI (`aiplatform.googleapis.com`) enabled and
    the signed-in identity needs permission to call it.
 5. **Select it per video.** Choose "Vertex AI" in the upload form's Scene vocabulary
