@@ -109,15 +109,18 @@ export default function LandingPage() {
             </p>
           </div>
           <div className="overflow-hidden rounded-md border-hair border-border bg-surface">
-            {/* Real capture, not a mockup: Burger + Husky path-following the exported
-                USD collision mesh of 02_modular_home inside Isaac Sim (isaac_demo.mp4,
-                14s / 840 frames, converted to gif for inline README/marketing use). */}
+            {/* Real capture, not a mockup: one colour frame from the accepted Isaac clip
+                library - burger + go2 + jackal on their three radius-specific routes
+                through this scene's own OpenUSD export (multi_colour.mp4, 150 frames @
+                30 fps). Headless render, kinematic drive: the robots follow planned
+                waypoints, they are not dynamically simulated. */}
             <img
-              src="/landing/isaac-demo.gif"
-              alt="TurtleBot3 Burger and Husky A200 path-following the exported scene inside NVIDIA Isaac Sim"
+              src="/landing/isaac-demo.png"
+              alt="Three robots - TurtleBot3 Burger, Unitree Go2 and Clearpath Jackal - on their planned routes through the exported scene inside NVIDIA Isaac Sim"
               className="block w-full"
             />
             <div className="flex flex-col gap-0.5 px-4 py-3 font-mono text-[11px] text-muted">
+              <span>Isaac Sim, headless · kinematic drive</span>
               <span>OpenUSD · metric scale</span>
               <span>walls as boxes</span>
               <span>objects as convex hulls</span>
