@@ -50,9 +50,10 @@ venv/
 # ignored. Intermediate takes live in var/scratch/autopilot-20260905/assets/landing/.
 frontend/public/landing/*.webm
 frontend/public/landing/*.gif
+frontend/public/landing/*.png
 frontend/public/landing/*.glb
 !frontend/public/landing/hero-orbit.webm
-!frontend/public/landing/isaac-demo.gif
+!frontend/public/landing/isaac-demo.png
 
 # Editors / OS
 .vscode/

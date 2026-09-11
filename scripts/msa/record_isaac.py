@@ -16,7 +16,7 @@ Clip structure (fixed order, each phase's duration is a CLI flag):
     /World/Target (= the route goal for MSA presentation exports) and
     `sphere_drop_point` (T15h).
 
-Frames are assembled into an mp4 with ffmpeg: a caption, a live "physics step N/M"
+Frames are assembled into an mp4 with ffmpeg: a caption, a live progress counter
 counter, and a color-to-class legend (from usd_export's own per-object-class color
 function, so the legend always matches what's actually in frame) are burned in via
 drawtext filters.
@@ -849,7 +849,7 @@ def build_spec(args: argparse.Namespace) -> dict:
         "pass_s": args.pass_s,
         "drop_s": args.drop_s,
         "static_s": args.static_s,
-        "caption": f"{platforms[0].display_name} vs {platforms[1].display_name} · same route",
+        "caption": "Isaac Sim, headless · kinematic drive",
     }
 
 
@@ -2218,7 +2218,7 @@ def _assemble_mp4(
         # per-frame counter, not a static string, despite this filter chain being
         # built once ahead of time.
         vf_filters.append(
-            f"drawtext=fontfile={font}:text='physics step %{{n}}/{total_frames} · {fps} Hz · PhysX':"
+            f"drawtext=fontfile={font}:text='Isaac Sim, headless · kinematic drive':"
             f"fontsize=20:fontcolor=white:box=1:boxcolor=black@0.55:boxborderw=6:x=20:y=20"
         )
         vf_filters += _build_legend_filters(class_colors, base_y=56, font=font)
