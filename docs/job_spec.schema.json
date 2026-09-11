@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cloudeye.local/schemas/job_spec-1.json",
+  "title": "CloudEye job spec",
+  "description": "What the operator chose in the New-workspace wizard, saved next to the uploaded video as <video_uuid>.job.json. Written by POST /api/videos/upload, read by the worker. See docs/JOB_SPEC.md for the prose and for how this meets pipeline-v1's status.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["spec_version", "video_id", "frames_fps", "mapping", "semantics", "chat_llm", "robots"],
+  "properties": {
+    "spec_version": {
+      "description": "Bumped only on a breaking change. A reader that does not recognise the value must refuse the job rather than guess at the fields.",
+      "type": "integer",
+      "const": 1
+    },
+    "video_id": {
+      "description": "The Video row this spec belongs to. Also the stem of the file it sits next to.",
+      "type": "string",
+      "format": "uuid"
+    },
+    "frames_fps": {
+      "description": "Keyframe sampling rate. 15 is the measured knee on the hero footage (HANDOFF section 4: 574 -> 1148 views buys +4.70 points, 1148 -> 2295 only +1.81).",
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 30,
+      "default": 15
+    },
+    "mapping": {
+      "description": "Reconstruction backend. One value today; present so a second one is a schema change with a name, not an implicit default.",
+      "type": "string",
+      "enum": ["mapanything"],
+      "default": "mapanything"
+    },
+    "semantics": {
+      "description": "Who answers the scene-vocabulary call. Maps onto GET /api/models/catalog's \"Scene vocabulary\" stage: openrouter-glm -> id \"openrouter\", vertex-gemma -> id \"vertex\".",
+      "type": "string",
+      "enum": ["openrouter-glm", "vertex-gemma"],
+      "default": "openrouter-glm"
+    },
+    "chat_llm": {
+      "description": "Who parses typed robot commands. Maps onto the catalog's \"Command parsing\" stage. NOTE: that stage is editable=false today and app/services/vlm_client.py has no Vertex path, so this is recorded for the worker and ignored by the running app - see docs/JOB_SPEC.md.",
+      "type": "string",
+      "enum": ["openrouter-nemotron", "vertex-gemma"],
+      "default": "openrouter-nemotron"
+    },
+    "robots": {
+      "description": "Platform ids from app/robots.py (GET /api/robots) the workspace cares about. Empty means \"every registered platform\", which is what the viewer already shows.",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["burger", "limo", "waffle_pi", "turtlebot4", "jackal", "go2", "husky", "rosbot_xl_arm"]
+      },
+      "uniqueItems": true,
+      "default": []
+    },
+    "created_at": {
+      "description": "When the wizard produced this spec. Local ISO-8601 with seconds, the same shape pipeline-v1's now() writes into status.json.",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+#!/usr/bin/env python3
+"""Fake `rsync`. A pull from the remote out-dir is satisfied from FAKE_NVBLOX_FIXTURE, so
+the live NVBLOX path can be exercised end to end - push, remote run, pull, and the real
+post-conditions - without a box."""
+import os, shutil, sys
+from pathlib import Path
+
+log = os.environ.get("FAKE_LOG")
+if log:
+    with open(log, "a") as fh:
+        fh.write("rsync " + " ".join(sys.argv[1:]) + "\n")
+
+argv = sys.argv[1:]
+args = [a for a in argv if not a.startswith("-")]
+# drop the value that follows -e
+if "-e" in argv:
+    ssh_val = argv[argv.index("-e") + 1]
+    args = [a for a in args if a != ssh_val]
+
+# Honour --include, the way real rsync does. The driver pulls exactly NVBLOX_PULL_FILES
+# (five files, ~16.8 MB) and excludes the rest - map.nvblx alone is 133.7 MB and no
+# downstream stage reads it. A fake that copied the whole directory made every test
+# disagree with the production pull it is standing in for, and dragged mesh_color.ply and
+# esdf_3d.npy (20.8 MB) into every case for nothing.
+includes = [argv[i + 1].lstrip("+ ") for i, a in enumerate(argv[:-1]) if a == "--include"]
+includes = [i for i in includes if i not in ("*/",)]
+excl_all = "--exclude" in argv and "*" in [argv[i + 1] for i, a in enumerate(argv[:-1])
+                                           if a == "--exclude"]
+
+src, dst = args[-2], args[-1]
+fixture = os.environ.get("FAKE_NVBLOX_FIXTURE")
+if src.startswith("root@") and fixture:
+    out = Path(dst)
+    out.mkdir(parents=True, exist_ok=True)
+    for f in Path(fixture).iterdir():
+        if not f.is_file():
+            continue
+        if includes and excl_all and f.name not in includes:
+            continue
+        target = out / f.name
+        if target.exists():
+            target.unlink()
+        # HARDLINK, not copy. The fixture is read-only input that every live-path case
+        # needs; five copies of a 36 MB tree is 180 MB of /tmp to hold bytes that already
+        # exist. rsync itself writes a temp file and renames, so nothing here ever writes
+        # through the link into the fixture. Falls back to a copy across filesystems.
+        try:
+            os.link(f, target)
+        except OSError:
+            shutil.copy(f, target)
+sys.exit(int(os.environ.get("FAKE_RSYNC_RC", "0")))

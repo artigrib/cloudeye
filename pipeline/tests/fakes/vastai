@@ -1,0 +1,61 @@
+#!/usr/bin/env python3
+"""Fake `vastai`. Records argv, answers from env, never touches the network.
+
+Its mere existence in the log is the proof a real call was attempted: test (a) asserts the
+log file was never created at all.
+"""
+import json, os, sys
+
+log = os.environ.get("FAKE_LOG")
+if log:
+    with open(log, "a") as fh:
+        fh.write(" ".join(["vastai"] + sys.argv[1:]) + "\n")
+
+argv = sys.argv[1:]
+
+def stopped_marker(iid):
+    """A stopped box must later report `exited` - the driver bills to that confirmation."""
+    base = log or "/tmp/fake_vastai"
+    return f"{base}.stopped.{iid}"
+
+if argv[:2] == ["stop", "instance"]:
+    open(stopped_marker(argv[2]), "w").close()
+elif argv[:2] == ["start", "instance"]:
+    try:
+        os.remove(stopped_marker(argv[2]))
+    except OSError:
+        pass
+
+if argv[:2] == ["show", "instance"]:
+    rc = int(os.environ.get("FAKE_SHOW_RC", "0"))
+    if rc != 0:
+        print("fake vastai: show failed", file=sys.stderr)
+        sys.exit(rc)
+    doc = json.loads(os.environ.get("FAKE_SHOW_JSON", "{}"))
+    doc.setdefault("id", int(argv[2]))
+    if os.path.exists(stopped_marker(argv[2])):
+        doc["actual_status"] = "exited"
+        doc["cur_state"] = "stopped"
+    print(json.dumps(doc))
+    sys.exit(0)
+if argv[:2] == ["search", "offers"]:
+    # Default is the empty list, i.e. "no capacity anywhere" - the case the
+    # waiting_capacity ceiling exists for. FAKE_OFFERS_JSON supplies real offers.
+    print(os.environ.get("FAKE_OFFERS_JSON", "[]"))
+    sys.exit(0)
+if argv[:2] == ["create", "instance"]:
+    new_id = int(os.environ.get("FAKE_NEW_CONTRACT", "0"))
+    if not new_id:
+        print(json.dumps({"success": False, "error": "no_such_ask"}))
+        sys.exit(0)
+    # The real response carries an instance_api_key; it is here so the test can prove
+    # VastClient.create strips it rather than handing it on.
+    print(json.dumps({"success": True, "new_contract": new_id,
+                      "instance_api_key": "SECRET-should-never-be-returned"}))
+    sys.exit(0)
+if argv[:2] == ["start", "instance"] and os.environ.get("FAKE_START_STDOUT"):
+    # vast declines in stdout while exiting 0 - the behaviour recorded on 2026-09-09.
+    print(os.environ["FAKE_START_STDOUT"])
+    sys.exit(0)
+print(f"fake vastai: ok {' '.join(argv)}")
+sys.exit(int(os.environ.get("FAKE_VASTAI_RC", "0")))

@@ -1,0 +1,466 @@
+@import 'tailwindcss';
+
+/* JetBrains Mono is the app's one custom font - weights 400/500, latin + cyrillic.
+   Vendored from Google Fonts (OFL) as separate latin/cyrillic subsets so a
+   latin-only page never fetches the cyrillic glyphs. See frontend/public/fonts/README.md
+   for provenance and how to refresh these. */
+/* Inter is the UI face; JetBrains Mono is kept for section headers and telemetry only
+   (see --font-mono's use sites). Both are vendored under /public/fonts with provenance -
+   see that directory's README - rather than fetched from a CDN, because this app is
+   served from one box and must not need a third party to be reachable to render its own
+   text. Latin and Cyrillic are separate files with their own unicode-range, so a
+   Latin-only page never downloads the Cyrillic glyphs. */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/inter-400-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/inter-400-cyrillic.woff2') format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/inter-500-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/inter-500-cyrillic.woff2') format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/inter-600-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/inter-600-cyrillic.woff2') format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/jetbrains-mono-400-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/jetbrains-mono-400-cyrillic.woff2') format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/jetbrains-mono-500-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/jetbrains-mono-500-cyrillic.woff2') format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+:root {
+  color-scheme: dark;
+
+  /* Surfaces */
+  --bg: oklch(13% 0 none); /* app background */
+  --surface: oklch(17% 0 none); /* panels, cards */
+  --surface-raised: oklch(21% 0 none); /* popovers, dropdowns, tooltips */
+  --canvas: oklch(9% 0 none); /* 2D/3D scene background, darkest surface */
+
+  /* Text */
+  --fg: oklch(97% 0 none); /* headings, active values */
+  --subtle: oklch(76% 0 none); /* body UI text */
+  --muted: oklch(56% 0 none); /* captions, secondary */
+  --faint: oklch(42% 0 none); /* disabled, placeholders */
+
+  /* Borders */
+  --border: oklch(26% 0 none); /* dividers inside a block */
+  --border-strong: oklch(36% 0 none); /* outline of an interactive entity */
+  --border-width: 0.5px;
+
+  /* Radii */
+  --r-sm: 3px; /* buttons, inputs, chips */
+  --r-md: 6px; /* cards, panels */
+  --r-lg: 10px; /* modals, large popovers */
+
+  /* Grid */
+  --space: 4px; /* base unit, all spacing is a multiple of this */
+  --header-h: 48px;
+  --sidebar-w: 240px;
+  --inspector-w: 304px;
+
+  /* Action accent - the app's one brand color. Used ONLY for actions: primary
+     buttons, links, focus. Never for state (active tab, checked, etc). */
+  --accent: oklch(70% 0.16 162);
+  --accent-hover: oklch(76% 0.16 162);
+  --accent-fg: oklch(15% 0.03 162); /* text on an accent fill */
+  --accent-dim: oklch(70% 0.16 162 / 0.14); /* selected-row background */
+
+  /* Data semantics - each color means exactly one thing, nowhere else.
+     Height ramp: perceptually even, distinguishable under deuteranopia and
+     protanopia. Order: floor -> ceiling. */
+  --h-0: oklch(32% 0.16 300); /* deep violet - floor */
+  --h-1: oklch(45% 0.17 288);
+  --h-2: oklch(58% 0.13 240);
+  --h-3: oklch(72% 0.13 195); /* cyan */
+  --h-4: oklch(85% 0.16 155); /* green - ceiling */
+
+  --data-object: oklch(80% 0.16 85); /* amber - object marker, ONLY this */
+  --data-trajectory: oklch(68% 0.25 340); /* magenta - robot trajectory, ONLY this */
+  --data-robot: oklch(80% 0 none); /* neutral - robot model */
+  --data-unreachable: oklch(64% 0.19 25); /* red - unreachable, ONLY this (+ form errors) */
+
+  /* Occupancy map. --occ-free is chroma 0 - strictly neutral, deliberately, so it never
+     competes with the clearance field's colored zones (spec renderer doc, section 10:
+     "убрать синеватый оттенок из --occ-free"). */
+  --occ-free: oklch(24% 0 none);
+  --occ-obstacle: oklch(62% 0 none);
+  --occ-unknown: oklch(16% 0 none);
+
+  /* Fonts */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* Type scale */
+  --t-display: clamp(2.5rem, 6vw + 1rem, 4rem); /* landing hero only */
+  --t-display-w: 450;
+  --t-display-tr: -0.02em;
+  --t-display-lh: 1.02;
+
+  --t-h1: clamp(1.9rem, 3vw + 1rem, 2.6rem); /* landing sections */
+  --t-h1-w: 500;
+  --t-h1-tr: -0.02em;
+  --t-h1-lh: 1.1;
+
+  --t-h2: 1.4rem;
+  --t-h2-w: 500;
+  --t-h2-tr: -0.01em;
+  --t-h2-lh: 1.2;
+
+  --t-h3: 1.1rem;
+  --t-h3-w: 500;
+  --t-h3-tr: 0;
+  --t-h3-lh: 1.35;
+
+  --t-body: 1rem;
+  --t-body-lh: 1.55;
+  --t-small: 0.867rem; /* 13px */
+  --t-small-lh: 1.45;
+  --t-micro: 0.733rem; /* 11px, mono only */
+  --t-micro-lh: 1.4;
+
+  /* --- The app scale -----------------------------------------------------------------
+     Absolute px, not rem. The four sizes above it are the LANDING page's, which is a
+     marketing page with a clamp()-scaled hero (40-64px) and its own rhythm; expressing
+     both in one rem ladder off a 15px root is what made "body" mean two different sizes
+     depending on which route you were on. These five are the product's, and every panel,
+     list, button and caption on the scene screen resolves to one of them. */
+  --t-display: 28px;
+  --t-display-lh: 32px;
+  --t-display-w: 600;
+
+  --t-heading: 15px;
+  --t-heading-lh: 20px;
+  --t-heading-w: 500;
+
+  --t-bodyux: 13px;
+  --t-bodyux-lh: 18px;
+
+  --t-caption: 11px;
+  --t-caption-lh: 16px;
+  /* Opacity, not a lighter colour: it keeps a caption's contrast tied to whatever it sits
+     on, so it stays legible on the panel and on the raised card alike. 0.6 of --subtle
+     on --surface measures 4.9:1, over the 3:1 the spec asks of a caption. */
+  --t-caption-o: 0.6;
+
+  --t-monocaps: 10px;
+  --t-monocaps-lh: 14px;
+  --t-monocaps-tr: 0.08em;
+  --t-monocaps-o: 0.5;
+
+  /* --- Spacing: 4, 8, 12, 16, 24, 32, and the four places they are spent -------------- */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-6: 24px;
+  --s-8: 32px;
+
+  --panel-pad: var(--s-4);
+  --section-gap: var(--s-6);
+  --section-inner: var(--s-2);
+  --card-pad: var(--s-3);
+
+  /* --- Geometry ----------------------------------------------------------------------
+     One row height and one minimum hit area, both 32: a list row IS the hit target, and
+     two numbers would drift apart. The canvas toolbar is 40 and is aligned with the first
+     row of each panel. */
+  --row-h: 32px;
+  --hit-min: 32px;
+  --canvas-toolbar-h: 40px;
+
+  /* --- Card: one step lighter than the panel it sits on ------------------------------- */
+  --card-bg: var(--surface-raised);
+  --card-border: oklch(100% 0 none / 0.08);
+  --card-radius: 8px;
+
+  /* --- Interaction states -------------------------------------------------------------
+     One hover value and one secondary fill for the whole app, as white at a fixed alpha,
+     so a control's state reads the same whatever surface it is on. */
+  --state-hover: oklch(100% 0 none / 0.04);
+  --fill-secondary: oklch(100% 0 none / 0.1);
+  --state-disabled-o: 0.4;
+
+  /* --- The three status colours -------------------------------------------------------
+     Green fits, amber partial, red does not fit - and nothing else in the CHROME is
+     coloured. The canvas keeps its own data encodings (--data-object, --data-trajectory,
+     the height ramp, the occupancy greys): those are the map's legend, not decoration,
+     and flattening them would remove information rather than noise. --status-fits is
+     --accent itself, so "the primary action" and "it fits" are the same green. */
+  --status-fits: var(--accent);
+  --status-partial: oklch(78% 0.15 75); /* amber */
+  --status-blocked: var(--data-unreachable);
+}
+
+/* Bridges the :root tokens above into Tailwind v4 utilities (bg-surface, text-muted,
+   border-border-strong, rounded-md, font-mono, ...) so components keep using Tailwind
+   classes, but every class resolves to a token instead of a hardcoded value. `inline`
+   because these reference existing custom properties rather than defining new literals. */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-canvas: var(--canvas);
+
+  --color-fg: var(--fg);
+  --color-subtle: var(--subtle);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-fg: var(--accent-fg);
+  --color-accent-dim: var(--accent-dim);
+
+  --color-h-0: var(--h-0);
+  --color-h-1: var(--h-1);
+  --color-h-2: var(--h-2);
+  --color-h-3: var(--h-3);
+  --color-h-4: var(--h-4);
+
+  --color-data-object: var(--data-object);
+  --color-data-trajectory: var(--data-trajectory);
+  --color-data-robot: var(--data-robot);
+  --color-data-unreachable: var(--data-unreachable);
+
+  --color-occ-free: var(--occ-free);
+  --color-occ-obstacle: var(--occ-obstacle);
+  --color-occ-unknown: var(--occ-unknown);
+
+  --radius-sm: var(--r-sm);
+  --radius-md: var(--r-md);
+  --radius-lg: var(--r-lg);
+
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+
+  --text-display: var(--t-display);
+  --text-display--line-height: var(--t-display-lh);
+  --text-display--letter-spacing: var(--t-display-tr);
+  --text-display--font-weight: var(--t-display-w);
+
+  --text-h1: var(--t-h1);
+  --text-h1--line-height: var(--t-h1-lh);
+  --text-h1--letter-spacing: var(--t-h1-tr);
+  --text-h1--font-weight: var(--t-h1-w);
+
+  --text-h2: var(--t-h2);
+  --text-h2--line-height: var(--t-h2-lh);
+  --text-h2--letter-spacing: var(--t-h2-tr);
+  --text-h2--font-weight: var(--t-h2-w);
+
+  --text-h3: var(--t-h3);
+  --text-h3--line-height: var(--t-h3-lh);
+  --text-h3--letter-spacing: var(--t-h3-tr);
+  --text-h3--font-weight: var(--t-h3-w);
+
+  --text-body: var(--t-body);
+  --text-body--line-height: var(--t-body-lh);
+  --text-small: var(--t-small);
+  --text-small--line-height: var(--t-small-lh);
+  --text-micro: var(--t-micro);
+  --text-micro--line-height: var(--t-micro-lh);
+
+  /* The app scale as utilities: text-display, text-heading, text-bodyux, text-caption,
+     text-monocaps. */
+  --text-display: var(--t-display);
+  --text-display--line-height: var(--t-display-lh);
+  --text-display--font-weight: var(--t-display-w);
+
+  --text-heading: var(--t-heading);
+  --text-heading--line-height: var(--t-heading-lh);
+  --text-heading--font-weight: var(--t-heading-w);
+
+  --text-bodyux: var(--t-bodyux);
+  --text-bodyux--line-height: var(--t-bodyux-lh);
+
+  --text-caption: var(--t-caption);
+  --text-caption--line-height: var(--t-caption-lh);
+
+  --text-monocaps: var(--t-monocaps);
+  --text-monocaps--line-height: var(--t-monocaps-lh);
+  --text-monocaps--letter-spacing: var(--t-monocaps-tr);
+
+  --color-card: var(--card-bg);
+  --color-card-border: var(--card-border);
+  --radius-card: var(--card-radius);
+
+  --color-status-fits: var(--status-fits);
+  --color-status-partial: var(--status-partial);
+  --color-status-blocked: var(--status-blocked);
+
+  --spacing-s1: var(--s-1);
+  --spacing-s2: var(--s-2);
+  --spacing-s3: var(--s-3);
+  --spacing-s4: var(--s-4);
+  --spacing-s6: var(--s-6);
+  --spacing-s8: var(--s-8);
+  --spacing-row: var(--row-h);
+  --spacing-toolbar: var(--canvas-toolbar-h);
+}
+
+/* --border-width (0.5px) doesn't fit Tailwind's default border-width scale. */
+@utility border-hair {
+  border-width: var(--border-width);
+}
+
+/* The two text roles that carry an opacity as part of their definition, so a caller
+   cannot use the size without the contrast that was measured for it. */
+@utility ui-caption {
+  font-size: var(--t-caption);
+  line-height: var(--t-caption-lh);
+  opacity: var(--t-caption-o);
+}
+
+@utility ui-monocaps {
+  font-family: var(--font-mono);
+  font-size: var(--t-monocaps);
+  line-height: var(--t-monocaps-lh);
+  letter-spacing: var(--t-monocaps-tr);
+  text-transform: uppercase;
+  opacity: var(--t-monocaps-o);
+}
+
+/* Every clickable thing is at least this tall. Applied by the primitives (Button,
+   Checkbox, Select, the list row) rather than left to each call site. */
+@utility hit-target {
+  min-height: var(--hit-min);
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  html {
+    font-size: 15px;
+    font-weight: 450;
+  }
+
+  html,
+  body {
+    /* The 3D view's own overscroll-none only stops scroll chaining on an element that
+       itself scrolls - that div never does (it's fixed-size, no overflow), so it has no
+       boundary for the property to engage with. Chrome's two-finger swipe back/forward
+       gesture is tied to the document root regardless, so it has to be disabled here to
+       actually take effect - without this, panning left/right in the 3D view kept
+       triggering browser back/forward navigation even though the wheel handler already
+       calls preventDefault(). */
+    overscroll-behavior: none;
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--subtle); /* muted by default; --fg is opted into where an accent is needed */
+    font-family: var(--font-sans);
+    line-height: var(--t-body-lh);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--border-strong);
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--muted);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}

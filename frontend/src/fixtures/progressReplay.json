@@ -1,0 +1,1080 @@
+{
+  "_source": "var/scratch/pipeline_live/scene161054/status.json",
+  "_scene": "own_0901_161054__optimal_step2",
+  "_derivation": "scripts/derive_progress_fixture.py - snapshots reconstructed at step boundaries from the recorded final status.json; every step name, state and timestamp is verbatim from that file",
+  "snapshots": [
+    {
+      "state": "QUEUED",
+      "started": "2026-09-09T13:46:39+02:00",
+      "finished": null,
+      "error": null,
+      "steps": {
+        "QUEUED": {
+          "state": "running",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": null,
+          "duration_s": null,
+          "error": null
+        }
+      }
+    },
+    {
+      "state": "FRAMES",
+      "started": "2026-09-09T13:46:39+02:00",
+      "finished": null,
+      "error": null,
+      "steps": {
+        "QUEUED": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.25,
+          "error": null
+        },
+        "FRAMES": {
+          "state": "running",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": null,
+          "duration_s": null,
+          "error": null
+        }
+      }
+    },
+    {
+      "state": "GPU_UP_MA",
+      "started": "2026-09-09T13:46:39+02:00",
+      "finished": null,
+      "error": null,
+      "steps": {
+        "QUEUED": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.25,
+          "error": null
+        },
+        "FRAMES": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.26,
+          "error": null
+        },
+        "GPU_UP_MA": {
+          "state": "running",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": null,
+          "duration_s": null,
+          "error": null
+        }
+      }
+    },
+    {
+      "state": "MAPANYTHING",
+      "started": "2026-09-09T13:46:39+02:00",
+      "finished": null,
+      "error": null,
+      "steps": {
+        "QUEUED": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.25,
+          "error": null
+        },
+        "FRAMES": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.26,
+          "error": null
+        },
+        "GPU_UP_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.27,
+          "error": null
+        },
+        "MAPANYTHING": {
+          "state": "running",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": null,
+          "duration_s": null,
+          "error": null
+        }
+      }
+    },
+    {
+      "state": "PULLED",
+      "started": "2026-09-09T13:46:39+02:00",
+      "finished": null,
+      "error": null,
+      "steps": {
+        "QUEUED": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.25,
+          "error": null
+        },
+        "FRAMES": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.26,
+          "error": null
+        },
+        "GPU_UP_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.27,
+          "error": null
+        },
+        "MAPANYTHING": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.31,
+          "error": null
+        },
+        "PULLED": {
+          "state": "running",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": null,
+          "duration_s": null,
+          "error": null
+        }
+      }
+    },
+    {
+      "state": "GPU_DOWN_MA",
+      "started": "2026-09-09T13:46:39+02:00",
+      "finished": null,
+      "error": null,
+      "steps": {
+        "QUEUED": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.25,
+          "error": null
+        },
+        "FRAMES": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.26,
+          "error": null
+        },
+        "GPU_UP_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.27,
+          "error": null
+        },
+        "MAPANYTHING": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.31,
+          "error": null
+        },
+        "PULLED": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.33,
+          "error": null
+        },
+        "GPU_DOWN_MA": {
+          "state": "running",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": null,
+          "duration_s": null,
+          "error": null
+        }
+      }
+    },
+    {
+      "state": "PACK",
+      "started": "2026-09-09T13:46:39+02:00",
+      "finished": null,
+      "error": null,
+      "steps": {
+        "QUEUED": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.25,
+          "error": null
+        },
+        "FRAMES": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.26,
+          "error": null
+        },
+        "GPU_UP_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.27,
+          "error": null
+        },
+        "MAPANYTHING": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.31,
+          "error": null
+        },
+        "PULLED": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.33,
+          "error": null
+        },
+        "GPU_DOWN_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.35,
+          "error": null
+        },
+        "PACK": {
+          "state": "running",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": null,
+          "duration_s": null,
+          "error": null
+        }
+      }
+    },
+    {
+      "state": "GPU_UP_NV",
+      "started": "2026-09-09T13:46:39+02:00",
+      "finished": null,
+      "error": null,
+      "steps": {
+        "QUEUED": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.25,
+          "error": null
+        },
+        "FRAMES": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.26,
+          "error": null
+        },
+        "GPU_UP_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.27,
+          "error": null
+        },
+        "MAPANYTHING": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.31,
+          "error": null
+        },
+        "PULLED": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.33,
+          "error": null
+        },
+        "GPU_DOWN_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.35,
+          "error": null
+        },
+        "PACK": {
+          "state": "skipped",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.71,
+          "error": null
+        },
+        "GPU_UP_NV": {
+          "state": "running",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": null,
+          "duration_s": null,
+          "error": null
+        }
+      }
+    },
+    {
+      "state": "NVBLOX",
+      "started": "2026-09-09T13:46:39+02:00",
+      "finished": null,
+      "error": null,
+      "steps": {
+        "QUEUED": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.25,
+          "error": null
+        },
+        "FRAMES": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.26,
+          "error": null
+        },
+        "GPU_UP_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.27,
+          "error": null
+        },
+        "MAPANYTHING": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.31,
+          "error": null
+        },
+        "PULLED": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.33,
+          "error": null
+        },
+        "GPU_DOWN_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.35,
+          "error": null
+        },
+        "PACK": {
+          "state": "skipped",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.71,
+          "error": null
+        },
+        "GPU_UP_NV": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:47:11+02:00",
+          "duration_s": 32.18,
+          "error": null
+        },
+        "NVBLOX": {
+          "state": "running",
+          "started": "2026-09-09T13:47:12+02:00",
+          "finished": null,
+          "duration_s": null,
+          "error": null
+        }
+      }
+    },
+    {
+      "state": "FLOOR",
+      "started": "2026-09-09T13:46:39+02:00",
+      "finished": null,
+      "error": null,
+      "steps": {
+        "QUEUED": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.25,
+          "error": null
+        },
+        "FRAMES": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.26,
+          "error": null
+        },
+        "GPU_UP_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.27,
+          "error": null
+        },
+        "MAPANYTHING": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.31,
+          "error": null
+        },
+        "PULLED": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.33,
+          "error": null
+        },
+        "GPU_DOWN_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.35,
+          "error": null
+        },
+        "PACK": {
+          "state": "skipped",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.71,
+          "error": null
+        },
+        "GPU_UP_NV": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:47:11+02:00",
+          "duration_s": 32.18,
+          "error": null
+        },
+        "NVBLOX": {
+          "state": "done",
+          "started": "2026-09-09T13:47:12+02:00",
+          "finished": "2026-09-09T13:49:40+02:00",
+          "duration_s": 148.46,
+          "error": null
+        },
+        "FLOOR": {
+          "state": "running",
+          "started": "2026-09-09T13:49:41+02:00",
+          "finished": null,
+          "duration_s": null,
+          "error": null
+        }
+      }
+    },
+    {
+      "state": "GPU_DOWN_NV",
+      "started": "2026-09-09T13:46:39+02:00",
+      "finished": null,
+      "error": null,
+      "steps": {
+        "QUEUED": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.25,
+          "error": null
+        },
+        "FRAMES": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.26,
+          "error": null
+        },
+        "GPU_UP_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.27,
+          "error": null
+        },
+        "MAPANYTHING": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.31,
+          "error": null
+        },
+        "PULLED": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.33,
+          "error": null
+        },
+        "GPU_DOWN_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.35,
+          "error": null
+        },
+        "PACK": {
+          "state": "skipped",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.71,
+          "error": null
+        },
+        "GPU_UP_NV": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:47:11+02:00",
+          "duration_s": 32.18,
+          "error": null
+        },
+        "NVBLOX": {
+          "state": "done",
+          "started": "2026-09-09T13:47:12+02:00",
+          "finished": "2026-09-09T13:49:40+02:00",
+          "duration_s": 148.46,
+          "error": null
+        },
+        "FLOOR": {
+          "state": "skipped",
+          "started": "2026-09-09T13:49:41+02:00",
+          "finished": "2026-09-09T13:49:41+02:00",
+          "duration_s": 0.92,
+          "error": null
+        },
+        "GPU_DOWN_NV": {
+          "state": "running",
+          "started": "2026-09-09T13:49:43+02:00",
+          "finished": null,
+          "duration_s": null,
+          "error": null
+        }
+      }
+    },
+    {
+      "state": "LAYERS",
+      "started": "2026-09-09T13:46:39+02:00",
+      "finished": null,
+      "error": null,
+      "steps": {
+        "QUEUED": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.25,
+          "error": null
+        },
+        "FRAMES": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.26,
+          "error": null
+        },
+        "GPU_UP_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.27,
+          "error": null
+        },
+        "MAPANYTHING": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.31,
+          "error": null
+        },
+        "PULLED": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.33,
+          "error": null
+        },
+        "GPU_DOWN_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.35,
+          "error": null
+        },
+        "PACK": {
+          "state": "skipped",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.71,
+          "error": null
+        },
+        "GPU_UP_NV": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:47:11+02:00",
+          "duration_s": 32.18,
+          "error": null
+        },
+        "NVBLOX": {
+          "state": "done",
+          "started": "2026-09-09T13:47:12+02:00",
+          "finished": "2026-09-09T13:49:40+02:00",
+          "duration_s": 148.46,
+          "error": null
+        },
+        "FLOOR": {
+          "state": "skipped",
+          "started": "2026-09-09T13:49:41+02:00",
+          "finished": "2026-09-09T13:49:41+02:00",
+          "duration_s": 0.92,
+          "error": null
+        },
+        "GPU_DOWN_NV": {
+          "state": "done",
+          "started": "2026-09-09T13:49:43+02:00",
+          "finished": "2026-09-09T13:50:32+02:00",
+          "duration_s": 49.03,
+          "error": null
+        },
+        "LAYERS": {
+          "state": "running",
+          "started": "2026-09-09T13:50:33+02:00",
+          "finished": null,
+          "duration_s": null,
+          "error": null
+        }
+      }
+    },
+    {
+      "state": "REACH",
+      "started": "2026-09-09T13:46:39+02:00",
+      "finished": null,
+      "error": null,
+      "steps": {
+        "QUEUED": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.25,
+          "error": null
+        },
+        "FRAMES": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.26,
+          "error": null
+        },
+        "GPU_UP_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.27,
+          "error": null
+        },
+        "MAPANYTHING": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.31,
+          "error": null
+        },
+        "PULLED": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.33,
+          "error": null
+        },
+        "GPU_DOWN_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.35,
+          "error": null
+        },
+        "PACK": {
+          "state": "skipped",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.71,
+          "error": null
+        },
+        "GPU_UP_NV": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:47:11+02:00",
+          "duration_s": 32.18,
+          "error": null
+        },
+        "NVBLOX": {
+          "state": "done",
+          "started": "2026-09-09T13:47:12+02:00",
+          "finished": "2026-09-09T13:49:40+02:00",
+          "duration_s": 148.46,
+          "error": null
+        },
+        "FLOOR": {
+          "state": "skipped",
+          "started": "2026-09-09T13:49:41+02:00",
+          "finished": "2026-09-09T13:49:41+02:00",
+          "duration_s": 0.92,
+          "error": null
+        },
+        "GPU_DOWN_NV": {
+          "state": "done",
+          "started": "2026-09-09T13:49:43+02:00",
+          "finished": "2026-09-09T13:50:32+02:00",
+          "duration_s": 49.03,
+          "error": null
+        },
+        "LAYERS": {
+          "state": "done",
+          "started": "2026-09-09T13:50:33+02:00",
+          "finished": "2026-09-09T13:50:35+02:00",
+          "duration_s": 2.97,
+          "error": null
+        },
+        "REACH": {
+          "state": "running",
+          "started": "2026-09-09T13:50:37+02:00",
+          "finished": null,
+          "duration_s": null,
+          "error": null
+        }
+      }
+    },
+    {
+      "state": "EXPORT",
+      "started": "2026-09-09T13:46:39+02:00",
+      "finished": null,
+      "error": null,
+      "steps": {
+        "QUEUED": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.25,
+          "error": null
+        },
+        "FRAMES": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.26,
+          "error": null
+        },
+        "GPU_UP_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.27,
+          "error": null
+        },
+        "MAPANYTHING": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.31,
+          "error": null
+        },
+        "PULLED": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.33,
+          "error": null
+        },
+        "GPU_DOWN_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.35,
+          "error": null
+        },
+        "PACK": {
+          "state": "skipped",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.71,
+          "error": null
+        },
+        "GPU_UP_NV": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:47:11+02:00",
+          "duration_s": 32.18,
+          "error": null
+        },
+        "NVBLOX": {
+          "state": "done",
+          "started": "2026-09-09T13:47:12+02:00",
+          "finished": "2026-09-09T13:49:40+02:00",
+          "duration_s": 148.46,
+          "error": null
+        },
+        "FLOOR": {
+          "state": "skipped",
+          "started": "2026-09-09T13:49:41+02:00",
+          "finished": "2026-09-09T13:49:41+02:00",
+          "duration_s": 0.92,
+          "error": null
+        },
+        "GPU_DOWN_NV": {
+          "state": "done",
+          "started": "2026-09-09T13:49:43+02:00",
+          "finished": "2026-09-09T13:50:32+02:00",
+          "duration_s": 49.03,
+          "error": null
+        },
+        "LAYERS": {
+          "state": "done",
+          "started": "2026-09-09T13:50:33+02:00",
+          "finished": "2026-09-09T13:50:35+02:00",
+          "duration_s": 2.97,
+          "error": null
+        },
+        "REACH": {
+          "state": "done",
+          "started": "2026-09-09T13:50:37+02:00",
+          "finished": "2026-09-09T13:50:47+02:00",
+          "duration_s": 10.75,
+          "error": null
+        },
+        "EXPORT": {
+          "state": "running",
+          "started": "2026-09-09T13:50:49+02:00",
+          "finished": null,
+          "duration_s": null,
+          "error": null
+        }
+      }
+    },
+    {
+      "state": "INGEST",
+      "started": "2026-09-09T13:46:39+02:00",
+      "finished": null,
+      "error": null,
+      "steps": {
+        "QUEUED": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.25,
+          "error": null
+        },
+        "FRAMES": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.26,
+          "error": null
+        },
+        "GPU_UP_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.27,
+          "error": null
+        },
+        "MAPANYTHING": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.31,
+          "error": null
+        },
+        "PULLED": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.33,
+          "error": null
+        },
+        "GPU_DOWN_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.35,
+          "error": null
+        },
+        "PACK": {
+          "state": "skipped",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.71,
+          "error": null
+        },
+        "GPU_UP_NV": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:47:11+02:00",
+          "duration_s": 32.18,
+          "error": null
+        },
+        "NVBLOX": {
+          "state": "done",
+          "started": "2026-09-09T13:47:12+02:00",
+          "finished": "2026-09-09T13:49:40+02:00",
+          "duration_s": 148.46,
+          "error": null
+        },
+        "FLOOR": {
+          "state": "skipped",
+          "started": "2026-09-09T13:49:41+02:00",
+          "finished": "2026-09-09T13:49:41+02:00",
+          "duration_s": 0.92,
+          "error": null
+        },
+        "GPU_DOWN_NV": {
+          "state": "done",
+          "started": "2026-09-09T13:49:43+02:00",
+          "finished": "2026-09-09T13:50:32+02:00",
+          "duration_s": 49.03,
+          "error": null
+        },
+        "LAYERS": {
+          "state": "done",
+          "started": "2026-09-09T13:50:33+02:00",
+          "finished": "2026-09-09T13:50:35+02:00",
+          "duration_s": 2.97,
+          "error": null
+        },
+        "REACH": {
+          "state": "done",
+          "started": "2026-09-09T13:50:37+02:00",
+          "finished": "2026-09-09T13:50:47+02:00",
+          "duration_s": 10.75,
+          "error": null
+        },
+        "EXPORT": {
+          "state": "done",
+          "started": "2026-09-09T13:50:49+02:00",
+          "finished": "2026-09-09T13:51:02+02:00",
+          "duration_s": 13.75,
+          "error": null
+        },
+        "INGEST": {
+          "state": "running",
+          "started": "2026-09-09T13:51:04+02:00",
+          "finished": null,
+          "duration_s": null,
+          "error": null
+        }
+      }
+    },
+    {
+      "state": "DONE",
+      "started": "2026-09-09T13:46:39+02:00",
+      "finished": "2026-09-09T13:51:04+02:00",
+      "error": null,
+      "steps": {
+        "QUEUED": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.25,
+          "error": null
+        },
+        "FRAMES": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.26,
+          "error": null
+        },
+        "GPU_UP_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.27,
+          "error": null
+        },
+        "MAPANYTHING": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.31,
+          "error": null
+        },
+        "PULLED": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.33,
+          "error": null
+        },
+        "GPU_DOWN_MA": {
+          "state": "skipped_precomputed",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.35,
+          "error": null
+        },
+        "PACK": {
+          "state": "skipped",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:46:39+02:00",
+          "duration_s": 0.71,
+          "error": null
+        },
+        "GPU_UP_NV": {
+          "state": "done",
+          "started": "2026-09-09T13:46:39+02:00",
+          "finished": "2026-09-09T13:47:11+02:00",
+          "duration_s": 32.18,
+          "error": null
+        },
+        "NVBLOX": {
+          "state": "done",
+          "started": "2026-09-09T13:47:12+02:00",
+          "finished": "2026-09-09T13:49:40+02:00",
+          "duration_s": 148.46,
+          "error": null
+        },
+        "FLOOR": {
+          "state": "skipped",
+          "started": "2026-09-09T13:49:41+02:00",
+          "finished": "2026-09-09T13:49:41+02:00",
+          "duration_s": 0.92,
+          "error": null
+        },
+        "GPU_DOWN_NV": {
+          "state": "done",
+          "started": "2026-09-09T13:49:43+02:00",
+          "finished": "2026-09-09T13:50:32+02:00",
+          "duration_s": 49.03,
+          "error": null
+        },
+        "LAYERS": {
+          "state": "done",
+          "started": "2026-09-09T13:50:33+02:00",
+          "finished": "2026-09-09T13:50:35+02:00",
+          "duration_s": 2.97,
+          "error": null
+        },
+        "REACH": {
+          "state": "done",
+          "started": "2026-09-09T13:50:37+02:00",
+          "finished": "2026-09-09T13:50:47+02:00",
+          "duration_s": 10.75,
+          "error": null
+        },
+        "EXPORT": {
+          "state": "done",
+          "started": "2026-09-09T13:50:49+02:00",
+          "finished": "2026-09-09T13:51:02+02:00",
+          "duration_s": 13.75,
+          "error": null
+        },
+        "INGEST": {
+          "state": "stubbed",
+          "started": "2026-09-09T13:51:04+02:00",
+          "finished": "2026-09-09T13:51:04+02:00",
+          "duration_s": 0.39,
+          "error": null
+        }
+      }
+    }
+  ]
+}

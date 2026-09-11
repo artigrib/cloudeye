@@ -1,0 +1,506 @@
+[
+  {
+    "id": "sink_0",
+    "label": "sink",
+    "prompt_used": "sink",
+    "centroid_xyz": [
+      0.8812319845155837,
+      0.617045781053177,
+      -1.180709980043874
+    ],
+    "bbox_min": [
+      0.4965063688369138,
+      -0.060759325798274366,
+      -2.0766792667809333
+    ],
+    "bbox_max": [
+      1.3216404987555583,
+      0.8239977938690166,
+      -0.5059904227288783
+    ],
+    "point_count": 99870,
+    "source_view_count": 15,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/sink_0.ply"
+  },
+  {
+    "id": "sink_1",
+    "label": "sink",
+    "prompt_used": "sink",
+    "centroid_xyz": [
+      1.0599055090733966,
+      0.5786740342694476,
+      -2.2813668066036192
+    ],
+    "bbox_min": [
+      0.8317609378684772,
+      0.521063312603734,
+      -2.384015724161516
+    ],
+    "bbox_max": [
+      1.2000881430480714,
+      0.6509038593201893,
+      -2.1449547444821637
+    ],
+    "point_count": 2113,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/sink_1.ply"
+  },
+  {
+    "id": "mirror_0",
+    "label": "mirror",
+    "prompt_used": "mirror",
+    "centroid_xyz": [
+      1.1303535230932167,
+      1.371817056801541,
+      -1.2234181632273262
+    ],
+    "bbox_min": [
+      0.8943862968426157,
+      0.9920056871148584,
+      -1.9861073776216478
+    ],
+    "bbox_max": [
+      1.4371049831215967,
+      1.9102818026423316,
+      -0.513799860994382
+    ],
+    "point_count": 62398,
+    "source_view_count": 12,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/mirror_0.ply"
+  },
+  {
+    "id": "mirror_1",
+    "label": "mirror",
+    "prompt_used": "mirror",
+    "centroid_xyz": [
+      1.7282567789855685,
+      1.9783056952416331,
+      -1.1410321680567619
+    ],
+    "bbox_min": [
+      1.654328956463069,
+      1.8925531619060538,
+      -1.181338573392272
+    ],
+    "bbox_max": [
+      1.7968491449543518,
+      2.0989339595748584,
+      -1.0899144848923012
+    ],
+    "point_count": 79,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/mirror_1.ply"
+  },
+  {
+    "id": "dispenser_0",
+    "label": "dispenser",
+    "prompt_used": "dispenser",
+    "centroid_xyz": [
+      1.0050552833051458,
+      1.5717022564023206,
+      -1.3656715634773473
+    ],
+    "bbox_min": [
+      0.9458902991698647,
+      1.4640244459957525,
+      -1.4555186428748679
+    ],
+    "bbox_max": [
+      1.0771792707931425,
+      1.7031897332364512,
+      -1.2811189308559534
+    ],
+    "point_count": 1023,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/dispenser_0.ply"
+  },
+  {
+    "id": "soap dispenser_0",
+    "label": "soap dispenser",
+    "prompt_used": "soap dispenser",
+    "centroid_xyz": [
+      0.8884339939468944,
+      1.6622063412720622,
+      -0.9710557178205736
+    ],
+    "bbox_min": [
+      0.8041361840504698,
+      1.5114143577583015,
+      -1.091606681903867
+    ],
+    "bbox_max": [
+      1.0058290269664882,
+      1.858804070971908,
+      -0.926728330403712
+    ],
+    "point_count": 1438,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/soap dispenser_0.ply"
+  },
+  {
+    "id": "soap dispenser_1",
+    "label": "soap dispenser",
+    "prompt_used": "soap dispenser",
+    "centroid_xyz": [
+      1.0050623259835387,
+      1.5715735993799782,
+      -1.3655836504838077
+    ],
+    "bbox_min": [
+      0.9458902991698647,
+      1.4640244459957525,
+      -1.4526926089527914
+    ],
+    "bbox_max": [
+      1.0771792707931425,
+      1.686332465084274,
+      -1.2811189308559534
+    ],
+    "point_count": 1022,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/soap dispenser_1.ply"
+  },
+  {
+    "id": "door_0",
+    "label": "door",
+    "prompt_used": "door",
+    "centroid_xyz": [
+      -0.38664926487382817,
+      1.1275274384792757,
+      -2.5729602645978145
+    ],
+    "bbox_min": [
+      -0.6401291726880377,
+      -0.028159867275363792,
+      -3.5811893877863876
+    ],
+    "bbox_max": [
+      -0.068750076369917,
+      2.2288278423768433,
+      -1.0603106753497042
+    ],
+    "point_count": 196708,
+    "source_view_count": 13,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/door_0.ply"
+  },
+  {
+    "id": "door_1",
+    "label": "door",
+    "prompt_used": "door",
+    "centroid_xyz": [
+      0.9748387233883666,
+      1.1745169718909678,
+      -3.2325335993667275
+    ],
+    "bbox_min": [
+      0.8323827541194452,
+      0.4961003004110658,
+      -3.7597245308109333
+    ],
+    "bbox_max": [
+      1.3623331364902536,
+      1.7834907976230923,
+      -2.825908381523281
+    ],
+    "point_count": 23365,
+    "source_view_count": 6,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/door_1.ply"
+  },
+  {
+    "id": "door_2",
+    "label": "door",
+    "prompt_used": "door",
+    "centroid_xyz": [
+      1.7325681640527983,
+      1.205226837405726,
+      -5.707684772763344
+    ],
+    "bbox_min": [
+      1.652304942545029,
+      1.0789163237394552,
+      -5.835337074477893
+    ],
+    "bbox_max": [
+      1.7899552438622088,
+      1.297262965726469,
+      -5.533487176898061
+    ],
+    "point_count": 53,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/door_2.ply"
+  },
+  {
+    "id": "door_3",
+    "label": "door",
+    "prompt_used": "door",
+    "centroid_xyz": [
+      2.0186017987502987,
+      0.40455008482995725,
+      -5.08636274618129
+    ],
+    "bbox_min": [
+      1.6383876766068404,
+      0.3637389220950076,
+      -6.151098298618839
+    ],
+    "bbox_max": [
+      2.6663923460874184,
+      0.48083601584866775,
+      -4.326243294591714
+    ],
+    "point_count": 714,
+    "source_view_count": 2,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/door_3.ply"
+  },
+  {
+    "id": "door_4",
+    "label": "door",
+    "prompt_used": "door",
+    "centroid_xyz": [
+      1.3850627678891418,
+      1.1083644115778248,
+      -4.387062110543301
+    ],
+    "bbox_min": [
+      1.3265940061769255,
+      0.9434155262558588,
+      -4.492442686405684
+    ],
+    "bbox_max": [
+      1.4400453728414853,
+      1.250368450338803,
+      -4.215738270289802
+    ],
+    "point_count": 151,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/door_4.ply"
+  },
+  {
+    "id": "light switch_0",
+    "label": "light switch",
+    "prompt_used": "light switch",
+    "centroid_xyz": [
+      0.05408353642333207,
+      1.1126510227375686,
+      -2.9678616667045077
+    ],
+    "bbox_min": [
+      -0.01422980576713121,
+      1.071977504079687,
+      -3.003928440442985
+    ],
+    "bbox_max": [
+      0.12235710607636047,
+      1.1528818718768343,
+      -2.9208553251144806
+    ],
+    "point_count": 158,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/light switch_0.ply"
+  },
+  {
+    "id": "light switch_1",
+    "label": "light switch",
+    "prompt_used": "light switch",
+    "centroid_xyz": [
+      -0.0113187377608196,
+      1.1332118916128282,
+      -2.851004374823086
+    ],
+    "bbox_min": [
+      -0.1776333227301486,
+      1.0730045412022728,
+      -2.953516741172435
+    ],
+    "bbox_max": [
+      0.19337527993170914,
+      1.23200572515128,
+      -2.776016002082615
+    ],
+    "point_count": 9441,
+    "source_view_count": 19,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/light switch_1.ply"
+  },
+  {
+    "id": "light switch_2",
+    "label": "light switch",
+    "prompt_used": "light switch",
+    "centroid_xyz": [
+      -0.559973861351013,
+      0.9862124682464635,
+      -0.9214615959684022
+    ],
+    "bbox_min": [
+      -0.5800018360545234,
+      0.9451973742016541,
+      -0.9842667582552146
+    ],
+    "bbox_max": [
+      -0.54501929282939,
+      1.0289214195897132,
+      -0.8639927971348856
+    ],
+    "point_count": 268,
+    "source_view_count": 2,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/light switch_2.ply"
+  },
+  {
+    "id": "light switch_3",
+    "label": "light switch",
+    "prompt_used": "light switch",
+    "centroid_xyz": [
+      -0.5051287350096293,
+      1.0165921738064325,
+      -0.9899773600471514
+    ],
+    "bbox_min": [
+      -0.5127167916167821,
+      0.979646682101872,
+      -1.0254544636577527
+    ],
+    "bbox_max": [
+      -0.49550411054967786,
+      1.054659067861011,
+      -0.9550079316175804
+    ],
+    "point_count": 96,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/light switch_3.ply"
+  },
+  {
+    "id": "light switch_4",
+    "label": "light switch",
+    "prompt_used": "light switch",
+    "centroid_xyz": [
+      -0.5376012528760571,
+      1.0046916268562622,
+      -0.8444933721223653
+    ],
+    "bbox_min": [
+      -0.5455750005185784,
+      0.966954946444813,
+      -0.8763284599809338
+    ],
+    "bbox_max": [
+      -0.5296147020584339,
+      1.04305084960747,
+      -0.8205981959114498
+    ],
+    "point_count": 118,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/light switch_4.ply"
+  },
+  {
+    "id": "light switch_5",
+    "label": "light switch",
+    "prompt_used": "light switch",
+    "centroid_xyz": [
+      -0.5164556388416328,
+      1.0011601844463924,
+      -1.1065513819570472
+    ],
+    "bbox_min": [
+      -0.5255887122125907,
+      0.9623783193779554,
+      -1.1461891315521517
+    ],
+    "bbox_max": [
+      -0.5085680045082248,
+      1.0422681542473826,
+      -1.0801491341599847
+    ],
+    "point_count": 108,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/light switch_5.ply"
+  },
+  {
+    "id": "light switch_6",
+    "label": "light switch",
+    "prompt_used": "light switch",
+    "centroid_xyz": [
+      -0.054407906514041565,
+      1.1543009841299576,
+      -2.7177337203530327
+    ],
+    "bbox_min": [
+      -0.14003398286109808,
+      1.115681427104424,
+      -2.731575664003782
+    ],
+    "bbox_max": [
+      0.026204893914659567,
+      1.191266132325997,
+      -2.701059016605553
+    ],
+    "point_count": 271,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/light switch_6.ply"
+  },
+  {
+    "id": "light switch_7",
+    "label": "light switch",
+    "prompt_used": "light switch",
+    "centroid_xyz": [
+      -0.32212581024337195,
+      1.105127325034215,
+      -2.347115600771586
+    ],
+    "bbox_min": [
+      -0.36064851988397323,
+      1.0482872899033617,
+      -2.4952617319201806
+    ],
+    "bbox_max": [
+      -0.2667369124161582,
+      1.1607911216616427,
+      -2.1850978054076813
+    ],
+    "point_count": 1239,
+    "source_view_count": 6,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/light switch_7.ply"
+  },
+  {
+    "id": "light switch_8",
+    "label": "light switch",
+    "prompt_used": "light switch",
+    "centroid_xyz": [
+      -0.28093947575590855,
+      1.097585686745526,
+      -2.162300851421837
+    ],
+    "bbox_min": [
+      -0.3235293063206542,
+      1.0536131065810708,
+      -2.2522353802383845
+    ],
+    "bbox_max": [
+      -0.2653670979038377,
+      1.1366131143032503,
+      -2.077553852322603
+    ],
+    "point_count": 2424,
+    "source_view_count": 3,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/light switch_8.ply"
+  }
+]

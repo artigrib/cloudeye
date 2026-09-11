@@ -1,0 +1,1994 @@
+[
+  {
+    "id": "bed_0",
+    "label": "bed",
+    "prompt_used": "bed",
+    "centroid_xyz": [
+      1.4974648804359383,
+      0.461779478986296,
+      -2.703963296434448
+    ],
+    "bbox_min": [
+      0.5412876607836788,
+      0.018785194718996534,
+      -3.811025148085919
+    ],
+    "bbox_max": [
+      2.729774690453297,
+      0.7066450920411077,
+      -1.8411970731630798
+    ],
+    "point_count": 2735,
+    "source_view_count": 27,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/bed_0.ply"
+  },
+  {
+    "id": "pillow_0",
+    "label": "pillow",
+    "prompt_used": "pillow",
+    "centroid_xyz": [
+      1.2691225808873738,
+      0.7017782903827949,
+      -3.4406744738844037
+    ],
+    "bbox_min": [
+      0.8219511338398996,
+      0.5070005424697629,
+      -3.83683092525395
+    ],
+    "bbox_max": [
+      1.7859073356692559,
+      0.9683394634036986,
+      -3.1895896946490963
+    ],
+    "point_count": 5529,
+    "source_view_count": 13,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/pillow_0.ply"
+  },
+  {
+    "id": "pillow_1",
+    "label": "pillow",
+    "prompt_used": "pillow",
+    "centroid_xyz": [
+      1.9968325861716103,
+      0.7146180918675558,
+      -3.701470007380915
+    ],
+    "bbox_min": [
+      1.7763254712672603,
+      0.506348532628806,
+      -3.918539985816971
+    ],
+    "bbox_max": [
+      2.2027881907787545,
+      0.8941002855180198,
+      -3.418442755240001
+    ],
+    "point_count": 1924,
+    "source_view_count": 14,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/pillow_1.ply"
+  },
+  {
+    "id": "pillow_2",
+    "label": "pillow",
+    "prompt_used": "pillow",
+    "centroid_xyz": [
+      0.9842830785907705,
+      0.84593435382431,
+      -3.863965350208349
+    ],
+    "bbox_min": [
+      0.9453424249301173,
+      0.8218693485570931,
+      -3.8761405898807033
+    ],
+    "bbox_max": [
+      1.026294006189195,
+      0.8750410198709629,
+      -3.84178281254051
+    ],
+    "point_count": 15,
+    "source_view_count": 4,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/pillow_2.ply"
+  },
+  {
+    "id": "pillow_3",
+    "label": "pillow",
+    "prompt_used": "pillow",
+    "centroid_xyz": [
+      1.443463636317076,
+      0.794086791363468,
+      -3.9722178032689013
+    ],
+    "bbox_min": [
+      1.3782768280461293,
+      0.768935284582171,
+      -4.00199046531723
+    ],
+    "bbox_max": [
+      1.5286417110504165,
+      0.8040001266037249,
+      -3.953190720945894
+    ],
+    "point_count": 9,
+    "source_view_count": 2,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/pillow_3.ply"
+  },
+  {
+    "id": "pillow_4",
+    "label": "pillow",
+    "prompt_used": "pillow",
+    "centroid_xyz": [
+      2.3108033897985067,
+      0.8462601094138629,
+      -4.184539241771182
+    ],
+    "bbox_min": [
+      2.2302928693078865,
+      0.834460544878067,
+      -4.210957699430042
+    ],
+    "bbox_max": [
+      2.380646059402478,
+      0.8587659608360034,
+      -4.161168323899712
+    ],
+    "point_count": 9,
+    "source_view_count": 2,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/pillow_4.ply"
+  },
+  {
+    "id": "blanket_0",
+    "label": "blanket",
+    "prompt_used": "blanket",
+    "centroid_xyz": [
+      1.313906100439767,
+      0.43051518143065987,
+      -2.1986945815597516
+    ],
+    "bbox_min": [
+      0.9092773457724206,
+      0.01172848319325559,
+      -3.012844056505299
+    ],
+    "bbox_max": [
+      1.9409674085098017,
+      0.6091337064504138,
+      -1.8107122360207253
+    ],
+    "point_count": 2533,
+    "source_view_count": 22,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/blanket_0.ply"
+  },
+  {
+    "id": "blanket_1",
+    "label": "blanket",
+    "prompt_used": "blanket",
+    "centroid_xyz": [
+      2.1953385529915086,
+      0.6217516255937213,
+      -3.234237726126464
+    ],
+    "bbox_min": [
+      2.055969077982672,
+      0.5294303093596359,
+      -3.4304385634762213
+    ],
+    "bbox_max": [
+      2.363229871260329,
+      0.6931892756130872,
+      -3.0289859513400117
+    ],
+    "point_count": 190,
+    "source_view_count": 3,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/blanket_1.ply"
+  },
+  {
+    "id": "chair_0",
+    "label": "chair",
+    "prompt_used": "chair",
+    "centroid_xyz": [
+      -0.4861247529374039,
+      0.3492206499961545,
+      -1.2889065704062908
+    ],
+    "bbox_min": [
+      -0.7030434265268772,
+      0.007423320316636506,
+      -1.5495347433323858
+    ],
+    "bbox_max": [
+      -0.2946884702152624,
+      0.8561407937905607,
+      -1.0433300493647069
+    ],
+    "point_count": 2093,
+    "source_view_count": 6,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/chair_0.ply"
+  },
+  {
+    "id": "chair_1",
+    "label": "chair",
+    "prompt_used": "chair",
+    "centroid_xyz": [
+      -0.6103877652025778,
+      0.4872390148387079,
+      -1.851596046339697
+    ],
+    "bbox_min": [
+      -0.6271191931748343,
+      0.4772048799354116,
+      -1.861758158071895
+    ],
+    "bbox_max": [
+      -0.597442090316706,
+      0.49559313663677096,
+      -1.8451175517978877
+    ],
+    "point_count": 7,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/chair_1.ply"
+  },
+  {
+    "id": "chair_2",
+    "label": "chair",
+    "prompt_used": "chair",
+    "centroid_xyz": [
+      -0.2101284034957559,
+      0.42929860429904354,
+      -1.7071420923745975
+    ],
+    "bbox_min": [
+      -0.3926287320005344,
+      0.010245402664951442,
+      -1.9524200652478754
+    ],
+    "bbox_max": [
+      -0.05651778975491115,
+      0.7937760045669946,
+      -1.5272162978892516
+    ],
+    "point_count": 1844,
+    "source_view_count": 5,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/chair_2.ply"
+  },
+  {
+    "id": "chair_3",
+    "label": "chair",
+    "prompt_used": "chair",
+    "centroid_xyz": [
+      -0.430428417708146,
+      0.03181532451180124,
+      -1.7221747572771422
+    ],
+    "bbox_min": [
+      -0.5152013124138858,
+      0.01613647736124557,
+      -1.823913489734822
+    ],
+    "bbox_max": [
+      -0.3357922531722474,
+      0.07472084384840683,
+      -1.6314506136846971
+    ],
+    "point_count": 53,
+    "source_view_count": 2,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/chair_3.ply"
+  },
+  {
+    "id": "chair_4",
+    "label": "chair",
+    "prompt_used": "chair",
+    "centroid_xyz": [
+      -0.31548741604904174,
+      0.27785358840480634,
+      -1.7701499662753242
+    ],
+    "bbox_min": [
+      -0.3227358473124894,
+      0.2627228595537059,
+      -1.7917637725885995
+    ],
+    "bbox_max": [
+      -0.3026092019962038,
+      0.29654730814056407,
+      -1.7463476210270805
+    ],
+    "point_count": 15,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/chair_4.ply"
+  },
+  {
+    "id": "chair_5",
+    "label": "chair",
+    "prompt_used": "chair",
+    "centroid_xyz": [
+      3.429860304242261,
+      0.5862752022541036,
+      -1.623913572692745
+    ],
+    "bbox_min": [
+      2.997479381813439,
+      0.3651301374154199,
+      -2.006657125847868
+    ],
+    "bbox_max": [
+      3.846537875107391,
+      0.8091730875767478,
+      -1.2747958540568811
+    ],
+    "point_count": 9973,
+    "source_view_count": 22,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/chair_5.ply"
+  },
+  {
+    "id": "chair_6",
+    "label": "chair",
+    "prompt_used": "chair",
+    "centroid_xyz": [
+      3.7425761848331245,
+      0.037924789088997525,
+      -1.7606905152009942
+    ],
+    "bbox_min": [
+      3.5901764255542945,
+      -0.0065694208704556445,
+      -1.8764830776190502
+    ],
+    "bbox_max": [
+      3.937805364737504,
+      0.1634638432870954,
+      -1.6018422665864256
+    ],
+    "point_count": 94,
+    "source_view_count": 11,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/chair_6.ply"
+  },
+  {
+    "id": "chair_7",
+    "label": "chair",
+    "prompt_used": "chair",
+    "centroid_xyz": [
+      3.28905447704863,
+      0.043942858914335386,
+      -1.7590226960651492
+    ],
+    "bbox_min": [
+      3.1813650487876632,
+      -0.02051601295356531,
+      -1.8328306112533417
+    ],
+    "bbox_max": [
+      3.381933804783376,
+      0.21688920953801571,
+      -1.6590387689655552
+    ],
+    "point_count": 169,
+    "source_view_count": 15,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/chair_7.ply"
+  },
+  {
+    "id": "chair_8",
+    "label": "chair",
+    "prompt_used": "chair",
+    "centroid_xyz": [
+      3.848670553987058,
+      0.03397235373050968,
+      -1.3064878777689306
+    ],
+    "bbox_min": [
+      3.7230661488182504,
+      -0.03483571010222963,
+      -1.3454364977238502
+    ],
+    "bbox_max": [
+      3.9293343277155692,
+      0.15006487118679335,
+      -1.2640028714585543
+    ],
+    "point_count": 48,
+    "source_view_count": 4,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/chair_8.ply"
+  },
+  {
+    "id": "chair_9",
+    "label": "chair",
+    "prompt_used": "chair",
+    "centroid_xyz": [
+      2.4723922308951827,
+      0.5375924311507086,
+      -1.3319762906488992
+    ],
+    "bbox_min": [
+      2.2739678707281428,
+      -0.027449152541809463,
+      -1.695050232933516
+    ],
+    "bbox_max": [
+      3.0415919483033083,
+      0.7492988388825292,
+      -0.8305926917278906
+    ],
+    "point_count": 7175,
+    "source_view_count": 18,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/chair_9.ply"
+  },
+  {
+    "id": "chair_10",
+    "label": "chair",
+    "prompt_used": "chair",
+    "centroid_xyz": [
+      2.782166515492288,
+      0.09546097347066815,
+      -1.5235741217928827
+    ],
+    "bbox_min": [
+      2.580877026173434,
+      -0.01900611271617003,
+      -1.6934473430185746
+    ],
+    "bbox_max": [
+      2.9563502169511975,
+      0.28341127028479607,
+      -1.394627180908315
+    ],
+    "point_count": 350,
+    "source_view_count": 16,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/chair_10.ply"
+  },
+  {
+    "id": "chair_11",
+    "label": "chair",
+    "prompt_used": "chair",
+    "centroid_xyz": [
+      3.852133761230135,
+      0.009691679412357624,
+      -1.4259534401493423
+    ],
+    "bbox_min": [
+      3.7319666738368067,
+      -0.023817522538936098,
+      -1.4621451002738357
+    ],
+    "bbox_max": [
+      3.9460959635001576,
+      0.06641173318162363,
+      -1.3955317165249104
+    ],
+    "point_count": 29,
+    "source_view_count": 3,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/chair_11.ply"
+  },
+  {
+    "id": "chair_12",
+    "label": "chair",
+    "prompt_used": "chair",
+    "centroid_xyz": [
+      3.1626611594097973,
+      0.004364509746358113,
+      -1.2306529915653681
+    ],
+    "bbox_min": [
+      3.017884445177582,
+      -0.020937047737099146,
+      -1.358089114118722
+    ],
+    "bbox_max": [
+      3.29245967923256,
+      0.055211440004311996,
+      -1.1366937261361034
+    ],
+    "point_count": 47,
+    "source_view_count": 2,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/chair_12.ply"
+  },
+  {
+    "id": "chair_13",
+    "label": "chair",
+    "prompt_used": "chair",
+    "centroid_xyz": [
+      -0.41907958800306994,
+      0.22642990841068228,
+      -1.648692230801397
+    ],
+    "bbox_min": [
+      -0.42782258388039235,
+      0.20939514563845196,
+      -1.7037285749839695
+    ],
+    "bbox_max": [
+      -0.40215895463062407,
+      0.2411701552882206,
+      -1.5882360063177317
+    ],
+    "point_count": 14,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/chair_13.ply"
+  },
+  {
+    "id": "chair_14",
+    "label": "chair",
+    "prompt_used": "chair",
+    "centroid_xyz": [
+      -0.6487963382975835,
+      0.0907126454468304,
+      -1.550363033917909
+    ],
+    "bbox_min": [
+      -0.7734938386229859,
+      0.06566428771871613,
+      -1.5701273778339286
+    ],
+    "bbox_max": [
+      -0.5519425717887646,
+      0.1171121239733548,
+      -1.5154589176275353
+    ],
+    "point_count": 48,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/chair_14.ply"
+  },
+  {
+    "id": "chair_15",
+    "label": "chair",
+    "prompt_used": "chair",
+    "centroid_xyz": [
+      3.509232220113522,
+      0.07149611013401137,
+      -1.8335566848756504
+    ],
+    "bbox_min": [
+      3.4634888183893806,
+      0.034224703393433975,
+      -1.8484617080974288
+    ],
+    "bbox_max": [
+      3.5409008427707223,
+      0.10656650521436473,
+      -1.8183027431089573
+    ],
+    "point_count": 7,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/chair_15.ply"
+  },
+  {
+    "id": "chair_16",
+    "label": "chair",
+    "prompt_used": "chair",
+    "centroid_xyz": [
+      2.7896834785996893,
+      0.38021437735494795,
+      -1.3067919103197334
+    ],
+    "bbox_min": [
+      2.6829173773737884,
+      0.2802507271974237,
+      -1.4673339885556194
+    ],
+    "bbox_max": [
+      2.8954634167594633,
+      0.4266200976495298,
+      -1.1625366717004828
+    ],
+    "point_count": 159,
+    "source_view_count": 2,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/chair_16.ply"
+  },
+  {
+    "id": "table_0",
+    "label": "table",
+    "prompt_used": "table",
+    "centroid_xyz": [
+      -0.7045253157058142,
+      0.8826846388984411,
+      -2.738247472424085
+    ],
+    "bbox_min": [
+      -0.7424951860610614,
+      0.8816470359368163,
+      -2.741015862282467
+    ],
+    "bbox_max": [
+      -0.662929715275141,
+      0.8834595636687546,
+      -2.7352665673165615
+    ],
+    "point_count": 6,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/table_0.ply"
+  },
+  {
+    "id": "table_1",
+    "label": "table",
+    "prompt_used": "table",
+    "centroid_xyz": [
+      -0.6976978441191997,
+      0.882884582490777,
+      -2.66978032751914
+    ],
+    "bbox_min": [
+      -0.7528125848359609,
+      0.8823020821454655,
+      -2.6751358902559983
+    ],
+    "bbox_max": [
+      -0.6424063666518778,
+      0.8834296476267784,
+      -2.6653311705613234
+    ],
+    "point_count": 10,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/table_1.ply"
+  },
+  {
+    "id": "table_2",
+    "label": "table",
+    "prompt_used": "table",
+    "centroid_xyz": [
+      -0.6831041119237267,
+      0.8827239676400095,
+      -2.6063069192733717
+    ],
+    "bbox_min": [
+      -0.7318329024895354,
+      0.882034953982971,
+      -2.6086481397202093
+    ],
+    "bbox_max": [
+      -0.6266564233380368,
+      0.8833763961437773,
+      -2.6038056867801957
+    ],
+    "point_count": 7,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/table_2.ply"
+  },
+  {
+    "id": "table_3",
+    "label": "table",
+    "prompt_used": "table",
+    "centroid_xyz": [
+      -0.5195038722209729,
+      0.823082427180906,
+      -1.7561215905953382
+    ],
+    "bbox_min": [
+      -1.1960659404124971,
+      0.01629355890325712,
+      -2.64080975516971
+    ],
+    "bbox_max": [
+      -0.12271047556138527,
+      0.9574167091942241,
+      -1.1596438308117232
+    ],
+    "point_count": 6378,
+    "source_view_count": 8,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/table_3.ply"
+  },
+  {
+    "id": "table_4",
+    "label": "table",
+    "prompt_used": "table",
+    "centroid_xyz": [
+      2.9066836502261344,
+      0.3311203234963236,
+      -1.546549024071594
+    ],
+    "bbox_min": [
+      2.6956304324435116,
+      -0.009620896798612222,
+      -1.7796884953196472
+    ],
+    "bbox_max": [
+      3.1427572396763286,
+      0.5960469654773947,
+      -1.2945637457974093
+    ],
+    "point_count": 3473,
+    "source_view_count": 14,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/table_4.ply"
+  },
+  {
+    "id": "table_5",
+    "label": "table",
+    "prompt_used": "table",
+    "centroid_xyz": [
+      2.22507982742492,
+      0.4228279913766438,
+      -0.5852509565758209
+    ],
+    "bbox_min": [
+      1.738928008287069,
+      0.34267571217761783,
+      -0.9456487768004201
+    ],
+    "bbox_max": [
+      2.8182969926606245,
+      0.4677623752021106,
+      -0.22508125174079502
+    ],
+    "point_count": 2750,
+    "source_view_count": 4,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/table_5.ply"
+  },
+  {
+    "id": "table_6",
+    "label": "table",
+    "prompt_used": "table",
+    "centroid_xyz": [
+      2.8662746413503646,
+      0.07511320116062223,
+      -0.49326938569964424
+    ],
+    "bbox_min": [
+      2.817192812506557,
+      0.03930554432783029,
+      -0.5805075052418833
+    ],
+    "bbox_max": [
+      2.893862019199915,
+      0.1117210150498662,
+      -0.39016583859990384
+    ],
+    "point_count": 23,
+    "source_view_count": 2,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/table_6.ply"
+  },
+  {
+    "id": "table_7",
+    "label": "table",
+    "prompt_used": "table",
+    "centroid_xyz": [
+      2.228911748541193,
+      0.08002651746942024,
+      -0.4246044817553109
+    ],
+    "bbox_min": [
+      1.8294817068501172,
+      -0.01407670010419415,
+      -0.6650352334478237
+    ],
+    "bbox_max": [
+      2.824563610555771,
+      0.2659692309411952,
+      -0.13018759628131196
+    ],
+    "point_count": 610,
+    "source_view_count": 4,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/table_7.ply"
+  },
+  {
+    "id": "table_8",
+    "label": "table",
+    "prompt_used": "table",
+    "centroid_xyz": [
+      2.0829100558129197,
+      0.10834950014680877,
+      -0.13220519696131153
+    ],
+    "bbox_min": [
+      2.0187305963409825,
+      0.05026191603689112,
+      -0.31375024850906796
+    ],
+    "bbox_max": [
+      2.1398275591683507,
+      0.17913872530319264,
+      -0.03173925563201323
+    ],
+    "point_count": 55,
+    "source_view_count": 3,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/table_8.ply"
+  },
+  {
+    "id": "table_9",
+    "label": "table",
+    "prompt_used": "table",
+    "centroid_xyz": [
+      2.9328887440855027,
+      0.0301493589625695,
+      -0.35317360590307006
+    ],
+    "bbox_min": [
+      2.887420686697283,
+      0.01045531849799719,
+      -0.41423001297594986
+    ],
+    "bbox_max": [
+      2.966824925555576,
+      0.04995938895801344,
+      -0.3070633387647369
+    ],
+    "point_count": 18,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/table_9.ply"
+  },
+  {
+    "id": "table_10",
+    "label": "table",
+    "prompt_used": "table",
+    "centroid_xyz": [
+      -0.17858906058320928,
+      0.37499333308482086,
+      -1.6738763932395417
+    ],
+    "bbox_min": [
+      -0.2220771840818793,
+      0.0321792210122922,
+      -1.836028628086804
+    ],
+    "bbox_max": [
+      -0.1101619064801546,
+      0.6155729181223126,
+      -1.5398001225753326
+    ],
+    "point_count": 217,
+    "source_view_count": 2,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/table_10.ply"
+  },
+  {
+    "id": "table_11",
+    "label": "table",
+    "prompt_used": "table",
+    "centroid_xyz": [
+      -1.3327060990326782,
+      -0.002842457481979347,
+      -0.07501842546913
+    ],
+    "bbox_min": [
+      -1.4165319670950138,
+      -0.012584095979657484,
+      -0.12828347420694705
+    ],
+    "bbox_max": [
+      -1.2491458009350092,
+      0.00592401281212207,
+      -0.05243999086670744
+    ],
+    "point_count": 12,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/table_11.ply"
+  },
+  {
+    "id": "table_12",
+    "label": "table",
+    "prompt_used": "table",
+    "centroid_xyz": [
+      0.8711318442147128,
+      0.27374621659744064,
+      -2.553217531638163
+    ],
+    "bbox_min": [
+      0.8555656753743632,
+      0.26990906439910045,
+      -2.5847917837519585
+    ],
+    "bbox_max": [
+      0.8879847866180391,
+      0.2771218455929767,
+      -2.524377881228766
+    ],
+    "point_count": 5,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/table_12.ply"
+  },
+  {
+    "id": "table_13",
+    "label": "table",
+    "prompt_used": "table",
+    "centroid_xyz": [
+      0.9073943872869158,
+      0.2677110176923275,
+      -2.381876821505535
+    ],
+    "bbox_min": [
+      0.8841679075484012,
+      0.26308329072484526,
+      -2.419747479978307
+    ],
+    "bbox_max": [
+      0.921265534793017,
+      0.27371109249595804,
+      -2.3484186756650636
+    ],
+    "point_count": 6,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/table_13.ply"
+  },
+  {
+    "id": "table_14",
+    "label": "table",
+    "prompt_used": "table",
+    "centroid_xyz": [
+      -0.3944326407197535,
+      0.42416894938137106,
+      -1.3909175902586364
+    ],
+    "bbox_min": [
+      -0.404804194372009,
+      0.3523406779189556,
+      -1.4225749529387435
+    ],
+    "bbox_max": [
+      -0.38219401992800234,
+      0.5079150069558502,
+      -1.3634612081474926
+    ],
+    "point_count": 35,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/table_14.ply"
+  },
+  {
+    "id": "table_15",
+    "label": "table",
+    "prompt_used": "table",
+    "centroid_xyz": [
+      3.0891178860314685,
+      0.2244877100560674,
+      -1.4063395494534827
+    ],
+    "bbox_min": [
+      3.0662215029926356,
+      0.19950379143601582,
+      -1.4208884830859507
+    ],
+    "bbox_max": [
+      3.1110799142238994,
+      0.25344188193019623,
+      -1.3948054080304186
+    ],
+    "point_count": 17,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/table_15.ply"
+  },
+  {
+    "id": "bench_0",
+    "label": "bench",
+    "prompt_used": "bench",
+    "centroid_xyz": [
+      2.2242232849486467,
+      0.43148286672870834,
+      -0.6319273816959785
+    ],
+    "bbox_min": [
+      1.748958217478121,
+      0.3544620791057854,
+      -0.9456487768004201
+    ],
+    "bbox_max": [
+      2.710668313203745,
+      0.4665352447949669,
+      -0.3249375767029958
+    ],
+    "point_count": 569,
+    "source_view_count": 2,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/bench_0.ply"
+  },
+  {
+    "id": "bench_1",
+    "label": "bench",
+    "prompt_used": "bench",
+    "centroid_xyz": [
+      2.2549278414270235,
+      0.07323315403918322,
+      -0.40454214036723657
+    ],
+    "bbox_min": [
+      1.8424586298233006,
+      -0.014241756043303688,
+      -0.6764976493382613
+    ],
+    "bbox_max": [
+      2.966824925555576,
+      0.26241403835471444,
+      -0.03173925563201323
+    ],
+    "point_count": 266,
+    "source_view_count": 2,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/bench_1.ply"
+  },
+  {
+    "id": "rug_0",
+    "label": "rug",
+    "prompt_used": "rug",
+    "centroid_xyz": [
+      0.36294474629435974,
+      -0.0038960463450043066,
+      -0.6631215896875533
+    ],
+    "bbox_min": [
+      -0.1342163684791853,
+      -0.02663420029278396,
+      -1.0283025425765167
+    ],
+    "bbox_max": [
+      0.8134039256677261,
+      0.05278451486772884,
+      -0.2871048059180544
+    ],
+    "point_count": 1016,
+    "source_view_count": 10,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/rug_0.ply"
+  },
+  {
+    "id": "rug_1",
+    "label": "rug",
+    "prompt_used": "rug",
+    "centroid_xyz": [
+      -0.3321481028654895,
+      0.022584180976701514,
+      -2.6791886325140246
+    ],
+    "bbox_min": [
+      -0.701424990595234,
+      -0.01876272163623849,
+      -3.3428543191526496
+    ],
+    "bbox_max": [
+      0.16830971626519914,
+      0.09129036315708605,
+      -2.070444502205007
+    ],
+    "point_count": 970,
+    "source_view_count": 10,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/rug_1.ply"
+  },
+  {
+    "id": "rug_2",
+    "label": "rug",
+    "prompt_used": "rug",
+    "centroid_xyz": [
+      2.1569381401995837,
+      0.00775992530798372,
+      -1.7448590112444724
+    ],
+    "bbox_min": [
+      1.3292208680036288,
+      -0.03883708869361069,
+      -2.3768318204215495
+    ],
+    "bbox_max": [
+      2.938643016331018,
+      0.060120501881387955,
+      -1.1509824678005685
+    ],
+    "point_count": 2484,
+    "source_view_count": 25,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/rug_2.ply"
+  },
+  {
+    "id": "rug_3",
+    "label": "rug",
+    "prompt_used": "rug",
+    "centroid_xyz": [
+      -2.06377142021877,
+      -0.0013781016313066411,
+      -1.9437257097149343
+    ],
+    "bbox_min": [
+      -2.2691230759814114,
+      -0.008348691018002397,
+      -2.0085889671674226
+    ],
+    "bbox_max": [
+      -1.8629965435125644,
+      0.0066842193369618386,
+      -1.874157509145402
+    ],
+    "point_count": 65,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/rug_3.ply"
+  },
+  {
+    "id": "refrigerator_0",
+    "label": "refrigerator",
+    "prompt_used": "refrigerator",
+    "centroid_xyz": [
+      -1.4718708206529294,
+      0.8472891511903758,
+      -1.2276086249653722
+    ],
+    "bbox_min": [
+      -1.8844144622056256,
+      0.01028789682376563,
+      -1.7654327473976836
+    ],
+    "bbox_max": [
+      -0.9912928453484422,
+      1.4981733953506031,
+      -0.9365865204950539
+    ],
+    "point_count": 1394,
+    "source_view_count": 10,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/refrigerator_0.ply"
+  },
+  {
+    "id": "refrigerator_1",
+    "label": "refrigerator",
+    "prompt_used": "refrigerator",
+    "centroid_xyz": [
+      -2.3819019952223974,
+      0.24563382862319927,
+      -0.9287409691701153
+    ],
+    "bbox_min": [
+      -2.4556954695799833,
+      0.1676267132967011,
+      -0.9429114067689421
+    ],
+    "bbox_max": [
+      -2.33560462933858,
+      0.3573725145166644,
+      -0.9171832885365958
+    ],
+    "point_count": 8,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/refrigerator_1.ply"
+  },
+  {
+    "id": "refrigerator_2",
+    "label": "refrigerator",
+    "prompt_used": "refrigerator",
+    "centroid_xyz": [
+      -2.7362402723788026,
+      0.36501931086284034,
+      -1.976736855177182
+    ],
+    "bbox_min": [
+      -2.750132615743465,
+      0.0979229335159022,
+      -2.000680057573723
+    ],
+    "bbox_max": [
+      -2.7175271342385643,
+      0.6042751351833915,
+      -1.9480464842734888
+    ],
+    "point_count": 15,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/refrigerator_2.ply"
+  },
+  {
+    "id": "refrigerator_3",
+    "label": "refrigerator",
+    "prompt_used": "refrigerator",
+    "centroid_xyz": [
+      -1.8366959672410295,
+      0.5165925712210911,
+      -1.8147390116282407
+    ],
+    "bbox_min": [
+      -1.851257242401069,
+      0.12307664592944279,
+      -1.9007692352813852
+    ],
+    "bbox_max": [
+      -1.8101627088025185,
+      0.8701641947925809,
+      -1.7867959023475641
+    ],
+    "point_count": 35,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/refrigerator_3.ply"
+  },
+  {
+    "id": "counter_0",
+    "label": "counter",
+    "prompt_used": "counter",
+    "centroid_xyz": [
+      -0.651655174413801,
+      0.9211763804089454,
+      -2.0857531112867944
+    ],
+    "bbox_min": [
+      -1.2480765292084208,
+      0.8771482959335072,
+      -3.371138244782696
+    ],
+    "bbox_max": [
+      -0.14385214765346813,
+      0.9480604634142027,
+      -1.1596438308117232
+    ],
+    "point_count": 1594,
+    "source_view_count": 7,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/counter_0.ply"
+  },
+  {
+    "id": "counter_1",
+    "label": "counter",
+    "prompt_used": "counter",
+    "centroid_xyz": [
+      -1.3430363618438212,
+      -0.0010255259477139622,
+      -0.07427707122446003
+    ],
+    "bbox_min": [
+      -1.4165319670950138,
+      -0.010847553254200282,
+      -0.10932836484260783
+    ],
+    "bbox_max": [
+      -1.267519780387292,
+      0.00592401281212207,
+      -0.05243999086670744
+    ],
+    "point_count": 8,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/counter_1.ply"
+  },
+  {
+    "id": "stool_0",
+    "label": "stool",
+    "prompt_used": "stool",
+    "centroid_xyz": [
+      -0.487973541749867,
+      0.7728507195240545,
+      -1.238161191919341
+    ],
+    "bbox_min": [
+      -0.65744721368726,
+      0.7085184665354042,
+      -1.3923708062175204
+    ],
+    "bbox_max": [
+      -0.3199289629354113,
+      0.8561407937905607,
+      -1.1081241605943057
+    ],
+    "point_count": 540,
+    "source_view_count": 5,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/stool_0.ply"
+  },
+  {
+    "id": "stool_1",
+    "label": "stool",
+    "prompt_used": "stool",
+    "centroid_xyz": [
+      -0.6125453776835563,
+      0.488911370655924,
+      -1.8499023610509973
+    ],
+    "bbox_min": [
+      -0.6271191931748343,
+      0.4828304905180638,
+      -1.8529017116380093
+    ],
+    "bbox_max": [
+      -0.5985578085119195,
+      0.49559313663677096,
+      -1.8451175517978877
+    ],
+    "point_count": 6,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/stool_1.ply"
+  },
+  {
+    "id": "stool_2",
+    "label": "stool",
+    "prompt_used": "stool",
+    "centroid_xyz": [
+      -0.3179401682069422,
+      0.30038860589781335,
+      -1.609238770466175
+    ],
+    "bbox_min": [
+      -0.8175998882003707,
+      -0.03035715752373136,
+      -1.9524200652478754
+    ],
+    "bbox_max": [
+      -0.03320515272525159,
+      0.8251405249546411,
+      -1.0399790720518338
+    ],
+    "point_count": 5875,
+    "source_view_count": 11,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/stool_2.ply"
+  },
+  {
+    "id": "stool_3",
+    "label": "stool",
+    "prompt_used": "stool",
+    "centroid_xyz": [
+      -0.31518202183171634,
+      0.27744890868731037,
+      -1.7690044849947573
+    ],
+    "bbox_min": [
+      -0.3227358473124894,
+      0.2627228595537059,
+      -1.7917637725885995
+    ],
+    "bbox_max": [
+      -0.3026092019962038,
+      0.29654730814056407,
+      -1.7463476210270805
+    ],
+    "point_count": 14,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/stool_3.ply"
+  },
+  {
+    "id": "stool_4",
+    "label": "stool",
+    "prompt_used": "stool",
+    "centroid_xyz": [
+      -1.1191319538698974,
+      -0.023178646007714,
+      -0.9245088929081025
+    ],
+    "bbox_min": [
+      -1.1470732821328886,
+      -0.02760243445771593,
+      -0.9376842883045456
+    ],
+    "bbox_max": [
+      -1.1037152912176513,
+      -0.020491306751639904,
+      -0.9146610578714236
+    ],
+    "point_count": 5,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/stool_4.ply"
+  },
+  {
+    "id": "stool_5",
+    "label": "stool",
+    "prompt_used": "stool",
+    "centroid_xyz": [
+      -0.43642648271411033,
+      0.37537930780418033,
+      -1.659042873890801
+    ],
+    "bbox_min": [
+      -0.45030755585293625,
+      0.3469561622553202,
+      -1.676738147395308
+    ],
+    "bbox_max": [
+      -0.4261416802458141,
+      0.39909339543528777,
+      -1.6378349972468462
+    ],
+    "point_count": 15,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/stool_5.ply"
+  },
+  {
+    "id": "stool_6",
+    "label": "stool",
+    "prompt_used": "stool",
+    "centroid_xyz": [
+      -0.39145106233547056,
+      0.34802406984261797,
+      -1.7524823903203959
+    ],
+    "bbox_min": [
+      -0.40824472263033795,
+      0.33245855986192974,
+      -1.7944881067694172
+    ],
+    "bbox_max": [
+      -0.37578191587961496,
+      0.3698760528916417,
+      -1.7224111776729971
+    ],
+    "point_count": 8,
+    "source_view_count": 2,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/stool_6.ply"
+  },
+  {
+    "id": "stool_7",
+    "label": "stool",
+    "prompt_used": "stool",
+    "centroid_xyz": [
+      -0.41890872358778225,
+      0.22591562043313562,
+      -1.6472005898909177
+    ],
+    "bbox_min": [
+      -0.42782258388039235,
+      0.20939514563845196,
+      -1.7037285749839695
+    ],
+    "bbox_max": [
+      -0.40215895463062407,
+      0.24040917964185837,
+      -1.5882360063177317
+    ],
+    "point_count": 14,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/stool_7.ply"
+  },
+  {
+    "id": "coffee maker_0",
+    "label": "coffee maker",
+    "prompt_used": "coffee maker",
+    "centroid_xyz": [
+      -0.8823257228529021,
+      1.1398750715888226,
+      -1.6314106880546708
+    ],
+    "bbox_min": [
+      -1.113946524042877,
+      0.9194078263762437,
+      -1.8556053554868712
+    ],
+    "bbox_max": [
+      -0.7056536236756265,
+      1.4772716215521464,
+      -1.2697220096777093
+    ],
+    "point_count": 7358,
+    "source_view_count": 9,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/coffee maker_0.ply"
+  },
+  {
+    "id": "coffee maker_1",
+    "label": "coffee maker",
+    "prompt_used": "coffee maker",
+    "centroid_xyz": [
+      -1.1876639615078532,
+      1.1939860016372306,
+      -1.4651261209577688
+    ],
+    "bbox_min": [
+      -1.2030097363516519,
+      1.193224193826032,
+      -1.501477125711407
+    ],
+    "bbox_max": [
+      -1.168665007411219,
+      1.1953322308443555,
+      -1.4322360802471155
+    ],
+    "point_count": 9,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/coffee maker_1.ply"
+  },
+  {
+    "id": "coffee maker_2",
+    "label": "coffee maker",
+    "prompt_used": "coffee maker",
+    "centroid_xyz": [
+      -1.216457053347621,
+      1.0629958310001673,
+      -1.7102927008023698
+    ],
+    "bbox_min": [
+      -1.2297301884855212,
+      1.0414396622425328,
+      -1.7127231623665713
+    ],
+    "bbox_max": [
+      -1.2018919763153229,
+      1.0842559706402954,
+      -1.7053951718244569
+    ],
+    "point_count": 6,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/coffee maker_2.ply"
+  },
+  {
+    "id": "coffee maker_3",
+    "label": "coffee maker",
+    "prompt_used": "coffee maker",
+    "centroid_xyz": [
+      -1.06746556642686,
+      0.9509261079939327,
+      -1.73205300308386
+    ],
+    "bbox_min": [
+      -1.1006429770891728,
+      0.9435270386285395,
+      -1.743449866561624
+    ],
+    "bbox_max": [
+      -1.0453105157778748,
+      0.9582703083304809,
+      -1.7220538760379405
+    ],
+    "point_count": 11,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/coffee maker_3.ply"
+  },
+  {
+    "id": "coffee maker_4",
+    "label": "coffee maker",
+    "prompt_used": "coffee maker",
+    "centroid_xyz": [
+      -0.8938924312048738,
+      0.9501383308067074,
+      -1.5721688101647913
+    ],
+    "bbox_min": [
+      -0.9064061404583436,
+      0.939999867915562,
+      -1.5822649584695463
+    ],
+    "bbox_max": [
+      -0.8780570491273534,
+      0.9575121111570846,
+      -1.5586855671914408
+    ],
+    "point_count": 15,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/coffee maker_4.ply"
+  },
+  {
+    "id": "air conditioner_0",
+    "label": "air conditioner",
+    "prompt_used": "air conditioner",
+    "centroid_xyz": [
+      -2.539226298185288,
+      2.4584103304200164,
+      -0.7700890638259513
+    ],
+    "bbox_min": [
+      -2.9047584016901196,
+      2.3399744363623993,
+      -1.5172074393307429
+    ],
+    "bbox_max": [
+      -2.268791450485296,
+      2.700221656503891,
+      0.14753129841910212
+    ],
+    "point_count": 2213,
+    "source_view_count": 10,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/air conditioner_0.ply"
+  },
+  {
+    "id": "air conditioner_1",
+    "label": "air conditioner",
+    "prompt_used": "air conditioner",
+    "centroid_xyz": [
+      -2.3823155148770523,
+      2.1044529660235254,
+      -0.7727177264044719
+    ],
+    "bbox_min": [
+      -2.4069374129251857,
+      2.065323233628329,
+      -0.8436382610210275
+    ],
+    "bbox_max": [
+      -2.3553808507466045,
+      2.1330436691519723,
+      -0.6944559581159546
+    ],
+    "point_count": 20,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/air conditioner_1.ply"
+  },
+  {
+    "id": "broom_0",
+    "label": "broom",
+    "prompt_used": "broom",
+    "centroid_xyz": [
+      -2.8964150518383374,
+      0.6395125094629384,
+      0.18128636361231806
+    ],
+    "bbox_min": [
+      -2.958040813454804,
+      0.0743577151780368,
+      0.017740513492866497
+    ],
+    "bbox_max": [
+      -2.7499346321406133,
+      1.4672976893811085,
+      0.264657517902323
+    ],
+    "point_count": 153,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/broom_0.ply"
+  },
+  {
+    "id": "mirror_0",
+    "label": "mirror",
+    "prompt_used": "mirror",
+    "centroid_xyz": [
+      -3.3133245499670165,
+      1.4968668927664721,
+      -1.9424633228239863
+    ],
+    "bbox_min": [
+      -3.571114527297547,
+      1.0949101005118176,
+      -2.479643228704887
+    ],
+    "bbox_max": [
+      -3.0629076456216846,
+      1.9169760923933237,
+      -1.5187499938572508
+    ],
+    "point_count": 1573,
+    "source_view_count": 4,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/mirror_0.ply"
+  },
+  {
+    "id": "sink_0",
+    "label": "sink",
+    "prompt_used": "sink",
+    "centroid_xyz": [
+      -0.8376487070919368,
+      0.8288387002751784,
+      -2.0937109192430308
+    ],
+    "bbox_min": [
+      -1.0009779309407365,
+      0.6641244406153124,
+      -2.3235179168839117
+    ],
+    "bbox_max": [
+      -0.46835059827337183,
+      0.9266234573848277,
+      -1.9225277025486416
+    ],
+    "point_count": 1658,
+    "source_view_count": 7,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/sink_0.ply"
+  },
+  {
+    "id": "sink_1",
+    "label": "sink",
+    "prompt_used": "sink",
+    "centroid_xyz": [
+      -1.1860366171699523,
+      0.8931587807262521,
+      -2.9556974678396086
+    ],
+    "bbox_min": [
+      -1.2734882932828526,
+      0.779913374490748,
+      -3.037784984976717
+    ],
+    "bbox_max": [
+      -1.1253306174451578,
+      0.9303943970719719,
+      -2.8677606210528555
+    ],
+    "point_count": 84,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/sink_1.ply"
+  },
+  {
+    "id": "sink_2",
+    "label": "sink",
+    "prompt_used": "sink",
+    "centroid_xyz": [
+      -3.147099955063727,
+      0.7517481734859982,
+      -2.30781767256775
+    ],
+    "bbox_min": [
+      -3.2210761276481006,
+      0.7377433463651164,
+      -2.351617316568581
+    ],
+    "bbox_max": [
+      -3.0324387060676177,
+      0.7637243853223504,
+      -2.2455016104464693
+    ],
+    "point_count": 56,
+    "source_view_count": 2,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/sink_2.ply"
+  },
+  {
+    "id": "sink_3",
+    "label": "sink",
+    "prompt_used": "sink",
+    "centroid_xyz": [
+      -2.8842759902911452,
+      0.7473123573539031,
+      -2.276173855907665
+    ],
+    "bbox_min": [
+      -2.90536730768453,
+      0.7151142376538233,
+      -2.3883609512546298
+    ],
+    "bbox_max": [
+      -2.8656650884637127,
+      0.7841323106025816,
+      -2.1643563607569565
+    ],
+    "point_count": 36,
+    "source_view_count": 2,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/sink_3.ply"
+  },
+  {
+    "id": "sink_4",
+    "label": "sink",
+    "prompt_used": "sink",
+    "centroid_xyz": [
+      -2.9517707580647365,
+      0.7495030227731141,
+      -2.332859086077183
+    ],
+    "bbox_min": [
+      -2.9625095892981834,
+      0.7435413829548713,
+      -2.3524659517573956
+    ],
+    "bbox_max": [
+      -2.9439872313080206,
+      0.7526676029574602,
+      -2.3195678712506056
+    ],
+    "point_count": 7,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/sink_4.ply"
+  },
+  {
+    "id": "sink_5",
+    "label": "sink",
+    "prompt_used": "sink",
+    "centroid_xyz": [
+      -3.1289071731293765,
+      0.7757280290368963,
+      -1.9124634186076939
+    ],
+    "bbox_min": [
+      -3.3122194243501233,
+      0.7320010786125893,
+      -2.2006326360260675
+    ],
+    "bbox_max": [
+      -2.848591463485078,
+      0.8193404124892142,
+      -1.6584793435657692
+    ],
+    "point_count": 756,
+    "source_view_count": 4,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/sink_5.ply"
+  },
+  {
+    "id": "towel_0",
+    "label": "towel",
+    "prompt_used": "towel",
+    "centroid_xyz": [
+      2.173982437413339,
+      0.6057537022450974,
+      -3.2248734944050015
+    ],
+    "bbox_min": [
+      2.0589704434950478,
+      0.5305435873029698,
+      -3.4838273940755857
+    ],
+    "bbox_max": [
+      2.3999396330101885,
+      0.6931892756130872,
+      -3.015512397227429
+    ],
+    "point_count": 2614,
+    "source_view_count": 5,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/towel_0.ply"
+  },
+  {
+    "id": "towel_1",
+    "label": "towel",
+    "prompt_used": "towel",
+    "centroid_xyz": [
+      -2.6076334188096437,
+      1.1717479197339775,
+      -0.7782369622741419
+    ],
+    "bbox_min": [
+      -2.706920742950867,
+      1.0309061319704533,
+      -0.8373780364817027
+    ],
+    "bbox_max": [
+      -2.5299582972628287,
+      1.3192892212092797,
+      -0.702800951244623
+    ],
+    "point_count": 749,
+    "source_view_count": 3,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/towel_1.ply"
+  },
+  {
+    "id": "towel_2",
+    "label": "towel",
+    "prompt_used": "towel",
+    "centroid_xyz": [
+      -3.068716459082987,
+      0.8022442514576962,
+      -2.3497991930676445
+    ],
+    "bbox_min": [
+      -3.3640862187365763,
+      0.6985429180139882,
+      -2.5352126200983633
+    ],
+    "bbox_max": [
+      -2.8170768172811025,
+      0.85034725848699,
+      -2.0744236892855956
+    ],
+    "point_count": 2369,
+    "source_view_count": 7,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/towel_2.ply"
+  },
+  {
+    "id": "towel_3",
+    "label": "towel",
+    "prompt_used": "towel",
+    "centroid_xyz": [
+      -3.391376700537526,
+      0.8273721425127845,
+      -2.206999482941897
+    ],
+    "bbox_min": [
+      -3.4639740743525302,
+      0.7890055192754326,
+      -2.3106232111167486
+    ],
+    "bbox_max": [
+      -3.32565467591338,
+      0.8510809174219749,
+      -2.1069641957161998
+    ],
+    "point_count": 258,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/towel_3.ply"
+  },
+  {
+    "id": "toilet_0",
+    "label": "toilet",
+    "prompt_used": "toilet",
+    "centroid_xyz": [
+      -2.8007409794396954,
+      0.30681088438969445,
+      -2.708634641947846
+    ],
+    "bbox_min": [
+      -2.97032421849008,
+      -0.017272632097271368,
+      -3.0252466391440187
+    ],
+    "bbox_max": [
+      -2.636140763091619,
+      0.4837855700753335,
+      -2.4731519857701727
+    ],
+    "point_count": 1577,
+    "source_view_count": 4,
+    "likely_fragment": false,
+    "point_cloud_path": "scene_objects/toilet_0.ply"
+  },
+  {
+    "id": "toilet_1",
+    "label": "toilet",
+    "prompt_used": "toilet",
+    "centroid_xyz": [
+      -1.2855602143893567,
+      1.051522761515403,
+      -2.629353443267884
+    ],
+    "bbox_min": [
+      -1.2897914985014913,
+      1.045310899007463,
+      -2.659619952701852
+    ],
+    "bbox_max": [
+      -1.2793321948577605,
+      1.0603272969077457,
+      -2.5978163848351397
+    ],
+    "point_count": 10,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/toilet_1.ply"
+  },
+  {
+    "id": "toilet_2",
+    "label": "toilet",
+    "prompt_used": "toilet",
+    "centroid_xyz": [
+      -3.317871160001662,
+      0.7293637647872321,
+      -2.6459157256998034
+    ],
+    "bbox_min": [
+      -3.4130161590298735,
+      0.6397827343285719,
+      -2.6977828745432255
+    ],
+    "bbox_max": [
+      -3.2164586900562946,
+      0.7563092183156849,
+      -2.6080400893665185
+    ],
+    "point_count": 106,
+    "source_view_count": 1,
+    "likely_fragment": true,
+    "point_cloud_path": "scene_objects/toilet_2.ply"
+  }
+]

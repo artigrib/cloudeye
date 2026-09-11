@@ -1,0 +1,14 @@
+{
+  "resolution": 0.05,
+  "origin_x": -1.0371029225982418,
+  "origin_z": -6.296292057593327,
+  "width": 52,
+  "height": 128,
+  "band_min": 0.1,
+  "band_max": 0.5,
+  "min_points_per_cell": 3,
+  "extent_percentile": 0.5,
+  "n_free": 1509,
+  "n_obstacle": 2847,
+  "n_unknown": 2300
+}

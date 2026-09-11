@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# uv
+.uv-cache/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Machine-local paths. `var/` is where every out-of-repo tree is mounted or symlinked:
+# var/uploads (UPLOAD_DIR), var/scratch, var/assets, var/nvblox_v2, var/test-fixtures,
+# var/pass_a. Nothing under it is ever committed - see docs/INSTALL.md.
+/var/
+/data/
+/uploads/
+
+# Model weights, pipeline artifacts (point clouds, occupancy grids, meshes/GLBs).
+# These are always generated (GPU pipeline output, HF/torch cache, etc), never meant
+# to be hand-authored - except the small test fixtures and the bundled robot model
+# explicitly allowlisted below.
+*.npz
+*.npy
+*.ply
+*.glb
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+*.bin
+!tests/fixtures/**
+!frontend/public/models/**
+!frontend/public/msa-fixtures/**
+
+# Landing-page hero/demo media (feat/landing-assets) - generated video/gif renders
+# (Playwright recordings, ffmpeg conversions). Unlike per-scene pipeline output
+# (npz/glb above), the landing page needs these specific fixed files to render for
+# every visitor, so - like frontend/public/models/** - the small final renders ARE
+# tracked (allowlisted below); only bulkier intermediate/candidate renders are
+# ignored. Intermediate takes live in var/scratch/autopilot-20260905/assets/landing/.
+frontend/public/landing/*.webm
+frontend/public/landing/*.gif
+frontend/public/landing/*.glb
+!frontend/public/landing/hero-orbit.webm
+!frontend/public/landing/isaac-demo.gif
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# per-session server PID files (demo/ingest_*.pid, demo_*.pid) - runtime state, never shared
+demo/*.pid
+
+# pipeline/ machine-local state: the vast.ai instance ids this box currently caches, the
+# ids it has retired, the day's spend ledger, and the operator's one-morning ARMED file.
+# All are per-machine and none belongs in a shared repo - pipeline/state/README.md explains
+# the format, and the code recreates each on demand.
+/pipeline/state/nvblox_box_id
+/pipeline/state/retired_box_ids
+/pipeline/state/daily_spend.json
+/pipeline/ARMED

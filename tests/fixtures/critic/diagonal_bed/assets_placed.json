@@ -1,0 +1,631 @@
+[
+  {
+    "split_from_blob": true,
+    "split_k": 2,
+    "split_axis": "u",
+    "split_offsets_m": [
+      -1.06624,
+      1.06624
+    ],
+    "split_instance_uv": [
+      2.1324793715701036,
+      2.3271283172859385
+    ],
+    "id": "bed_0",
+    "label": "bed",
+    "index_class": null,
+    "source": "generated",
+    "tier": null,
+    "asset_id": "bed_0",
+    "asset_path": "var/scratch/run-20260906/hero_b1/crops/bed_0.glb",
+    "scale_xyz": [
+      2.9102280110101444,
+      3.035176037945608,
+      2.328687464303329
+    ],
+    "uniform": false,
+    "yaw_deg": 1.091992665159143,
+    "pre_rotation_deg": 0.0,
+    "aspect_measured": 1.8327131819333038,
+    "aspect_asset": null,
+    "footprint_uv": [
+      4.264958743140207,
+      2.3271283172859385
+    ],
+    "height": 1.2509927920886905,
+    "bbox_min_y": 0.027598359096846936,
+    "center_xy": [
+      1.9036632778231528,
+      -4.139743992928175
+    ],
+    "angle_rad": 0.019058867414655012,
+    "fitted_extents": [
+      2.1324793715701036,
+      1.2509927920886907,
+      2.327128317285938
+    ],
+    "n_parts": 2,
+    "status": "generated"
+  },
+  {
+    "id": "desk_1",
+    "label": "desk",
+    "index_class": null,
+    "source": "generated",
+    "tier": null,
+    "asset_id": "desk_1",
+    "asset_path": "var/scratch/run-20260906/hero_b1/crops/desk_1.glb",
+    "scale_xyz": [
+      2.7190806326789625,
+      7.295484450100565,
+      3.7902094583226233
+    ],
+    "uniform": false,
+    "yaw_deg": -0.16032420652642923,
+    "pre_rotation_deg": 0.0,
+    "aspect_measured": 3.717371557697216,
+    "aspect_asset": null,
+    "footprint_uv": [
+      2.724423751006709,
+      0.7328898144081126
+    ],
+    "height": 0.9442369120813545,
+    "bbox_min_y": 0.09191305660781524,
+    "center_xy": [
+      1.5936779454430945,
+      -1.7896407379319852
+    ],
+    "angle_rad": -0.002798185274533571,
+    "fitted_extents": [
+      2.724423751006709,
+      0.9442369120813545,
+      0.7328898144081126
+    ],
+    "n_parts": 1,
+    "status": "generated"
+  },
+  {
+    "id": "nightstand_1",
+    "label": "nightstand",
+    "index_class": null,
+    "source": "generated",
+    "tier": null,
+    "asset_id": "nightstand_1",
+    "asset_path": "var/scratch/run-20260906/hero_b1/crops/nightstand_1.glb",
+    "scale_xyz": [
+      0.6964363159697381,
+      3.4037557674289163,
+      0.6039095236367258
+    ],
+    "uniform": false,
+    "yaw_deg": 5.9432074690809475,
+    "pre_rotation_deg": 0.0,
+    "aspect_measured": 1.1532117686507508,
+    "aspect_asset": null,
+    "footprint_uv": [
+      0.6974469388614383,
+      0.6047865256157123
+    ],
+    "height": 0.6008661842576307,
+    "bbox_min_y": -0.028786606046128593,
+    "center_xy": [
+      0.034394006092753976,
+      -4.977563261297613
+    ],
+    "angle_rad": 0.10372853846458163,
+    "fitted_extents": [
+      0.6974469388614384,
+      0.6008661842576307,
+      0.6047865256157123
+    ],
+    "n_parts": 1,
+    "status": "generated"
+  },
+  {
+    "id": "chair_0",
+    "label": "chair",
+    "index_class": "chair",
+    "source": "polyhaven",
+    "tier": "furniture",
+    "asset_id": "dining_chair_02",
+    "asset_path": "var/assets/furniture/polyhaven/dining_chair_02/dining_chair_02.glb",
+    "scale_xyz": [
+      1.597151355105491,
+      1.0940131550224623,
+      1.223399326795786
+    ],
+    "uniform": false,
+    "yaw_deg": 91.46564250057509,
+    "aspect_measured": 1.735629269925575,
+    "aspect_asset": 1.3294717958986189,
+    "footprint_uv": [
+      0.9206301652976698,
+      0.5304301910840367
+    ],
+    "height": 1.0648879973581775,
+    "bbox_min_y": 0.09835435713593488,
+    "center_xy": [
+      1.879179451465917,
+      -2.1552396624582473
+    ],
+    "angle_rad": 0.02558028729219819,
+    "status": "placed",
+    "pre_rotation_deg": 90.0,
+    "asset_canonical_aabb_m": [
+      0.4335707724094391,
+      0.9733776897192001,
+      0.5764201134443283
+    ],
+    "fitted_extents": [
+      0.9206301652976698,
+      1.0648879973581775,
+      0.5304301910840367
+    ],
+    "n_parts": 1,
+    "color_override_rgb": null
+  },
+  {
+    "id": "chair_4",
+    "label": "chair",
+    "index_class": "chair",
+    "source": "polyhaven",
+    "tier": "furniture",
+    "asset_id": "dining_chair_02",
+    "asset_path": "var/assets/furniture/polyhaven/dining_chair_02/dining_chair_02.glb",
+    "scale_xyz": [
+      0.173939305531584,
+      0.24989279141891685,
+      0.10410374624281936
+    ],
+    "uniform": false,
+    "yaw_deg": 125.5341095670691,
+    "aspect_measured": 2.221316804133588,
+    "aspect_asset": 1.3294717958986189,
+    "footprint_uv": [
+      0.10026211422694332,
+      0.04513634166921543
+    ],
+    "height": 0.24324006798882725,
+    "bbox_min_y": 0.18973768449154327,
+    "center_xy": [
+      1.6123800467807432,
+      -1.8282840056117324
+    ],
+    "angle_rad": 0.6201872087097726,
+    "status": "placed",
+    "pre_rotation_deg": 90.0,
+    "asset_canonical_aabb_m": [
+      0.4335707724094391,
+      0.9733776897192001,
+      0.5764201134443283
+    ],
+    "fitted_extents": [
+      0.10026211422694332,
+      0.24324006798882725,
+      0.04513634166921543
+    ],
+    "n_parts": 1,
+    "color_override_rgb": null
+  },
+  {
+    "id": "chair_5",
+    "label": "chair",
+    "index_class": "chair",
+    "source": "polyhaven",
+    "tier": "furniture",
+    "asset_id": "ArmChair_01",
+    "asset_path": "var/assets/furniture/polyhaven/ArmChair_01/ArmChair_01.glb",
+    "scale_xyz": [
+      0.17841041010415043,
+      0.20661982804758638,
+      0.19051444171824644
+    ],
+    "uniform": false,
+    "yaw_deg": 146.9366119988353,
+    "aspect_measured": 1.1831269781020126,
+    "aspect_asset": 1.1079588899650747,
+    "footprint_uv": [
+      0.1366196043012446,
+      0.16163833958642423
+    ],
+    "height": 0.2200682240318318,
+    "bbox_min_y": 0.18260734381095012,
+    "center_xy": [
+      1.5193327070011153,
+      -1.8592298983287687
+    ],
+    "angle_rad": 0.9937313443101861,
+    "status": "placed",
+    "pre_rotation_deg": 90.0,
+    "asset_canonical_aabb_m": [
+      0.8484309017658234,
+      1.065087635157397,
+      0.7657602727413177
+    ],
+    "fitted_extents": [
+      0.1366196043012446,
+      0.2200682240318318,
+      0.16163833958642423
+    ],
+    "n_parts": 1,
+    "color_override_rgb": null
+  },
+  {
+    "id": "television_0",
+    "label": "television",
+    "index_class": "tv",
+    "source": "polyhaven",
+    "tier": "furniture",
+    "asset_id": "Television_01",
+    "asset_path": "var/assets/furniture/polyhaven/Television_01/Television_01.glb",
+    "scale_xyz": [
+      2.176184495346376,
+      1.6990619505966085,
+      0.8799046711065596
+    ],
+    "uniform": false,
+    "yaw_deg": -1.8312834154326763,
+    "aspect_measured": 3.151846116389422,
+    "aspect_asset": 1.2743975183862801,
+    "footprint_uv": [
+      1.3057106193814034,
+      0.4142685179304224
+    ],
+    "height": 0.7762146323041157,
+    "bbox_min_y": 0.8664468530149974,
+    "center_xy": [
+      2.2822359452480745,
+      -1.756766275926601
+    ],
+    "angle_rad": -0.03196192513646734,
+    "status": "placed",
+    "pre_rotation_deg": 0.0,
+    "asset_canonical_aabb_m": [
+      0.5999999642372131,
+      0.45684892892313655,
+      0.4708106815814972
+    ],
+    "fitted_extents": [
+      1.3057106193814034,
+      0.7762146323041157,
+      0.4142685179304224
+    ],
+    "n_parts": 1,
+    "color_override_rgb": null
+  },
+  {
+    "id": "lamp_0",
+    "label": "lamp",
+    "index_class": "lamp",
+    "source": "polyhaven",
+    "tier": "furniture",
+    "asset_id": "desk_lamp_arm_01",
+    "asset_path": "var/assets/furniture/polyhaven/desk_lamp_arm_01/desk_lamp_arm_01.glb",
+    "scale_xyz": [
+      0.7743938567795502,
+      0.7743938567795502,
+      0.7743938567795502
+    ],
+    "uniform": true,
+    "yaw_deg": 93.68353060244303,
+    "aspect_measured": 5.429710792128675,
+    "aspect_asset": 1.5129296958198122,
+    "footprint_uv": [
+      2.2062412777401,
+      0.40632758579673095
+    ],
+    "height": 0.6912322417535741,
+    "bbox_min_y": 1.8591787632898618,
+    "center_xy": [
+      2.1550165119333973,
+      -1.6796500096432387
+    ],
+    "angle_rad": 0.06428973711060104,
+    "status": "placed",
+    "pre_rotation_deg": 90.0,
+    "asset_canonical_aabb_m": [
+      0.40802252292633057,
+      0.8790190517902374,
+      0.6173093914985657
+    ],
+    "fitted_extents": [
+      0.4753791607453902,
+      0.6912322417535741,
+      0.1562179519020091
+    ],
+    "n_parts": 2,
+    "color_override_rgb": null
+  },
+  {
+    "id": "lamp_1",
+    "label": "lamp",
+    "index_class": "lamp",
+    "source": "polyhaven",
+    "tier": "furniture",
+    "asset_id": "vintage_oil_lamp",
+    "asset_path": "var/assets/furniture/polyhaven/vintage_oil_lamp/vintage_oil_lamp.glb",
+    "scale_xyz": [
+      0.7193741774918648,
+      0.7193741774918648,
+      0.7193741774918648
+    ],
+    "uniform": true,
+    "yaw_deg": 15.672533595654187,
+    "aspect_measured": 1.1999866659416136,
+    "aspect_asset": 1.0000000338662767,
+    "footprint_uv": [
+      0.32136539293886646,
+      0.26780746991608884
+    ],
+    "height": 0.5766770948704698,
+    "bbox_min_y": 0.5871599582679006,
+    "center_xy": [
+      1.0937051211972155,
+      -1.6919217492268006
+    ],
+    "angle_rad": 0.2735373133735912,
+    "status": "placed",
+    "pre_rotation_deg": 0.0,
+    "asset_canonical_aabb_m": [
+      0.2199999988079071,
+      0.8016371909276536,
+      0.2199999913573265
+    ],
+    "fitted_extents": [
+      0.15826231819064943,
+      0.5766770948704698,
+      0.15826231283089415
+    ],
+    "n_parts": 3,
+    "color_override_rgb": null
+  },
+  {
+    "id": "lamp_5",
+    "label": "lamp",
+    "index_class": "lamp",
+    "source": "polyhaven",
+    "tier": "furniture",
+    "asset_id": "vintage_oil_lamp",
+    "asset_path": "var/assets/furniture/polyhaven/vintage_oil_lamp/vintage_oil_lamp.glb",
+    "scale_xyz": [
+      0.6138067357177559,
+      0.6138067357177559,
+      0.6138067357177559
+    ],
+    "uniform": true,
+    "yaw_deg": -32.37998229820023,
+    "aspect_measured": 1.1835778209813466,
+    "aspect_asset": 1.0000000338662767,
+    "footprint_uv": [
+      0.4927631776611783,
+      0.41633356837711843
+    ],
+    "height": 0.4920503073932545,
+    "bbox_min_y": 1.2954924939361305,
+    "center_xy": [
+      2.3911895972808024,
+      -5.143385014728263
+    ],
+    "angle_rad": -0.5651373028410744,
+    "status": "placed",
+    "pre_rotation_deg": 0.0,
+    "asset_canonical_aabb_m": [
+      0.2199999988079071,
+      0.8016371909276536,
+      0.2199999913573265
+    ],
+    "fitted_extents": [
+      0.13503748112619166,
+      0.49205030739325456,
+      0.1350374765529751
+    ],
+    "n_parts": 3,
+    "color_override_rgb": null
+  },
+  {
+    "id": "lamp_7",
+    "label": "lamp",
+    "index_class": "floor_lamp",
+    "source": "kenney",
+    "tier": "furniture",
+    "asset_id": "lampRoundFloor",
+    "asset_path": "var/assets/furniture/kenney_furniture_kit/Models/GLTF format/lampRoundFloor.glb",
+    "scale_xyz": [
+      1.2414320596069754,
+      1.2414320596069754,
+      1.2414320596069754
+    ],
+    "uniform": true,
+    "yaw_deg": 147.74909926222878,
+    "aspect_measured": 1.1504095927940512,
+    "aspect_asset": 1.1547005630835643,
+    "footprint_uv": [
+      0.42122400553622685,
+      0.366151332685936
+    ],
+    "height": 1.067631589020827,
+    "bbox_min_y": 0.6957578726916269,
+    "center_xy": [
+      3.8095166077566374,
+      -4.798485170735367
+    ],
+    "angle_rad": 1.0079119221869206,
+    "status": "placed",
+    "pre_rotation_deg": 90.0,
+    "asset_canonical_aabb_m": [
+      0.2736709490418434,
+      1.5480000257492066,
+      0.31600799895823
+    ],
+    "fitted_extents": [
+      0.21794581166610805,
+      1.067631589020827,
+      0.1887466055131174
+    ],
+    "n_parts": 2,
+    "color_override_rgb": null
+  },
+  {
+    "id": "curtain_0",
+    "label": "curtain",
+    "index_class": null,
+    "source": null,
+    "tier": null,
+    "asset_id": null,
+    "asset_path": null,
+    "scale_xyz": null,
+    "uniform": null,
+    "yaw_deg": 86.59782173357172,
+    "aspect_measured": 2.949432831386419,
+    "aspect_asset": null,
+    "footprint_uv": [
+      3.7701360768024976,
+      1.2782579880045264
+    ],
+    "height": 3.1953352028382875,
+    "bbox_min_y": 0.06639203198632826,
+    "center_xy": [
+      3.8555796269369544,
+      -3.3497630972713734
+    ],
+    "angle_rad": 1.5114171143059303,
+    "status": "no_candidate_placeholder_kept"
+  },
+  {
+    "id": "nightstand_0",
+    "label": "nightstand",
+    "index_class": "nightstand",
+    "source": "polyhaven",
+    "tier": "furniture",
+    "asset_id": "ClassicNightstand_01",
+    "asset_path": "var/assets/furniture/polyhaven/ClassicNightstand_01/ClassicNightstand_01.glb",
+    "scale_xyz": [
+      1.6446684516289027,
+      0.7797377232071512,
+      1.3578128685690252
+    ],
+    "uniform": false,
+    "yaw_deg": 2.977616188120223,
+    "aspect_measured": 1.6211901334456298,
+    "aspect_asset": 1.3384295317451,
+    "footprint_uv": [
+      0.9337642499191712,
+      0.5759745452771639
+    ],
+    "height": 0.5457891028289695,
+    "bbox_min_y": -0.02185503354620466,
+    "center_xy": [
+      2.499987749130547,
+      -4.906001730228272
+    ],
+    "angle_rad": 0.05196920634338076,
+    "status": "placed",
+    "pre_rotation_deg": 0.0,
+    "asset_canonical_aabb_m": [
+      0.5677522718906403,
+      0.6999649838462041,
+      0.424192875623703
+    ],
+    "fitted_extents": [
+      0.9337642499191712,
+      0.5457891028289695,
+      0.5759745452771639
+    ],
+    "n_parts": 1,
+    "color_override_rgb": null
+  },
+  {
+    "id": "pillow_0",
+    "label": "pillow",
+    "index_class": "pillow",
+    "source": "kenney",
+    "tier": "furniture",
+    "asset_id": "pillow",
+    "asset_path": "var/assets/furniture/kenney_furniture_kit/Models/GLTF format/pillow.glb",
+    "scale_xyz": [
+      8.102630862831965,
+      2.474253567352103,
+      9.498151392470392
+    ],
+    "uniform": false,
+    "yaw_deg": 0.8930378062200223,
+    "aspect_measured": 2.2174410887701224,
+    "aspect_asset": 2.59935217604887,
+    "footprint_uv": [
+      1.8636051322581624,
+      0.8404305041951707
+    ],
+    "height": 0.5496874274241385,
+    "bbox_min_y": 0.5246791286167484,
+    "center_xy": [
+      1.141140188123666,
+      -4.7807813713663405
+    ],
+    "angle_rad": 0.015586450063326485,
+    "status": "placed",
+    "pre_rotation_deg": 0.0,
+    "asset_canonical_aabb_m": [
+      0.41400000751018523,
+      0.3998932778835297,
+      0.1592704564332962
+    ],
+    "fitted_extents": [
+      1.8636051322581624,
+      0.5496874274241385,
+      0.8404305041951707
+    ],
+    "n_parts": 1,
+    "color_override_rgb": [
+      237,
+      230,
+      220
+    ]
+  },
+  {
+    "id": "pillow_2",
+    "label": "pillow",
+    "index_class": "pillow",
+    "source": "kenney",
+    "tier": "furniture",
+    "asset_id": "pillow",
+    "asset_path": "var/assets/furniture/kenney_furniture_kit/Models/GLTF format/pillow.glb",
+    "scale_xyz": [
+      4.8189999446975476,
+      1.2925864835115477,
+      5.710614294354995
+    ],
+    "uniform": false,
+    "yaw_deg": -2.095075197063314,
+    "aspect_measured": 2.193507974266677,
+    "aspect_asset": 2.59935217604887,
+    "footprint_uv": [
+      1.1083700073868705,
+      0.5052956362091254
+    ],
+    "height": 0.28716480324409877,
+    "bbox_min_y": 0.4774373632493969,
+    "center_xy": [
+      3.3777983048909714,
+      -4.747741524367836
+    ],
+    "angle_rad": -0.036565960265623865,
+    "status": "placed",
+    "pre_rotation_deg": 0.0,
+    "asset_canonical_aabb_m": [
+      0.41400000751018523,
+      0.3998932778835297,
+      0.1592704564332962
+    ],
+    "fitted_extents": [
+      1.1083700073868705,
+      0.28716480324409877,
+      0.5052956362091254
+    ],
+    "n_parts": 1,
+    "color_override_rgb": [
+      237,
+      230,
+      220
+    ]
+  }
+]

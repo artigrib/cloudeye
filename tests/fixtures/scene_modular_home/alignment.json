@@ -1,0 +1,33 @@
+{
+  "floor_y": -1.2814527698120997,
+  "ceiling_y": 2.689142392993922,
+  "bbox_min": [
+    -3.938159539401741,
+    -0.3499971693429684,
+    -4.766196080650617
+  ],
+  "bbox_max": [
+    5.8113646942566275,
+    3.1460751617166016,
+    0.8121105953659924
+  ],
+  "residual_tilt_deg": 0.08609148707878812,
+  "det_r": 0.9999999999999992,
+  "is_reflection": false,
+  "n_views": 67,
+  "frac_cameras_between": 1.0,
+  "floor_support": 411090,
+  "ceiling_support": 68351,
+  "chosen_band": "high",
+  "warnings": [],
+  "points_below_floor": 41852,
+  "points_below_floor_frac": 0.004800139650435783,
+  "reflective_floor_suspected": false,
+  "floor_likely_wrong": false,
+  "floor_hull_area": 6.739330242758532,
+  "room_bbox_xy_area": 54.806827950829756,
+  "conf_available": true,
+  "conf_cutoff": 1.0000841617584229,
+  "conf_threshold_percentile": 10.0,
+  "schema_version": 5
+}

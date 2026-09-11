@@ -1,0 +1,55 @@
+go2.glb
+=======
+
+Derived from the Unitree Go2 meshes and URDF in the Unitree Robotics unitree_ros repository:
+
+  Source:      https://github.com/unitreerobotics/unitree_ros
+  Commit:      7d6075f7f58588b189b940130e3edab3c839b2df (fetched 2026-08-31)
+  Path:        robots/go2_description/{meshes/*.dae, urdf/go2_description.urdf}
+  License:     BSD 3-Clause License (reproduced in full below), from the repository root
+               LICENSE file. robots/go2_description/package.xml also declares
+               <license>BSD</license>. No separate/divergent license file, NC/ND term, or
+               per-file header was found under robots/go2_description/ - the repository-root
+               BSD-3-Clause applies to the meshes.
+  Copyright:   HangZhou YuShu TECHNOLOGY CO.,LTD. ("Unitree Robotics"), 2016-2022
+
+This .glb is a static, non-articulated conversion of those meshes: the trunk and the 4 legs'
+hip/thigh/calf/foot parts (17 parts total, from 7 unique source .dae files) were assembled
+per the joint offsets in go2_description.urdf at the zero joint angle (legs straight down -
+the URDF's own rest pose, not a crouched stance), decimated, and re-exported as a single
+static mesh. See frontend/scripts/build-go2-glb.mjs for the exact process and
+~/reports/M-go2.md for the coordinate/scale/decimation details, which is the modification
+this License's clause on redistribution in modified form covers.
+
+No trademark or endorsement by Unitree Robotics is implied.
+
+
+BSD 3-Clause License
+
+Copyright (c) 2016-2022 HangZhou YuShu TECHNOLOGY CO.,LTD. ("Unitree Robotics")
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+* Neither the name of the copyright holder nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

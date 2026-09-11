@@ -1,0 +1,221 @@
+# Target: stdgpu (vendored into nvblox's build via CMake FetchContent)
+# Files:  src/stdgpu/functional.h, src/stdgpu/impl/deque_detail.cuh,
+#         src/stdgpu/impl/functional_detail.h, src/stdgpu/impl/memory_detail.h,
+#         src/stdgpu/impl/unordered_base_detail.cuh,
+#         src/stdgpu/impl/unordered_map_detail.cuh,
+#         src/stdgpu/impl/unordered_set_detail.cuh,
+#         src/stdgpu/impl/vector_detail.cuh
+# Commit: e10f6f3ccc9902d693af4380c3bcd188ec34a2e6 (stotko/stdgpu, 2021-07-26
+#         — the exact commit pinned by valtsblukis/nvblox's
+#         thirdparty/stdgpu/stdgpu.cmake GIT_TAG as of 2026-08-28)
+#
+# Toolchain: CUDA 12.8 (nvcc), GCC 13, Ubuntu 24.04
+#
+# Upstream status (checked 2026-08-29): STILL PRESENT in stdgpu's current
+# master (verified directly: src/stdgpu/impl/memory_detail.h still calls
+# unqualified forward<Args>/construct_at/destroy_at at multiple call sites).
+# No existing stdgpu issue or PR found covering this ADL ambiguity under
+# CUDA 12.x's libcu++. See patches/nvblox-cuda128/upstream/ for a draft
+# issue.
+#
+# Symptom (hit after patch 02 was already applied): gpu_layer_view.cu fails
+# with ~12 ambiguous-overload errors, e.g.:
+#   error: more than one instance of overloaded function "stdgpu::forward"
+#   matches the argument list:
+#             function "stdgpu::forward<T>(...)"
+#             function "cuda::std::__4::forward<T>(...)"
+#   ... (same pattern for construct_at / destroy_at)
+#
+# Cause: stdgpu predates CUDA 12.x's libcu++ (CCCL) changes. CUDA 12.x's
+# libcu++ now aliases thrust::pair into the cuda::std namespace. stdgpu's
+# own forward<Args>(), construct_at(), destroy_at() helpers are called
+# unqualified inside stdgpu's own namespace (relying on ordinary unqualified
+# lookup finding stdgpu::forward). When one of these is instantiated with a
+# thrust::pair<...> argument, argument-dependent lookup (ADL) now also
+# associates cuda::std (via the pair alias) and finds cuda::std::forward /
+# cuda::std::destroy_at alongside stdgpu's own — two equally-good candidates,
+# ambiguous overload, hard compile error.
+#
+# Fix: explicitly qualify every affected call site as stdgpu::forward<...>,
+# stdgpu::construct_at(...), stdgpu::destroy_at(...). A qualified call
+# skips ADL entirely, so there's no candidate-set ambiguity regardless of
+# what cuda::std does or doesn't alias in the future. Applied tree-wide
+# (every unqualified forward<...>/construct_at/destroy_at call site in
+# src/stdgpu, not just the one that first failed) since the same ADL
+# ambiguity would otherwise resurface file-by-file as more of stdgpu's
+# container templates get instantiated with thrust:: types. The two
+# *definitions* of construct_at/destroy_at in memory_detail.h are left
+# unqualified (a definition can't self-reference through ADL the same way).
+diff --git a/src/stdgpu/functional.h b/src/stdgpu/functional.h
+index 52bd6bf..ede2f44 100644
+--- a/src/stdgpu/functional.h
++++ b/src/stdgpu/functional.h
+@@ -395,7 +395,7 @@ struct equal_to<void>
+     template <typename T, typename U>
+     STDGPU_HOST_DEVICE auto
+     operator()(T&& lhs,
+-               U&& rhs) const -> decltype(forward<T>(lhs) == forward<U>(rhs));
++               U&& rhs) const -> decltype(stdgpu::forward<T>(lhs) == stdgpu::forward<U>(rhs));
+ };
+
+
+@@ -433,7 +433,7 @@ struct bit_not<void>
+      */
+     template <typename T>
+     STDGPU_HOST_DEVICE auto
+-    operator()(T&& value) const -> decltype(~forward<T>(value));
++    operator()(T&& value) const -> decltype(~stdgpu::forward<T>(value));
+ };
+
+ } // namespace stdgpu
+diff --git a/src/stdgpu/impl/deque_detail.cuh b/src/stdgpu/impl/deque_detail.cuh
+index d6ba667..5d8eae2 100644
+--- a/src/stdgpu/impl/deque_detail.cuh
++++ b/src/stdgpu/impl/deque_detail.cuh
+@@ -168,7 +168,7 @@ template <class... Args>
+ inline STDGPU_DEVICE_ONLY bool
+ deque<T, Allocator>::emplace_back(Args&&... args)
+ {
+-    return push_back(T(forward<Args>(args)...));
++    return push_back(T(stdgpu::forward<Args>(args)...));
+ }
+
+
+@@ -283,7 +283,7 @@ template <class... Args>
+ inline STDGPU_DEVICE_ONLY bool
+ deque<T, Allocator>::emplace_front(Args&&... args)
+ {
+-    return push_front(T(forward<Args>(args)...));
++    return push_front(T(stdgpu::forward<Args>(args)...));
+ }
+
+
+diff --git a/src/stdgpu/impl/functional_detail.h b/src/stdgpu/impl/functional_detail.h
+index 2e01456..a07c380 100644
+--- a/src/stdgpu/impl/functional_detail.h
++++ b/src/stdgpu/impl/functional_detail.h
+@@ -89,9 +89,9 @@ equal_to<T>::operator()(const T &lhs,
+ template <typename T, typename U>
+ inline STDGPU_HOST_DEVICE auto
+ equal_to<void>::operator()(T&& lhs,
+-                           U&& rhs) const -> decltype(forward<T>(lhs) == forward<U>(rhs))
++                           U&& rhs) const -> decltype(stdgpu::forward<T>(lhs) == stdgpu::forward<U>(rhs))
+ {
+-    return forward<T>(lhs) == forward<U>(rhs);
++    return stdgpu::forward<T>(lhs) == stdgpu::forward<U>(rhs);
+ }
+
+
+@@ -104,9 +104,9 @@ bit_not<T>::operator()(const T value) const
+
+ template <typename T>
+ inline STDGPU_HOST_DEVICE auto
+-bit_not<void>::operator()(T&& value) const -> decltype(~forward<T>(value))
++bit_not<void>::operator()(T&& value) const -> decltype(~stdgpu::forward<T>(value))
+ {
+-    return ~forward<T>(value);
++    return ~stdgpu::forward<T>(value);
+ }
+
+ } // namespace stdgpu
+diff --git a/src/stdgpu/impl/memory_detail.h b/src/stdgpu/impl/memory_detail.h
+index 230c8a0..5cda9f1 100644
+--- a/src/stdgpu/impl/memory_detail.h
++++ b/src/stdgpu/impl/memory_detail.h
+@@ -87,7 +87,7 @@ class construct_value
+         STDGPU_HOST_DEVICE void
+         operator()(T& t) const
+         {
+-            construct_at(&t, _value);
++            stdgpu::construct_at(&t, _value);
+         }
+
+     private:
+@@ -112,7 +112,7 @@ struct destroy_value
+     STDGPU_HOST_DEVICE void
+     operator()(T& t) const
+     {
+-        destroy_at(&t);
++        stdgpu::destroy_at(&t);
+     }
+ };
+
+@@ -735,7 +735,7 @@ allocator_traits<Allocator>::construct(STDGPU_MAYBE_UNUSED Allocator& a,
+                                        T* p,
+                                        Args&&... args)
+ {
+-    construct_at(p, forward<Args>(args)...);
++    stdgpu::construct_at(p, stdgpu::forward<Args>(args)...);
+ }
+
+
+@@ -745,7 +745,7 @@ STDGPU_HOST_DEVICE void
+ allocator_traits<Allocator>::destroy(STDGPU_MAYBE_UNUSED Allocator& a,
+                                      T* p)
+ {
+-    destroy_at(p);
++    stdgpu::destroy_at(p);
+ }
+
+
+@@ -770,7 +770,7 @@ STDGPU_HOST_DEVICE T*
+ construct_at(T* p,
+              Args&&... args)
+ {
+-    return ::new (static_cast<void*>(p)) T(forward<Args>(args)...);
++    return ::new (static_cast<void*>(p)) T(stdgpu::forward<Args>(args)...);
+ }
+
+
+diff --git a/src/stdgpu/impl/unordered_base_detail.cuh b/src/stdgpu/impl/unordered_base_detail.cuh
+index 934a7ed..f2c4449 100644
+--- a/src/stdgpu/impl/unordered_base_detail.cuh
++++ b/src/stdgpu/impl/unordered_base_detail.cuh
+@@ -872,7 +872,7 @@ template <class... Args>
+ inline STDGPU_DEVICE_ONLY thrust::pair<typename unordered_base<Key, Value, KeyFromValue, Hash, KeyEqual, Allocator>::iterator, bool>
+ unordered_base<Key, Value, KeyFromValue, Hash, KeyEqual, Allocator>::emplace(Args&&... args)
+ {
+-    return insert(value_type(forward<Args>(args)...));
++    return insert(value_type(stdgpu::forward<Args>(args)...));
+ }
+
+
+diff --git a/src/stdgpu/impl/unordered_map_detail.cuh b/src/stdgpu/impl/unordered_map_detail.cuh
+index 0e9a098..691acd3 100644
+--- a/src/stdgpu/impl/unordered_map_detail.cuh
++++ b/src/stdgpu/impl/unordered_map_detail.cuh
+@@ -193,7 +193,7 @@ template <class... Args>
+ inline STDGPU_DEVICE_ONLY thrust::pair<typename unordered_map<Key, T, Hash, KeyEqual, Allocator>::iterator, bool>
+ unordered_map<Key, T, Hash, KeyEqual, Allocator>::emplace(Args&&... args)
+ {
+-    return _base.emplace(forward<Args>(args)...);
++    return _base.emplace(stdgpu::forward<Args>(args)...);
+ }
+
+
+diff --git a/src/stdgpu/impl/unordered_set_detail.cuh b/src/stdgpu/impl/unordered_set_detail.cuh
+index 91b42cb..92484ca 100644
+--- a/src/stdgpu/impl/unordered_set_detail.cuh
++++ b/src/stdgpu/impl/unordered_set_detail.cuh
+@@ -178,7 +178,7 @@ template <class... Args>
+ inline STDGPU_DEVICE_ONLY thrust::pair<typename unordered_set<Key, Hash, KeyEqual, Allocator>::iterator, bool>
+ unordered_set<Key, Hash, KeyEqual, Allocator>::emplace(Args&&... args)
+ {
+-    return _base.emplace(forward<Args>(args)...);
++    return _base.emplace(stdgpu::forward<Args>(args)...);
+ }
+
+
+diff --git a/src/stdgpu/impl/vector_detail.cuh b/src/stdgpu/impl/vector_detail.cuh
+index f09c0e3..a947e4a 100644
+--- a/src/stdgpu/impl/vector_detail.cuh
++++ b/src/stdgpu/impl/vector_detail.cuh
+@@ -159,7 +159,7 @@ template <class... Args>
+ inline STDGPU_DEVICE_ONLY bool
+ vector<T, Allocator>::emplace_back(Args&&... args)
+ {
+-    return push_back(T(forward<Args>(args)...));
++    return push_back(T(stdgpu::forward<Args>(args)...));
+ }
+
+

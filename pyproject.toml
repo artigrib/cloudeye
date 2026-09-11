@@ -1,0 +1,50 @@
+[project]
+name = "video-backend"
+version = "0.1.0"
+description = "Add your description here"
+license = "Apache-2.0"
+requires-python = ">=3.12"
+dependencies = [
+    "aiofiles>=25.1.0",
+    "alembic>=1.14",
+    "arq>=0.26",
+    "asyncpg>=0.31.0",
+    "ezdxf>=1.4.4",
+    "fastapi>=0.141.1",
+    "httpx>=0.28",
+    "mapbox-earcut>=2.0.0",
+    "numpy>=2.1",
+    "pillow>=12.3.0",
+    "pydantic-settings>=2.15.0",
+    "python-multipart>=0.0.32",
+    "rtree>=1.4.1",
+    "scipy>=1.18.1",
+    "shapely>=2.1.2",
+    "sqlalchemy[asyncio]>=2.0",
+    "trimesh>=5.1.0",
+    "usd-core>=26.8",
+    "uvicorn[standard]>=0.52.4",
+]
+
+[dependency-groups]
+dev = [
+    "anyio>=4.7",
+    "matplotlib>=3.11.1",
+    "pytest>=8.3",
+    "pytest-asyncio>=0.25",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.cloudeye]
+# The Isaac Sim version app/services/usd_export.py's output targets - not a pip
+# dependency of this project (Isaac Sim is a separate GPU-box install, see
+# deploy/install_isaacsim_gpu.sh and docs/ISAAC_VALIDATION.md), so it has no natural
+# home in [project.dependencies]. "targeted-untested" until docs/ISAAC_VALIDATION.md's
+# "Verified runs" table has a real row from a live Isaac Sim run - flip to "tested"
+# (and update this comment with the date) only then, never preemptively.
+isaac_sim_target = "6.0.1"
+isaac_sim_status = "targeted-untested"

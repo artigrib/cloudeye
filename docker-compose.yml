@@ -1,0 +1,73 @@
+# CloudEye, containerised.
+#
+# WRITTEN, NOT EXECUTED. No container runtime was installed on the machine this project is
+# developed on, so this file has never been run. It is a starting point, not a verified
+# path - docs/INSTALL.md's native install is the one that is tested. Report what breaks.
+#
+# Every port is published on 127.0.0.1 only. Do not change that to 0.0.0.0 without putting
+# authentication in front of the API first: this project has none.
+#
+#   docker compose up --build
+#   docker compose run --rm api alembic upgrade head
+#   open http://127.0.0.1:5173/workspaces
+
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: robot
+      POSTGRES_PASSWORD: robot
+      POSTGRES_DB: robotdb
+    ports: ["127.0.0.1:5432:5432"]
+    volumes: ["pgdata:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U robot -d robotdb"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  redis:
+    image: redis:7
+    ports: ["127.0.0.1:6379:6379"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  api:
+    build: {context: ., dockerfile: Dockerfile.api}
+    depends_on:
+      postgres: {condition: service_healthy}
+      redis: {condition: service_healthy}
+    environment:
+      DATABASE_URL: postgresql+asyncpg://robot:robot@postgres:5432/robotdb
+      REDIS_URL: redis://redis:6379/0
+      UPLOAD_DIR: /data/uploads
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+    ports: ["127.0.0.1:8000:8000"]
+    volumes: ["uploads:/data/uploads"]
+
+  worker:
+    build: {context: ., dockerfile: Dockerfile.api}
+    depends_on:
+      postgres: {condition: service_healthy}
+      redis: {condition: service_healthy}
+    environment:
+      DATABASE_URL: postgresql+asyncpg://robot:robot@postgres:5432/robotdb
+      REDIS_URL: redis://redis:6379/0
+      UPLOAD_DIR: /data/uploads
+      OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+    volumes: ["uploads:/data/uploads"]
+    command: ["arq", "app.worker.WorkerSettings"]
+
+  web:
+    build: {context: ., dockerfile: Dockerfile.web}
+    depends_on: [api]
+    environment:
+      VITE_API_PROXY_TARGET: http://api:8000
+    ports: ["127.0.0.1:5173:5173"]
+
+volumes:
+  pgdata:
+  uploads:

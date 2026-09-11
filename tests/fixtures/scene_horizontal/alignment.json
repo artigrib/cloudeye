@@ -1,0 +1,24 @@
+{
+  "floor_y": -1.1516703083623625,
+  "ceiling_y": 2.455329785014923,
+  "bbox_min": [
+    -1.7024149804463302,
+    -0.42814402643797606,
+    -7.674163874176201
+  ],
+  "bbox_max": [
+    2.693914271985191,
+    2.9696585720232727,
+    0.5197586656002573
+  ],
+  "residual_tilt_deg": 0.16074067583121548,
+  "det_r": 0.9999999999999998,
+  "is_reflection": false,
+  "n_views": 26,
+  "frac_cameras_between": 1.0,
+  "floor_support": 128851,
+  "ceiling_support": 2452,
+  "chosen_band": "high",
+  "warnings": [],
+  "schema_version": 2
+}

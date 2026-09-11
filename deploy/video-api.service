@@ -1,0 +1,25 @@
+[Unit]
+Description=Video backend FastAPI service (uvicorn)
+After=network.target postgresql.service redis-server.service
+Wants=postgresql.service redis-server.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/cloudeye
+# Order matters: values from the later file win, so app defaults come from .env and the
+# OpenRouter secret is layered on top without ever needing to live in .env itself.
+# .env is NOT prefixed with "-": every setting here (DATABASE_URL in particular) has a
+# hardcoded fallback in app/config.py, so a missing/unreadable .env must fail the unit
+# loudly instead of silently starting against robot:robot@127.0.0.1/robotdb. The
+# OpenRouter file stays optional ("-") since its absence only disables VLM calls
+# (openrouter_api_key defaults to "").
+EnvironmentFile=/opt/cloudeye/.env
+EnvironmentFile=-/etc/cloudeye/openrouter.env
+# Loopback only - this must never be exposed on 0.0.0.0.
+ExecStart=/usr/local/bin/uv run --project /opt/cloudeye uvicorn app.main:app --host 127.0.0.1 --port 8000
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
