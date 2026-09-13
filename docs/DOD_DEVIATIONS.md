@@ -125,3 +125,7 @@ by environment variable, instead of UUID literals. The visual probes that only t
 - **The offline pipeline suite grew.** `docs/KNOWN_TEST_FAILURES.md` records 117 checks from
   an earlier run; the suite in this repository reports **153/153**. The count in the table is
   whatever the suite actually printed, not the one the older note remembers.
+- **2026-09-13, history rewritten once at the tip.** Two commits carried `Co-Authored-By` and
+  `Claude-Session` trailers, which the 2026-09-12 cleanup had removed from every other commit.
+  `7b56873` and `370ff77` were squashed into `7c5a598`, same tree, messages concatenated with
+  the trailers stripped, and pushed with `--force-with-lease`. Content unchanged.
